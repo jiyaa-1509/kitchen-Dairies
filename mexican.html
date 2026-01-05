@@ -1,0 +1,1404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mexican Recipes | kitchen Dairies</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="indian.css">
+</head>
+<body>
+    
+    <header class="premium-header">
+        <div class="header-container">
+            <div class="logo-section">
+                <a href="home.html" class="logo">
+                    <img src="C:\Users\pjiya\OneDrive\Documents\Desktop\IMG_20251218_100944.jpg" alt="kitchen Dairies Logo">
+                    <div class="logo-text">
+                        <h1>kitchen Dairies</h1>
+                        <p class="tagline">Artisanal Culinary Creations</p>
+                    </div>
+                </a>
+            </div>
+
+            <nav class="main-nav">
+                <a href="home.html" class="nav-link"><i class="fas fa-home"></i> Home</a>
+                <a href="Cuisine.html" class="nav-link active"><i class="fas fa-globe-americas"></i> Cuisine</a>
+                <a href="nutrition.html" class="nav-link"><i class="fas fa-apple-alt"></i> Nutrition</a>
+                <a href="contact.html" class="nav-link"><i class="fas fa-envelope"></i> Contact</a>
+                <a href="store.html" class="nav-link"><i class="fas fa-store"></i> Store</a>
+                <a href="cart.html" class="nav-cart">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-count" id="cart-count">0</span>
+                </a>
+                <button class="premium-cta">Join Club</button>
+            </nav>
+
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+
+    <section class="cuisine-hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span><i class="fas fa-pepper-hot"></i> ¡Buen Provecho!</span>
+                </div>
+                <h1 class="hero-title">Discover <span class="highlight">Mexican</span> Culinary Art</h1>
+                <p class="hero-subtitle">From vibrant street tacos to complex mole sauces, explore the rich tapestry of Mexico's regional cuisines</p>
+                
+                <div class="cuisine-stats">
+                    <div class="stat">
+                        <i class="fas fa-clock"></i>
+                        <span>7 Culinary Regions</span>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-mortar-pestle"></i>
+                        <span>60+ Chilis</span>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-leaf"></i>
+                        <span>UNESCO Heritage</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="regional-nav">
+        <div class="container">
+            <div class="section-header">
+                <h2>Explore by <span class="accent">Category</span></h2>
+                <p>Mexico's diverse culinary traditions</p>
+            </div>
+            
+            <div class="region-tabs">
+                <button class="region-tab active" data-region="all">All Dishes</button>
+                <button class="region-tab" data-region="street">Street Food</button>
+                <button class="region-tab" data-region="main">Main Dishes</button>
+                <button class="region-tab" data-region="soup">Soups & Stews</button>
+                <button class="region-tab" data-region="dessert">Desserts</button>
+            </div>
+        </div>
+    </section>
+
+   
+    <section class="featured-recipes">
+        <div class="container">
+            <div class="section-header">
+                <h2>Signature <span class="accent">Mexican</span> Recipes</h2>
+                <p>Handpicked classics that define Mexican cuisine</p>
+            </div>
+            
+            <div class="recipes-grid">
+                
+                <!-- ========== STREET FOOD (10 Recipes) ========== -->
+                
+                <!-- Recipe 1: Tacos al Pastor -->
+                <div class="recipe-card" data-region="street">
+                    <div class="recipe-image">
+                        <img src="https://images.ctfassets.net/3s5io6mnxfqz/5GlOYuzg0nApcehTPlbJMy/140abddf0f3f93fa16568f4d035cd5e6/AdobeStock_175165460.jpeg" alt="Tacos al Pastor">
+                        <div class="recipe-badge">Street Food</div>
+                        <button class="recipe-favorite" data-recipe="tacos-al-pastor">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Tacos al Pastor</h3>
+                        </div>
+                        <p class="recipe-desc">Marinated pork cooked on a vertical spit with pineapple, served on corn tortillas.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>4 hrs+</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>320 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Tacos</span><span>Pork</span><span>Pineapple</span><span>Mexico City</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="tacos-al-pastor-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="tacos-al-pastor"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 2: Elote -->
+                <div class="recipe-card" data-region="street">
+                    <div class="recipe-image">
+                        <img src="https://thenoshery.com/wp-content/uploads/2017/06/Elote-Corn-3-735x1029.jpg       " alt="Elote">
+                        <div class="recipe-badge vegetarian">Street Food</div>
+                        <button class="recipe-favorite" data-recipe="elote">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Elote</h3>
+                        </div>
+                        <p class="recipe-desc">Grilled corn on the cob slathered with mayo, cotija cheese, chili powder, and lime.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>20 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>280 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Easy</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Corn</span><span>Grilled</span><span>Street Snack</span><span>Spicy</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="elote-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="elote"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 3: Quesadillas -->
+                <div class="recipe-card" data-region="street">
+                    <div class="recipe-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSnfhFRxEoDdhXMA_Co103cs_EqB_qor2Huw&s" alt="Quesadillas">
+                        <div class="recipe-badge vegetarian">Quick</div>
+                        <button class="recipe-favorite" data-recipe="quesadillas">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Quesadillas</h3>
+                        </div>
+                        <p class="recipe-desc">Grilled tortillas filled with melted cheese and various fillings, folded in half.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>15 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>350 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Easy</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Cheese</span><span>Tortilla</span><span>Quick Meal</span><span>Grilled</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="quesadillas-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="quesadillas"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 4: Churros -->
+                <div class="recipe-card" data-region="street">
+                    <div class="recipe-image">
+                        <img src="https://www.recipetineats.com/tachyon/2016/08/Churros_9.jpg" alt="Churros">
+                        <div class="recipe-badge vegetarian">Dessert</div>
+                        <button class="recipe-favorite" data-recipe="churros">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Churros</h3>
+                        </div>
+                        <p class="recipe-desc">Fried dough pastry dusted with cinnamon sugar, served with chocolate sauce.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>40 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>380 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Dessert</span><span>Fried</span><span>Cinnamon</span><span>Street Food</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="churros-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="churros"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 5: Tostadas -->
+                <div class="recipe-card" data-region="street">
+                    <div class="recipe-image">
+                        <img src="https://www.simplyorganic.com/media/wysiwyg/tmp/simply-organic-recipe-crowded-kitchen-shrimp-tostadas-900x900.jpg" alt="Tostadas">
+                        <div class="recipe-badge">Crunchy</div>
+                        <button class="recipe-favorite" data-recipe="tostadas">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Tostadas</h3>
+                        </div>
+                        <p class="recipe-desc">Crispy fried tortillas topped with beans, meat, lettuce, cheese, and salsa.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>30 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>420 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Easy</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Optional Meat</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Crispy</span><span>Toppings</span><span>Layered</span><span>Party Food</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="tostadas-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="tostadas"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 6: Sopes -->
+                <div class="recipe-card" data-region="street">
+                    <div class="recipe-image">
+                        <img src="https://www.muydelish.com/wp-content/uploads/2024/04/sope.jpg" alt="Sopes">
+                        <div class="recipe-badge vegetarian">Traditional</div>
+                        <button class="recipe-favorite" data-recipe="sopes">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Sopes</h3>
+                        </div>
+                        <p class="recipe-desc">Thick corn masa cakes with pinched edges, topped with beans, meat, and salsa.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>50 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>320 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Optional Meat</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Masa</span><span>Handmade</span><span>Traditional</span><span>Toppings</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="sopes-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="sopes"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 7: Gorditas -->
+                <div class="recipe-card" data-region="street">
+                    <div class="recipe-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKWe7jT8X8-WeUQcSoLaGDKqxevci9UjKQYQ&s" alt="Gorditas">
+                        <div class="recipe-badge vegetarian">Stuffed</div>
+                        <button class="recipe-favorite" data-recipe="gorditas">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Gorditas</h3>
+                        </div>
+                        <p class="recipe-desc">Thick corn cakes split and stuffed with various fillings like beans, cheese, or meat.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>45 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>380 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Optional Meat</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Stuffed</span><span>Thick</span><span>Hearty</span><span>Corn</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="gorditas-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="gorditas"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 8: Tlacoyos -->
+                <div class="recipe-card" data-region="street">
+                    <div class="recipe-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXfGqI6WmnpFzQ8_g0IADvNxHZ5jC4SYAzGw&s" alt="Tlacoyos">
+                        <div class="recipe-badge vegetarian">Pre-Hispanic</div>
+                        <button class="recipe-favorite" data-recipe="tlacoyos">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Tlacoyos</h3>
+                        </div>
+                        <p class="recipe-desc">Oval-shaped masa cakes stuffed with beans, topped with nopales, cheese, and salsa.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>60 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>340 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Ancient</span><span>Beans</span><span>Nopales</span><span>Traditional</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="tlacoyos-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="tlacoyos"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 9: Agua Fresca -->
+                <div class="recipe-card" data-region="street">
+                    <div class="recipe-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNbN3v-Bi1cFEB-taVC5ESKWWwaM1q9x3-BQ&s" alt="Agua Fresca">
+                        <div class="recipe-badge vegetarian">Drink</div>
+                        <button class="recipe-favorite" data-recipe="agua-fresca">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Agua Fresca</h3>
+                        </div>
+                        <p class="recipe-desc">Refreshing fruit waters - hibiscus, tamarind, or fruit-based non-alcoholic drinks.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>15 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>120 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Easy</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Drink</span><span>Refreshing</span><span>Fruit</span><span>Summer</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="agua-fresca-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="agua-fresca"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 10: Flautas -->
+                <div class="recipe-card" data-region="street">
+                    <div class="recipe-image">
+                        <img src="https://s3.amazonaws.com/static.realcaliforniamilk.com/media/recipes_2/flautas-de-pollo-chicken-flautas.jpg" alt="Flautas">
+                        <div class="recipe-badge">Crispy</div>
+                        <button class="recipe-favorite" data-recipe="flautas">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Flautas</h3>
+                        </div>
+                        <p class="recipe-desc">"Flutes" - tightly rolled tortillas filled with meat, fried until crispy, topped with salsa.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>40 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>380 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Rolled</span><span>Fried</span><span>Crispy</span><span>Party</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="flautas-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="flautas"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ========== MAIN DISHES (10 Recipes) ========== -->
+
+                <!-- Recipe 11: Enchiladas -->
+                <div class="recipe-card" data-region="main">
+                    <div class="recipe-image">
+                        <img src="https://tastesbetterfromscratch.com/wp-content/uploads/2019/02/Chicken-and-Rice-Enchiladas.jpg" alt="Enchiladas">
+                        <div class="recipe-badge featured">Family Favorite</div>
+                        <button class="recipe-favorite" data-recipe="enchiladas">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Enchiladas</h3>
+                        </div>
+                        <p class="recipe-desc">Tortillas filled with meat or cheese, covered in chili sauce, and baked with cheese topping.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>60 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>420 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Optional Meat</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Baked</span><span>Cheesy</span><span>Family Meal</span><span>Comfort Food</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="enchiladas-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="enchiladas"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 12: Mole Poblano -->
+                <div class="recipe-card" data-region="main">
+                    <div class="recipe-image">
+                        <img src="https://www.mexicanplease.com/wp-content/uploads/2020/12/Mole-Poblano-Recipe-18.jpg" alt="Mole Poblano">
+                        <div class="recipe-badge">Complex</div>
+                        <button class="recipe-favorite" data-recipe="mole-poblano">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Mole Poblano</h3>
+                        </div>
+                        <p class="recipe-desc">Complex sauce with chili peppers, spices, nuts, seeds, and chocolate, served over chicken.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>180 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>520 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Hard</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Complex</span><span>Chocolate</span><span>Festive</span><span>Traditional</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="mole-poblano-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="mole-poblano"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 13: Chiles Rellenos -->
+                <div class="recipe-card" data-region="main">
+                    <div class="recipe-image">
+                        <img src="https://www.chilipeppermadness.com/wp-content/uploads/2024/09/Chiles-Rellenos-Recipe-SQ.jpg" alt="Chiles Rellenos">
+                        <div class="recipe-badge vegetarian">Stuffed Peppers</div>
+                        <button class="recipe-favorite" data-recipe="chiles-rellenos">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Chiles Rellenos</h3>
+                        </div>
+                        <p class="recipe-desc">Poblano peppers stuffed with cheese or meat, battered and fried, served with tomato sauce.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>75 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>480 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Optional Meat</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Poblano</span><span>Stuffed</span><span>Fried</span><span>Cheesy</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="chiles-rellenos-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="chiles-rellenos"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 14: Carnitas -->
+                <div class="recipe-card" data-region="main">
+                    <div class="recipe-image">
+                        <img src="https://mycrazygoodlife.com/wp-content/uploads/2022/07/Instant-Pot-Carnitas-28.jpg" alt="Carnitas">
+                        <div class="recipe-badge">Slow-Cooked</div>
+                        <button class="recipe-favorite" data-recipe="carnitas">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Carnitas</h3>
+                        </div>
+                        <p class="recipe-desc">Slow-cooked pork braised in lard until tender, then roasted until crispy edges form.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>240 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>450 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Pork</span><span>Slow Cooked</span><span>Crispy</span><span>Michoacán</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="carnitas-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="carnitas"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 15: Tamales -->
+                <div class="recipe-card" data-region="main">
+                    <div class="recipe-image">
+                        <img src="https://www.tasteofhome.com/wp-content/uploads/2018/01/Chicken-Tamales_EXPS_TOHAM25_50905_P2_MD_04_17_3b.jpg" alt="Tamales">
+                        <div class="recipe-badge">Festive</div>
+                        <button class="recipe-favorite" data-recipe="tamales">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Tamales</h3>
+                        </div>
+                        <p class="recipe-desc">Masa dough filled with meats or cheese, wrapped in corn husks and steamed.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>180 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>320 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Hard</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Optional Meat</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Steamed</span><span>Masa</span><span>Christmas</span><span>Traditional</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="tamales-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="tamales"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 16: Pozole -->
+                <div class="recipe-card" data-region="soup">
+                    <div class="recipe-image">
+                        <img src="https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_1:1/k%2FPhoto%2FRecipes%2F2025-01-pozole%2Fpozole-121" alt="Pozole">
+                        <div class="recipe-badge">Festive Soup</div>
+                        <button class="recipe-favorite" data-recipe="pozole">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Pozole</h3>
+                        </div>
+                        <p class="recipe-desc">Traditional soup with hominy corn, pork or chicken, and garnished with radish, lettuce, and lime.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>180 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>380 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Hominy</span><span>Pork</span><span>Festive</span><span>Garnishes</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="pozole-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="pozole"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 17: Birria -->
+                <div class="recipe-card" data-region="soup">
+                    <div class="recipe-image">
+                        <img src="https://hips.hearstapps.com/hmg-prod/images/delish-202104-birriatacos-033-1619806490.jpg?crop=1.00xw:0.846xh;0,0" alt="Birria">
+                        <div class="recipe-badge">Trending</div>
+                        <button class="recipe-favorite" data-recipe="birria">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Birria</h3>
+                        </div>
+                        <p class="recipe-desc">Spicy stew traditionally made with goat meat, now popular with beef, served with consommé for dipping.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>240 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>520 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Hard</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Stew</span><span>Spicy</span><span>Goat/Beef</span><span>Consommé</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="birria-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="birria"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 18: Cochinita Pibil -->
+                <div class="recipe-card" data-region="main">
+                    <div class="recipe-image">
+                        <img src="https://assets.tmecosys.com/image/upload/t_web_rdp_recipe_584x480/img/recipe/ras/Assets/5d4236c8562ab4dda251f6595fccd5c1/Derivates/adfa2fb564cced5b0cd79934cf8b7989be2b6e48.jpg" alt="Cochinita Pibil">
+                        <div class="recipe-badge">Yucatán</div>
+                        <button class="recipe-favorite" data-recipe="cochinita-pibil">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Cochinita Pibil</h3>
+                        </div>
+                        <p class="recipe-desc">Yucatán-style slow-roasted pork marinated in achiote and citrus, wrapped in banana leaves.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>360 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>480 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Hard</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Yucatán</span><span>Achiote</span><span>Slow Roasted</span><span>Banana Leaf</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="cochinita-pibil-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="cochinita-pibil"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 19: Chilaquiles -->
+                <div class="recipe-card" data-region="main">
+                    <div class="recipe-image">
+                        <img src="https://tastesbetterfromscratch.com/wp-content/uploads/2022/05/Chilaquiles25-1.jpg" alt="Chilaquiles">
+                        <div class="recipe-badge">Breakfast</div>
+                        <button class="recipe-favorite" data-recipe="chilaquiles">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Chilaquiles</h3>
+                        </div>
+                        <p class="recipe-desc">Fried tortilla chips simmered in salsa, topped with cheese, crema, onions, and optional eggs.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>30 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>420 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Easy</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Optional Meat</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Breakfast</span><span>Tortilla Chips</span><span>Salsa</span><span>Hangover Cure</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="chilaquiles-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="chilaquiles"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 20: Tinga de Pollo -->
+                <div class="recipe-card" data-region="main">
+                    <div class="recipe-image">
+                        <img src="https://theworldinrecipes.s3.amazonaws.com/uploads/recipe/main_image/187/Tinga_de_Pollo_1280.jpg" alt="Tinga de Pollo">
+                        <div class="recipe-badge">Shredded Chicken</div>
+                        <button class="recipe-favorite" data-recipe="tinga-pollo">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Tinga de Pollo</h3>
+                        </div>
+                        <p class="recipe-desc">Shredded chicken cooked in a chipotle tomato sauce with onions, perfect for tostadas or tacos.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>60 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>320 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Easy</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Chicken</span><span>Chipotle</span><span>Shredded</span><span>Versatile</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="tinga-pollo-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="tinga-pollo"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ========== SOUPS & STEWS (10 Recipes) ========== -->
+
+                <!-- Recipe 21: Caldo de Res -->
+                <div class="recipe-card" data-region="soup">
+                    <div class="recipe-image">
+                        <img src="https://keviniscooking.com/wp-content/uploads/2021/07/Caldo-de-Res-Mexican-Beef-Soup-square.jpg" alt="Caldo de Res">
+                        <div class="recipe-badge">Hearty</div>
+                        <button class="recipe-favorite" data-recipe="caldo-de-res">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Caldo de Res</h3>
+                        </div>
+                        <p class="recipe-desc">Hearty beef and vegetable soup with corn, carrots, potatoes, and cabbage.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>120 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>380 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Beef</span><span>Vegetables</span><span>Hearty</span><span>Comfort Food</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="caldo-de-res-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="caldo-de-res"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 22: Sopa de Lima -->
+                <div class="recipe-card" data-region="soup">
+                    <div class="recipe-image">
+                        <img src="https://www.seriouseats.com/thmb/9lylUmOSkIlUH1_hNa6zTmenGl4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__recipes__images__2016__05__20160505-sopa-de-lima-22-a78c408efb60416d8b6e36b45e3977fa.jpg" alt="Sopa de Lima">
+                        <div class="recipe-badge">Yucatán</div>
+                        <button class="recipe-favorite" data-recipe="sopa-de-lima">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Sopa de Lima</h3>
+                        </div>
+                        <p class="recipe-desc">Yucatán-style lime soup with chicken, tortilla strips, and fragrant local lime.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>60 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>280 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Easy</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Lime</span><span>Chicken</span><span>Yucatán</span><span>Citrus</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="sopa-de-lima-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="sopa-de-lima"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 23: Menudo -->
+                <div class="recipe-card" data-region="soup">
+                    <div class="recipe-image">
+                        <img src="https://delishglobe.com/wp-content/uploads/2024/10/Menudo-500x500.png" alt="Menudo">
+                        <div class="recipe-badge">Hangover Cure</div>
+                        <button class="recipe-favorite" data-recipe="menudo">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Menudo</h3>
+                        </div>
+                        <p class="recipe-desc">Traditional tripe soup with hominy, known as a cure for hangovers, served on weekends.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>240 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>320 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Hard</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Tripe</span><span>Hominy</span><span>Weekend</span><span>Traditional</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="menudo-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="menudo"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 24: Caldo de Pollo -->
+                <div class="recipe-card" data-region="soup">
+                    <div class="recipe-image">
+                        <img src="https://foodanddealsbylaura.com/wp-content/uploads/2022/12/caldo-de-pollo-authentic-recipe.jpg" alt="Caldo de Pollo">
+                        <div class="recipe-badge">Comfort Food</div>
+                        <button class="recipe-favorite" data-recipe="caldo-de-pollo">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Caldo de Pollo</h3>
+                        </div>
+                        <p class="recipe-desc">Classic chicken soup with vegetables, rice, and fresh herbs - Mexican comfort food.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>90 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>280 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Easy</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Chicken</span><span>Soup</span><span>Comfort</span><span>Healing</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="caldo-de-pollo-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="caldo-de-pollo"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 25: Albóndigas -->
+                <div class="recipe-card" data-region="soup">
+                    <div class="recipe-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBPiXh17sZwMi4Tdkrv4YWL-ZDX7GiOMWcHA&s" alt="Albóndigas">
+                        <div class="recipe-badge">Meatball Soup</div>
+                        <button class="recipe-favorite" data-recipe="albondigas">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Albóndigas</h3>
+                        </div>
+                        <p class="recipe-desc">Mexican meatball soup with vegetables and rice in tomato-based broth.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>60 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>350 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Meatballs</span><span>Soup</span><span>Tomato</span><span>Hearty</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="albondigas-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="albondigas"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 26: Sopa Azteca -->
+                <div class="recipe-card" data-region="soup">
+                    <div class="recipe-image">
+                        <img src="https://keviniscooking.com/wp-content/uploads/2023/01/Chicken-Tortilla-Soup-Sopa-Azteca-square.jpg" alt="Sopa Azteca">
+                        <div class="recipe-badge">Tortilla Soup</div>
+                        <button class="recipe-favorite" data-recipe="sopa-azteca">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Sopa Azteca</h3>
+                        </div>
+                        <p class="recipe-desc">Tortilla soup with chicken, avocado, cheese, cream, and crispy tortilla strips.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>45 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>320 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Easy</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Tortilla</span><span>Chicken</span><span>Avocado</span><span>Crispy</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="sopa-azteca-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="sopa-azteca"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 27: Caldo Tlalpeño -->
+                <div class="recipe-card" data-region="soup">
+                    <div class="recipe-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXKT87hHD5DClG4Hsiu05gpHPRZU2JtPtCZA&s" alt="Caldo Tlalpeño">
+                        <div class="recipe-badge">Spicy</div>
+                        <button class="recipe-favorite" data-recipe="caldo-tlalpeno">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Caldo Tlalpeño</h3>
+                        </div>
+                        <p class="recipe-desc">Spicy chicken soup with chickpeas, carrots, and chipotle peppers from Tlalpan.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>75 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>300 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Spicy</span><span>Chickpeas</span><span>Chipotle</span><span>Tlalpan</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="caldo-tlalpeno-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="caldo-tlalpeno"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 28: Frijoles de la Olla -->
+                <div class="recipe-card" data-region="soup">
+                    <div class="recipe-image">
+                        <img src="https://www.muydelish.com/wp-content/uploads/2023/02/frijoles-de-la-olla.jpg" alt="Frijoles de la Olla">
+                        <div class="recipe-badge vegetarian">Basic</div>
+                        <button class="recipe-favorite" data-recipe="frijoles-olla">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Frijoles de la Olla</h3>
+                        </div>
+                        <p class="recipe-desc">Basic Mexican beans cooked simply with onion, garlic, and epazote in a clay pot.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>180 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>220 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Easy</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Beans</span><span>Basic</span><span>Clay Pot</span><span>Epazote</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="frijoles-olla-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="frijoles-olla"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 29: Chilorio -->
+                <div class="recipe-card" data-region="main">
+                    <div class="recipe-image">
+                        <img src="https://honest-food.net/wp-content/uploads/2022/01/chilorio-recipe.jpg" alt="Chilorio">
+                        <div class="recipe-badge">Sinaloa</div>
+                        <button class="recipe-favorite" data-recipe="chilorio">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Chilorio</h3>
+                        </div>
+                        <p class="recipe-desc">Sinaloan shredded pork cooked in ancho chili sauce, great for tacos or burritos.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>120 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>420 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Pork</span><span>Ancho Chili</span><span>Sinaloa</span><span>Shredded</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="chilorio-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="chilorio"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 30: Barbacoa -->
+                <div class="recipe-card" data-region="main">
+                    <div class="recipe-image">
+                        <img src="https://sunkissedkitchen.com/wp-content/uploads/2023/05/barbacoa-feature.jpg" alt="Barbacoa">
+                        <div class="recipe-badge">Weekend</div>
+                        <button class="recipe-favorite" data-recipe="barbacoa">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Barbacoa</h3>
+                        </div>
+                        <p class="recipe-desc">Slow-cooked meat (traditionally lamb or goat) in an underground pit, served on weekends.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>480 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>450 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Hard</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Slow Cooked</span><span>Lamb/Goat</span><span>Weekend</span><span>Traditional</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="barbacoa-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="barbacoa"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ========== DESSERTS (10 Recipes) ========== -->
+
+                <!-- Recipe 31: Flan -->
+                <div class="recipe-card" data-region="dessert">
+                    <div class="recipe-image">
+                        <img src="https://www.recetasnestle.com.mx/sites/default/files/srh_recipes/54c6cbcbc6d611e056122d64560cd9c1.jpg" alt="Flan">
+                        <div class="recipe-badge vegetarian">Classic</div>
+                        <button class="recipe-favorite" data-recipe="flan">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Flan</h3>
+                        </div>
+                        <p class="recipe-desc">Creamy caramel custard dessert with smooth texture and rich caramel sauce.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>180 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>280 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Custard</span><span>Caramel</span><span>Classic</span><span>Creamy</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="flan-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="flan"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 32: Tres Leches Cake -->
+                <div class="recipe-card" data-region="dessert">
+                    <div class="recipe-image">
+                        <img src="https://www.lemonblossoms.com/wp-content/uploads/2023/03/Tres-Leches-Cake-S2.jpg" alt="Tres Leches Cake">
+                        <div class="recipe-badge vegetarian">Popular</div>
+                        <button class="recipe-favorite" data-recipe="tres-leches">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Tres Leches Cake</h3>
+                        </div>
+                        <p class="recipe-desc">Sponge cake soaked in three kinds of milk, topped with whipped cream.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>120 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>420 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Cake</span><span>Three Milks</span><span>Soaked</span><span>Party</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="tres-leches-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="tres-leches"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 33: Arroz con Leche -->
+                <div class="recipe-card" data-region="dessert">
+                    <div class="recipe-image">
+                        <img src="https://lilluna.com/wp-content/uploads/2025/12/arroz-con-leche-resize-15.jpg" alt="Arroz con Leche">
+                        <div class="recipe-badge vegetarian">Comfort</div>
+                        <button class="recipe-favorite" data-recipe="arroz-con-leche">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Arroz con Leche</h3>
+                        </div>
+                        <p class="recipe-desc">Creamy rice pudding with cinnamon, raisins, and sometimes coconut.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>60 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>320 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Easy</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Rice Pudding</span><span>Cinnamon</span><span>Comfort</span><span>Warm</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="arroz-con-leche-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="arroz-con-leche"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 34: Jericalla -->
+                <div class="recipe-card" data-region="dessert">
+                    <div class="recipe-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTUzx8iyZp6uWDwU5my5loInH5HVNMV2lyVQ&s" alt="Jericalla">
+                        <div class="recipe-badge vegetarian">Guadalajara</div>
+                        <button class="recipe-favorite" data-recipe="jericalla">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Jericalla</h3>
+                        </div>
+                        <p class="recipe-desc">Guadalajara-style burnt cream custard, similar to crème brûlée but baked.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>90 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>280 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Custard</span><span>Burnt Cream</span><span>Guadalajara</span><span>Baked</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="jericalla-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="jericalla"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 35: Capirotada -->
+                <div class="recipe-card" data-region="dessert">
+                    <div class="recipe-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLANXFaxJxmyxrdxV5tokVhaPBNGoKNtAHHw&s" alt="Capirotada">
+                        <div class="recipe-badge vegetarian">Lent</div>
+                        <button class="recipe-favorite" data-recipe="capirotada">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Capirotada</h3>
+                        </div>
+                        <p class="recipe-desc">Mexican bread pudding with cheese, raisins, peanuts, and piloncillo syrup, eaten during Lent.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>75 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>380 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Bread Pudding</span><span>Lent</span><span>Cheese</span><span>Sweet</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="capirotada-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="capirotada"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 36: Buñuelos -->
+                <div class="recipe-card" data-region="dessert">
+                    <div class="recipe-image">
+                        <img src="https://www.biggerbolderbaking.com/wp-content/uploads/2021/03/Bunuelo-Thumbnail-scaled.jpg" alt="Buñuelos">
+                        <div class="recipe-badge vegetarian">Christmas</div>
+                        <button class="recipe-favorite" data-recipe="bunuelos">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Buñuelos</h3>
+                        </div>
+                        <p class="recipe-desc">Crispy fried dough fritters dusted with cinnamon sugar or dipped in syrup, traditional at Christmas.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>60 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>320 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Fried</span><span>Christmas</span><span>Crispy</span><span>Fritters</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="bunuelos-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="bunuelos"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 37: Alegrías -->
+                <div class="recipe-card" data-region="dessert">
+                    <div class="recipe-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_1mflQRRgnhk6CY9YPZgtcS8Gn2qxVUhPYg&s" alt="Alegrías">
+                        <div class="recipe-badge vegetarian">Healthy</div>
+                        <button class="recipe-favorite" data-recipe="alegrias">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Alegrías</h3>
+                        </div>
+                        <p class="recipe-desc">Ancient Aztec snack of amaranth seeds mixed with honey or piloncillo, pressed into bars.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>30 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>220 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Easy</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Amaranth</span><span>Ancient</span><span>Healthy</span><span>Bars</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="alegrias-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="alegrias"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 39: Cocadas -->
+                <div class="recipe-card" data-region="dessert">
+                    <div class="recipe-image">
+                        <img src="https://www.thespruceeats.com/thmb/dHmzERIsBeZ0N_m2r4O6kI8rJMo=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/coconut-macaroons-dulce-de-leche-3029770-hero-04-f571526ee0494e27b2dedc8f901d307c.jpg" alt="Cocadas">
+                        <div class="recipe-badge vegetarian">Coconut</div>
+                        <button class="recipe-favorite" data-recipe="cocadas">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Cocadas</h3>
+                        </div>
+                        <p class="recipe-desc">Coconut macaroons in various colors and flavors, popular throughout Mexico.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>45 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>180 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Easy</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Coconut</span><span>Macaroons</span><span>Colorful</span><span>Sweet</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="cocadas-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="cocadas"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 40: Mangonada -->
+                <div class="recipe-card" data-region="dessert">
+                    <div class="recipe-image">
+                        <img src="https://www.isabeleats.com/wp-content/uploads/2025/04/mangonada-recipe-25-small-9.jpg" alt="Mangonada">
+                        <div class="recipe-badge vegetarian">Frozen</div>
+                        <button class="recipe-favorite" data-recipe="mangonada">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Mangonada</h3>
+                        </div>
+                        <p class="recipe-desc">Frozen mango treat with chamoy sauce, chili powder, and lime - sweet, sour, and spicy.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>20 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>220 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Easy</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Mango</span><span>Frozen</span><span>Chamoy</span><span>Spicy-Sweet</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="mangonada-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="mangonada"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="techniques-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Mexican <span class="accent">Cooking</span> Techniques</h2>
+                <p>Master these methods for authentic Mexican flavors</p>
+            </div>
+            
+            <div class="techniques-grid">
+                <div class="technique-card">
+                    <div class="technique-icon">
+                        <i class="fas fa-mortar-pestle"></i>
+                    </div>
+                    <h3>Molienda (Grinding)</h3>
+                    <p>Traditional stone grinding of corn for masa, and using molcajete for salsas and guacamole.</p>
+                </div>
+                
+                <div class="technique-card">
+                    <div class="technique-icon">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <h3>Comal Cooking</h3>
+                    <p>Cooking tortillas and toasting spices on a traditional clay or cast iron griddle.</p>
+                </div>
+                
+                <div class="technique-card">
+                    <div class="technique-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Nixtamalization</h3>
+                    <p>Ancient process of treating corn with lime to make masa for tortillas and tamales.</p>
+                </div>
+                
+                <div class="technique-card">
+                    <div class="technique-icon">
+                        <i class="fas fa-pepper-hot"></i>
+                    </div>
+                    <h3>Chili Preparation</h3>
+                    <p>Toasting, soaking, and blending dried chilies to create complex sauce bases.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+    <footer class="luxury-footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>© 2025 <span class="accent">kitchen Dairies</span>. All rights reserved. Connect • Create • Cook</p>
+                <div class="footer-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                    <a href="faq.html">FAQ</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Filter functionality for Mexican cuisine
+        document.querySelectorAll('.region-tab').forEach(tab => {
+            tab.addEventListener('click', function() {
+                // Update active tab
+                document.querySelectorAll('.region-tab').forEach(t => t.classList.remove('active'));
+                this.classList.add('active');
+                
+                const region = this.dataset.region;
+                const recipeCards = document.querySelectorAll('.recipe-card');
+                
+                recipeCards.forEach(card => {
+                    if (region === 'all' || card.dataset.region === region) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Favorite functionality
+        document.querySelectorAll('.recipe-favorite').forEach(button => {
+            button.addEventListener('click', function() {
+                const icon = this.querySelector('i');
+                if (icon.classList.contains('far')) {
+                    icon.classList.remove('far');
+                    icon.classList.add('fas');
+                    icon.style.color = '#e63946';
+                } else {
+                    icon.classList.remove('fas');
+                    icon.classList.add('far');
+                    icon.style.color = '';
+                }
+            });
+        });
+
+        // Add to cart functionality
+        document.querySelectorAll('.add-cart-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                const cartCount = document.getElementById('cart-count');
+                let count = parseInt(cartCount.textContent);
+                count++;
+                cartCount.textContent = count;
+                
+                // Add animation
+                cartCount.style.transform = 'scale(1.5)';
+                setTimeout(() => {
+                    cartCount.style.transform = 'scale(1)';
+                }, 300);
+                
+                // Show notification (you can customize this)
+                alert('Ingredients added to cart!');
+            });
+        });
+
+        // Mobile menu toggle (placeholder)
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            alert('Mobile menu would open here in a full implementation');
+        });
+    </script>
+</body>
+</html>

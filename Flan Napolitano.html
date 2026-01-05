@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flan Napolitano Recipe | AJ Recipe</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        /* Premium Recipe Page CSS */
+        :root {
+            --gold: #d4af37;
+            --dark: #1a1a1a;
+            --light: #f8f5f0;
+            --cream: #fffaf0;
+            --red: #c41e3a;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--cream);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Premium Header */
+        .premium-header {
+            background: white;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 15px 0;
+        }
+
+        .header-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            text-decoration: none;
+            color: var(--dark);
+        }
+
+        .logo img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid var(--gold);
+        }
+
+        .logo span {
+            font-family: 'Playfair Display', serif;
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--dark);
+        }
+
+        .main-nav {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: #444;
+            font-weight: 500;
+            font-size: 15px;
+            transition: color 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .nav-link:hover {
+            color: var(--gold);
+        }
+
+        .nav-cart {
+            position: relative;
+            font-size: 18px;
+            color: #444;
+            text-decoration: none;
+        }
+
+        .cart-count {
+            position: absolute;
+            top: -8px;
+            right: -8px;
+            background: var(--gold);
+            color: white;
+            font-size: 12px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 24px;
+            color: #444;
+            cursor: pointer;
+        }
+
+        /* Recipe Hero */
+        .recipe-hero {
+            margin-top: 100px;
+            padding: 80px 0 40px;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                        url('https://images.unsplash.com/photo-1565958011703-44f9829ba187');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+        }
+
+        .recipe-badge {
+            display: inline-block;
+            background: rgba(212, 175, 55, 0.2);
+            border: 1px solid var(--gold);
+            padding: 8px 20px;
+            border-radius: 30px;
+            margin-bottom: 20px;
+            backdrop-filter: blur(10px);
+        }
+
+        .recipe-hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 4rem;
+            margin-bottom: 15px;
+            color: white;
+        }
+
+        .recipe-subtitle {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 30px;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .recipe-meta {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 30px;
+        }
+
+        .meta-item {
+            text-align: center;
+        }
+
+        .meta-item h3 {
+            font-size: 2rem;
+            color: var(--gold);
+            margin-bottom: 5px;
+        }
+
+        .meta-item p {
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        /* Recipe Container */
+        .recipe-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 40px;
+            display: grid;
+            grid-template-columns: 1fr 400px;
+            gap: 40px;
+        }
+
+        /* Recipe Main Content */
+        .recipe-main {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        }
+
+        .section-header {
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid var(--light);
+        }
+
+        .section-header h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            color: var(--dark);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .accent {
+            color: var(--gold);
+        }
+
+        /* Ingredients */
+        .ingredients-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+            margin-bottom: 40px;
+        }
+
+        .ingredient-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 12px;
+            background: var(--light);
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .ingredient-item:hover {
+            background: #f0ebe3;
+            transform: translateX(5px);
+        }
+
+        .ingredient-check {
+            width: 20px;
+            height: 20px;
+            border: 2px solid #ddd;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .ingredient-item.done .ingredient-check {
+            background: var(--gold);
+            border-color: var(--gold);
+            color: white;
+        }
+
+        .ingredient-details {
+            flex: 1;
+        }
+
+        .ingredient-name {
+            font-weight: 500;
+            margin-bottom: 3px;
+        }
+
+        .ingredient-amount {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        /* Steps */
+        .steps-list {
+            counter-reset: step-counter;
+        }
+
+        .step-item {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 25px;
+            padding: 20px;
+            background: white;
+            border: 1px solid var(--light);
+            border-radius: 15px;
+            transition: all 0.3s ease;
+        }
+
+        .step-item:hover {
+            border-color: var(--gold);
+            box-shadow: 0 5px 15px rgba(212, 175, 55, 0.1);
+        }
+
+        .step-number {
+            width: 40px;
+            height: 40px;
+            background: var(--gold);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            font-size: 1.1rem;
+            flex-shrink: 0;
+        }
+
+        .step-content {
+            flex: 1;
+        }
+
+        .step-content p {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        /* Recipe Sidebar */
+        .recipe-sidebar {
+            position: sticky;
+            top: 120px;
+            height: fit-content;
+        }
+
+        .preview-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            margin-bottom: 30px;
+        }
+
+        .preview-image {
+            height: 250px;
+            background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+                        url('https://images.unsplash.com/photo-1565958011703-44f9829ba187');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: flex-end;
+            padding: 20px;
+            color: white;
+        }
+
+        .preview-content {
+            padding: 25px;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .info-item {
+            text-align: center;
+            padding: 15px;
+            background: var(--light);
+            border-radius: 10px;
+        }
+
+        .info-item h4 {
+            color: var(--gold);
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+        }
+
+        .info-item p {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        /* Action Buttons */
+        .action-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--gold), #b8941f);
+            color: white;
+            border: none;
+            padding: 15px;
+            border-radius: 10px;
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(212, 175, 55, 0.3);
+        }
+
+        .btn-secondary {
+            background: white;
+            color: var(--dark);
+            border: 2px solid var(--light);
+            padding: 13px;
+            border-radius: 10px;
+            font-weight: 500;
+            font-size: 1rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--gold);
+            color: var(--gold);
+        }
+
+        /* Tips Section */
+        .tips-section {
+            background: linear-gradient(135deg, var(--light), #f0ebe3);
+            border-radius: 20px;
+            padding: 30px;
+            margin-top: 40px;
+        }
+
+        .tips-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .tips-header i {
+            color: var(--gold);
+            font-size: 1.5rem;
+        }
+
+        .tip-item {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 15px;
+            padding: 15px;
+            background: white;
+            border-radius: 10px;
+        }
+
+        .tip-item i {
+            color: var(--gold);
+            margin-top: 3px;
+        }
+
+        /* Luxury Footer */
+        .luxury-footer {
+            background: var(--dark);
+            color: white;
+            padding: 60px 0 30px;
+            margin-top: 60px;
+        }
+
+        .footer-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 30px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .footer-bottom p {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .recipe-container {
+                grid-template-columns: 1fr;
+                padding: 30px;
+            }
+            
+            .recipe-sidebar {
+                position: static;
+                margin-top: 40px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .main-nav {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: white;
+                flex-direction: column;
+                padding: 20px;
+                box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            }
+            
+            .recipe-hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .recipe-container {
+                padding: 20px;
+            }
+            
+            .ingredients-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .recipe-hero h1 {
+                font-size: 2rem;
+            }
+            
+            .recipe-meta {
+                flex-direction: column;
+                gap: 20px;
+            }
+            
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Premium Navigation -->
+    <header class="premium-header">
+        <div class="header-container">
+            <a href="home.html" class="logo">
+                <img src="WhatsApp Image 2025-07-29 at 10.56.15_3531c5a5.jpg" alt="AJ Recipe Logo">
+                <span>AJ Recipe</span>
+            </a>
+
+            <nav class="main-nav">
+                <a href="home.html" class="nav-link"><i class="fas fa-home"></i> Home</a>
+                <a href="Cuisine.html" class="nav-link"><i class="fas fa-globe-americas"></i> Cuisine</a>
+                <a href="nutritions.html" class="nav-link"><i class="fas fa-apple-alt"></i> Nutrition</a>
+                <a href="contact.html" class="nav-link"><i class="fas fa-envelope"></i> Contact</a>
+                <a href="store.html" class="nav-link"><i class="fas fa-store"></i> Store</a>
+                <a href="cart.html" class="nav-cart">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-count" id="cart-count">0</span>
+                </a>
+            </nav>
+
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Recipe Content -->
+    <div class="recipe-container">
+        <!-- Main Recipe Content -->
+        <main class="recipe-main">
+            <!-- Ingredients Section -->
+            <section class="ingredients-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-shopping-basket accent"></i> Ingredients</h2>
+                </div>
+                <div class="ingredients-grid" id="ingredients-list">
+                    <!-- Ingredients will be populated by JavaScript -->
+                </div>
+            </section>
+
+            <!-- Steps Section -->
+            <section class="steps-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-list-ol accent"></i> Preparation Steps</h2>
+                </div>
+                <div class="steps-list" id="steps-list">
+                    <!-- Steps will be populated by JavaScript -->
+                </div>
+            </section>
+
+            <!-- Tips Section -->
+            <section class="tips-section">
+                <div class="tips-header">
+                    <i class="fas fa-lightbulb"></i>
+                    <h3>Chef's Tips & Tricks</h3>
+                </div>
+                <div class="tips-content">
+                    <div class="tip-item">
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <strong>Room Temperature Eggs</strong>
+                            <p>Use eggs at room temperature for a smoother, creamier custard texture.</p>
+                        </div>
+                    </div>
+                    <div class="tip-item">
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <strong>Caramel Perfection</strong>
+                            <p>Don't stir the caramel while it's cooking - just swirl the pan occasionally.</p>
+                        </div>
+                    </div>
+                    <div class="tip-item">
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <strong>Chill Time</strong>
+                            <p>Let the flan chill overnight for the best texture and easier unmolding.</p>
+                        </div>
+                    </div>
+                    <div class="tip-item">
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <strong>Water Bath</strong>
+                            <p>Use hot water in the water bath to maintain consistent baking temperature.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Recipe Sidebar -->
+        <aside class="recipe-sidebar">
+            <!-- Recipe Preview Card -->
+            <div class="preview-card">
+                <div class="preview-image">
+                    <div>
+                        <h3 style="color: white; margin-bottom: 5px;">Flan Napolitano</h3>
+                        <p style="color: rgba(255,255,255,0.9); font-size: 0.9rem;">Creamy Caramel Custard</p>
+                    </div>
+                </div>
+                <div class="preview-content">
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <h4>15</h4>
+                            <p>Prep Time</p>
+                        </div>
+                        <div class="info-item">
+                            <h4>60</h4>
+                            <p>Bake Time</p>
+                        </div>
+                        <div class="info-item">
+                            <h4>4</h4>
+                            <p>Chill Time</p>
+                        </div>
+                        <div class="info-item">
+                            <h4>395</h4>
+                            <p>Calories</p>
+                        </div>
+                    </div>
+                    
+                    <div class="nutrition-info">
+                        <h4 style="margin-bottom: 15px;">Nutrition (per serving)</h4>
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                            <span>Carbs</span>
+                            <span style="font-weight: 500;">45g</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                            <span>Protein</span>
+                            <span style="font-weight: 500;">8g</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between;">
+                            <span>Fat</span>
+                            <span style="font-weight: 500;">15g</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="action-buttons">
+                <button class="btn-primary" id="print-recipe">
+                    <i class="fas fa-print"></i> Print Recipe
+                </button>
+                <button class="btn-secondary" id="save-recipe">
+                    <i class="far fa-bookmark"></i> Save Recipe
+                </button>
+                <button class="btn-secondary" id="share-recipe">
+                    <i class="fas fa-share-alt"></i> Share Recipe
+                </button>
+                <button class="btn-primary" id="cooked-recipe">
+                    <i class="fas fa-utensils"></i> I Made This!
+                </button>
+            </div>
+
+            <!-- Required Equipment -->
+            <div class="preview-card" style="margin-top: 30px;">
+                <div class="preview-content">
+                    <h4 style="margin-bottom: 15px;"><i class="fas fa-blender"></i> Equipment Needed</h4>
+                    <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+                        <span style="background: var(--light); padding: 8px 12px; border-radius: 20px; font-size: 0.9rem;">Blender</span>
+                        <span style="background: var(--light); padding: 8px 12px; border-radius: 20px; font-size: 0.9rem;">9-inch Round Pan</span>
+                        <span style="background: var(--light); padding: 8px 12px; border-radius: 20px; font-size: 0.9rem;">Large Roasting Pan</span>
+                        <span style="background: var(--light); padding: 8px 12px; border-radius: 20px; font-size: 0.9rem;">Saucepan</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Luxury Footer -->
+    <footer class="luxury-footer">
+        <div class="footer-container">
+            <div class="footer-bottom">
+                <p>© 2025 <span style="color: #d4af37;">AJ Recipe</span>. All rights reserved. Crafted with ❤️ for food lovers.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Recipe Data
+        const recipeData = {
+            name: "Flan Napolitano",
+            ingredients: [
+                { name: "Granulated Sugar", amount: "1 cup", note: "for caramel" },
+                { name: "Sweetened Condensed Milk", amount: "1 can (14 oz)" },
+                { name: "Evaporated Milk", amount: "1 can (12 oz)" },
+                { name: "Large Eggs", amount: "4" },
+                { name: "Vanilla Extract", amount: "1 tsp" },
+                { name: "Cream Cheese", amount: "4 oz", note: "softened, optional" },
+                { name: "Water", amount: "¼ cup", note: "for water bath" }
+            ],
+            steps: [
+                "Preheat oven to 350°F (175°C). Place a 9-inch round baking dish in a larger roasting pan.",
+                "In a saucepan over medium heat, melt 1 cup sugar until it turns golden amber. Immediately pour into the baking dish, tilting to coat the bottom evenly.",
+                "In a blender, combine condensed milk, evaporated milk, eggs, vanilla extract, and cream cheese (if using). Blend until completely smooth.",
+                "Pour the custard mixture over the caramel in the baking dish.",
+                "Create a water bath: pour hot water into the roasting pan until it reaches halfway up the sides of the baking dish.",
+                "Bake for 50-60 minutes, or until the center is set but still slightly jiggly.",
+                "Remove from oven and water bath. Let cool completely at room temperature.",
+                "Refrigerate for at least 4 hours, preferably overnight.",
+                "To serve, run a knife around the edges and invert onto a serving plate. The caramel sauce will flow over the flan.",
+                "Garnish with fresh berries or mint leaves if desired."
+            ]
+        };
+
+        // DOM Elements
+        const ingredientsList = document.getElementById('ingredients-list');
+        const stepsList = document.getElementById('steps-list');
+
+        // Initialize Recipe
+        document.addEventListener('DOMContentLoaded', function() {
+            
+            // Mobile Menu Toggle
+            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+            const mainNav = document.querySelector('.main-nav');
+            
+            if (mobileMenuBtn && mainNav) {
+                mobileMenuBtn.addEventListener('click', () => {
+                    mainNav.style.display = mainNav.style.display === 'flex' ? 'none' : 'flex';
+                    if (mainNav.style.display === 'flex') {
+                        mainNav.style.flexDirection = 'column';
+                        mainNav.style.position = 'absolute';
+                        mainNav.style.top = '100%';
+                        mainNav.style.left = '0';
+                        mainNav.style.right = '0';
+                        mainNav.style.background = 'white';
+                        mainNav.style.padding = '20px';
+                        mainNav.style.boxShadow = '0 10px 30px rgba(0,0,0,0.1)';
+                    }
+                });
+            }
+            
+            // Populate Ingredients
+            recipeData.ingredients.forEach((ingredient, index) => {
+                const ingredientItem = document.createElement('div');
+                ingredientItem.className = 'ingredient-item';
+                ingredientItem.innerHTML = `
+                    <div class="ingredient-check"></div>
+                    <div class="ingredient-details">
+                        <div class="ingredient-name">${ingredient.name}</div>
+                        <div class="ingredient-amount">${ingredient.amount}${ingredient.note ? ` • ${ingredient.note}` : ''}</div>
+                    </div>
+                `;
+                ingredientItem.addEventListener('click', () => {
+                    ingredientItem.classList.toggle('done');
+                    const check = ingredientItem.querySelector('.ingredient-check');
+                    check.innerHTML = ingredientItem.classList.contains('done') ? '✓' : '';
+                });
+                ingredientsList.appendChild(ingredientItem);
+            });
+            
+            // Populate Steps
+            recipeData.steps.forEach((step, index) => {
+                const stepItem = document.createElement('div');
+                stepItem.className = 'step-item';
+                stepItem.innerHTML = `
+                    <div class="step-number">${index + 1}</div>
+                    <div class="step-content">
+                        <p>${step}</p>
+                    </div>
+                `;
+                stepsList.appendChild(stepItem);
+            });
+            
+            // Button Actions
+            document.getElementById('print-recipe').addEventListener('click', () => {
+                window.print();
+            });
+            
+            document.getElementById('save-recipe').addEventListener('click', () => {
+                alert('Recipe saved to your favorites!');
+                document.getElementById('save-recipe').innerHTML = '<i class="fas fa-bookmark"></i> Saved!';
+                document.getElementById('save-recipe').style.background = '#4CAF50';
+                document.getElementById('save-recipe').style.color = 'white';
+                document.getElementById('save-recipe').style.border = 'none';
+            });
+            
+            document.getElementById('share-recipe').addEventListener('click', () => {
+                if (navigator.share) {
+                    navigator.share({
+                        title: 'Flan Napolitano Recipe',
+                        text: 'Check out this amazing Flan Napolitano recipe from AJ Recipe!',
+                        url: window.location.href
+                    });
+                } else {
+                    alert('Share this recipe URL with your friends!');
+                }
+            });
+            
+            document.getElementById('cooked-recipe').addEventListener('click', () => {
+                alert('🎉 Amazing! We\'re so glad you enjoyed the Flan Napolitano. Share your creation on social media with #AJRecipe!');
+            });
+            
+            // Load cart count
+            const cartCount = document.getElementById('cart-count');
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            cartCount.textContent = cart.length;
+        });
+    </script>
+</body>
+</html>

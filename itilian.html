@@ -1,0 +1,1318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Italian Recipes | kitchen Dairies</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="indian.css">
+</head>
+<body>
+    
+    <header class="premium-header">
+        <div class="header-container">
+            <div class="logo-section">
+                <a href="home.html" class="logo">
+                    <img src="C:\Users\pjiya\OneDrive\Documents\Desktop\IMG_20251218_100944.jpg" alt="kitchen Dairies Logo">
+                    <div class="logo-text">
+                        <h1>kitchen Dairies</h1>
+                        <p class="tagline">Artisanal Culinary Creations</p>
+                    </div>
+                </a>
+            </div>
+
+            <nav class="main-nav">
+                <a href="home.html" class="nav-link"><i class="fas fa-home"></i> Home</a>
+                <a href="Cuisine.html" class="nav-link active"><i class="fas fa-globe-americas"></i> Cuisine</a>
+                <a href="nutrition.html" class="nav-link"><i class="fas fa-apple-alt"></i> Nutrition</a>
+                <a href="contact.html" class="nav-link"><i class="fas fa-envelope"></i> Contact</a>
+                <a href="store.html" class="nav-link"><i class="fas fa-store"></i> Store</a>
+                <a href="cart.html" class="nav-cart">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-count" id="cart-count">0</span>
+                </a>
+                <button class="premium-cta">Join Club</button>
+            </nav>
+
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+
+    <section class="cuisine-hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span><i class="fas fa-pizza-slice"></i> Buon Appetito!</span>
+                </div>
+                <h1 class="hero-title">Discover <span class="highlight">Italian</span> Culinary Art</h1>
+                <p class="hero-subtitle">From authentic Neapolitan pizza to delicate handmade pasta, explore the rich traditions of Italy's regional cuisines</p>
+                
+                <div class="cuisine-stats">
+                    <div class="stat">
+                        <i class="fas fa-clock"></i>
+                        <span>20+ Regions</span>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-mortar-pestle"></i>
+                        <span>400+ Pasta Shapes</span>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-leaf"></i>
+                        <span>Mediterranean Diet</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="regional-nav">
+        <div class="container">
+            <div class="section-header">
+                <h2>Explore by <span class="accent">Category</span></h2>
+                <p>Italy's diverse culinary traditions</p>
+            </div>
+            
+            <div class="region-tabs">
+                <button class="region-tab active" data-region="all">All Dishes</button>
+                <button class="region-tab" data-region="street">Street Food</button>
+                <button class="region-tab" data-region="main">Main Dishes</button>
+                <button class="region-tab" data-region="soup">Soups & Stews</button>
+                <button class="region-tab" data-region="dessert">Desserts</button>
+            </div>
+        </div>
+    </section>
+
+   
+    <section class="featured-recipes">
+        <div class="container">
+            <div class="section-header">
+                <h2>Signature <span class="accent">Italian</span> Recipes</h2>
+                <p>Handpicked classics that define Italian cuisine</p>
+            </div>
+            
+            <div class="recipes-grid">
+                
+                <!-- ========== STREET FOOD (10 Recipes) ========== -->
+                
+                <!-- Recipe 1: Pizza Margherita -->
+                <div class="recipe-card" data-region="street">
+                    <div class="recipe-image">
+                        <img src="https://media.istockphoto.com/id/1393150881/photo/italian-pizza-margherita-with-cheese-and-tomato-sauce-on-the-board-on-grey-table-macro-close.jpg?s=612x612&w=0&k=20&c=kL0Vhg2XKBjEl__iG8sFv31WTiahdpLc3rTDtNZuD2g=" alt="Pizza Margherita">
+                        <div class="recipe-badge">Neapolitan</div>
+                        <button class="recipe-favorite" data-recipe="pizza-margherita">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Pizza Margherita</h3>
+                        </div>
+                        <p class="recipe-desc">Classic Neapolitan pizza with San Marzano tomatoes, mozzarella, fresh basil, and olive oil.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>2 hrs</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>850 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Pizza</span><span>Naples</span><span>Classic</span><span>Tomato</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="pizza-margherita-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="pizza-margherita"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 2: Arancini -->
+                <div class="recipe-card" data-region="street">
+                    <div class="recipe-image">
+                        <img src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2013/1/31/3/FNM_030113-Arancini-Recipe_s4x3.jpg.rend.hgtvcom.1280.960.suffix/1382542297870.webp" alt="Arancini">
+                        <div class="recipe-badge vegetarian">Sicilian</div>
+                        <button class="recipe-favorite" data-recipe="arancini">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Arancini</h3>
+                        </div>
+                        <p class="recipe-desc">Sicilian rice balls stuffed with ragù, mozzarella, and peas, coated with breadcrumbs and fried.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>90 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>280 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Rice Balls</span><span>Fried</span><span>Sicily</span><span>Street Food</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="arancini-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="arancini"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 3: Panini -->
+                <div class="recipe-card" data-region="street">
+                    <div class="recipe-image">
+                        <img src="https://newmansown.com/wp-content/uploads/2022/11/Roasted-Eggplant-Panninis-052_1x1@2x-1124x1124.jpg" alt="Panini">
+                        <div class="recipe-badge vegetarian">Quick</div>
+                        <button class="recipe-favorite" data-recipe="panini">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Panini</h3>
+                        </div>
+                        <p class="recipe-desc">Grilled Italian sandwich with various fillings, pressed until crisp and melted.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>20 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>450 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Easy</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Optional Meat</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Sandwich</span><span>Grilled</span><span>Quick Meal</span><span>Lunch</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="panini-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="panini"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 4: Gelato -->
+                <div class="recipe-card" data-region="street">
+                    <div class="recipe-image">
+                        <img src="https://delishglobe.com/wp-content/uploads/2024/09/Gelato-1.png" alt="Gelato">
+                        <div class="recipe-badge vegetarian">Dessert</div>
+                        <button class="recipe-favorite" data-recipe="gelato">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Gelato</h3>
+                        </div>
+                        <p class="recipe-desc">Italian ice cream with less fat than regular ice cream, denser and more intensely flavored.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>6 hrs+</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>200 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Ice Cream</span><span>Dessert</span><span>Creamy</span><span>Summer</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="gelato-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="gelato"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 5: Focaccia -->
+                <div class="recipe-card" data-region="street">
+                    <div class="recipe-image">
+                        <img src="https://www.recipetineats.com/tachyon/2021/03/Rosemary-Garlic-Focaccia_2-SQ-1.jpg" alt="Focaccia">
+                        <div class="recipe-badge vegetarian">Bread</div>
+                        <button class="recipe-favorite" data-recipe="focaccia">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Focaccia</h3>
+                        </div>
+                        <p class="recipe-desc">Italian flat oven-baked bread similar to pizza dough, topped with olive oil, rosemary, and salt.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>3 hrs</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>250 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Bread</span><span>Liguria</span><span>Olive Oil</span><span>Rosemary</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="focaccia-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="focaccia"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 6: Supplì -->
+                <div class="recipe-card" data-region="street">
+                    <div class="recipe-image">
+                        <img src="https://www.manusmenu.com/wp-content/uploads/2011/12/suppli-al-telefono.webp" alt="Supplì">
+                        <div class="recipe-badge">Roman</div>
+                        <button class="recipe-favorite" data-recipe="suppli">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Supplì</h3>
+                        </div>
+                        <p class="recipe-desc">Roman street food of rice balls with tomato sauce and mozzarella center, fried until crispy.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>60 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>320 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Rome</span><span>Fried</span><span>Rice</span><span>Street Food</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="suppli-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="suppli"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 7: Piadina -->
+                <div class="recipe-card" data-region="street">
+                    <div class="recipe-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbJxPprK4NU-PZNYGP70fuN5xoCeh6FuMevQ&s" alt="Piadina">
+                        <div class="recipe-badge vegetarian">Romagna</div>
+                        <button class="recipe-favorite" data-recipe="piadina">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Piadina</h3>
+                        </div>
+                        <p class="recipe-desc">Italian flatbread from Romagna, typically filled with cheese, cold cuts, or vegetables.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>45 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>380 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Optional Meat</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Flatbread</span><span>Romagna</span><span>Street Food</span><span>Quick</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="piadina-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="piadina"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 8: Zeppole -->
+                <div class="recipe-card" data-region="street">
+                    <div class="recipe-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWuLhPsQ7fah8V6xDglCj4wA5r6GR7eaclQw&s" alt="Zeppole">
+                        <div class="recipe-badge vegetarian">Festive</div>
+                        <button class="recipe-favorite" data-recipe="zeppole">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Zeppole</h3>
+                        </div>
+                        <p class="recipe-desc">Italian doughnuts, especially popular during St. Joseph's Day, often filled with custard.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>90 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>340 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Doughnuts</span><span>Fried</span><span>Festive</span><span>Street Food</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="zeppole-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="zeppole"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 9: Granita -->
+                <div class="recipe-card" data-region="street">
+                    <div class="recipe-image">
+                        <img src="https://sugarspunrun.com/wp-content/uploads/2016/06/strawberry-margarita-granita15.jpg" alt="Granita">
+                        <div class="recipe-badge vegetarian">Sicilian</div>
+                        <button class="recipe-favorite" data-recipe="granita">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Granita</h3>
+                        </div>
+                        <p class="recipe-desc">Semi-frozen dessert from Sicily made with sugar, water, and various flavorings.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>6 hrs</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>150 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Easy</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Frozen</span><span>Sicily</span><span>Summer</span><span>Refreshing</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="granita-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="granita"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 10: Porchetta Sandwich -->
+                <div class="recipe-card" data-region="street">
+                    <div class="recipe-image">
+                        <img src="https://www.marthastewart.com/thmb/pCQtkSP02FXXR6NEgq6cB5oyFSQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/porchetta-sandwich-mslb7065_horiz-505bb0a5ab574bee8bb0d6b7f17db266.jpg" alt="Porchetta Sandwich">
+                        <div class="recipe-badge">Lazio</div>
+                        <button class="recipe-favorite" data-recipe="porchetta-sandwich">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Porchetta Sandwich</h3>
+                        </div>
+                        <p class="recipe-desc">Slow-roasted pork seasoned with herbs, served in a crusty roll - a Roman street food classic.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>6 hrs</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>550 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Hard</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Pork</span><span>Sandwich</span><span>Rome</span><span>Slow Roasted</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="porchetta-sandwich-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="porchetta-sandwich"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ========== MAIN DISHES (10 Recipes) ========== -->
+
+                <!-- Recipe 11: Spaghetti Carbonara -->
+                <div class="recipe-card" data-region="main">
+                    <div class="recipe-image">
+                        <img src="https://www.budgetbytes.com/wp-content/uploads/2016/05/Spaghetti-Carbonara-Plated.jpg" alt="Spaghetti Carbonara">
+                        <div class="recipe-badge featured">Roman Classic</div>
+                        <button class="recipe-favorite" data-recipe="spaghetti-carbonara">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Spaghetti Carbonara</h3>
+                        </div>
+                        <p class="recipe-desc">Roman pasta dish with eggs, Pecorino Romano cheese, pancetta, and black pepper.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>30 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>650 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Pasta</span><span>Rome</span><span>Creamy</span><span>Quick</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="spaghetti-carbonara-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="spaghetti-carbonara"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 12: Lasagna -->
+                <div class="recipe-card" data-region="main">
+                    <div class="recipe-image">
+                        <img src="https://static01.nyt.com/images/2023/08/31/multimedia/RS-Lasagna-hkjl/RS-Lasagna-hkjl-videoSixteenByNineJumbo1600.jpg" alt="Lasagna">
+                        <div class="recipe-badge">Family Favorite</div>
+                        <button class="recipe-favorite" data-recipe="lasagna">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Lasagna</h3>
+                        </div>
+                        <p class="recipe-desc">Layered pasta sheets with ragù, béchamel sauce, and Parmigiano-Reggiano cheese.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>3 hrs</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>450 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Pasta</span><span>Baked</span><span>Comfort Food</span><span>Family Meal</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="lasagna-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="lasagna"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 13: Osso Buco -->
+                <div class="recipe-card" data-region="main">
+                    <div class="recipe-image">
+                        <img src="https://www.simplyrecipes.com/thmb/2AjZWxY7oJ7jkMRtrSjtkQAtvQg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2006__12__Osso-Buco-LEAD-5-a816159cbe9740a5b21f3c1e515f9da2.jpg" alt="Osso Buco">
+                        <div class="recipe-badge">Milanese</div>
+                        <button class="recipe-favorite" data-recipe="osso-buco">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Osso Buco</h3>
+                        </div>
+                        <p class="recipe-desc">Milanese specialty of braised veal shanks with vegetables, white wine, and broth.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>3 hrs</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>520 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Veal</span><span>Milan</span><span>Braised</span><span>Winter</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="osso-buco-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="osso-buco"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 14: Risotto alla Milanese -->
+                <div class="recipe-card" data-region="main">
+                    <div class="recipe-image">
+                        <img src="https://thedefineddish.com/wp-content/uploads/2024/11/Risotto-Milanese-5-scaled.jpg" alt="Risotto alla Milanese">
+                        <div class="recipe-badge">Saffron</div>
+                        <button class="recipe-favorite" data-recipe="risotto-milanese">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Risotto alla Milanese</h3>
+                        </div>
+                        <p class="recipe-desc">Creamy saffron risotto from Milan, traditionally served with Osso Buco.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>45 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>420 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Rice</span><span>Milan</span><span>Saffron</span><span>Creamy</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="risotto-milanese-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="risotto-milanese"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 15: Eggplant Parmigiana -->
+                <div class="recipe-card" data-region="main">
+                    <div class="recipe-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPHkFLZrTpUuNzjhTLH1-LiPehYD3nVgAthQ&s" alt="Eggplant Parmigiana">
+                        <div class="recipe-badge vegetarian">Vegetarian</div>
+                        <button class="recipe-favorite" data-recipe="eggplant-parmigiana">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Eggplant Parmigiana</h3>
+                        </div>
+                        <p class="recipe-desc">Sicilian dish of fried eggplant slices with tomato sauce and cheese, baked until bubbly.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>90 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>380 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Eggplant</span><span>Sicily</span><span>Baked</span><span>Cheesy</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="eggplant-parmigiana-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="eggplant-parmigiana"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 16: Minestrone -->
+                <div class="recipe-card" data-region="soup">
+                    <div class="recipe-image">
+                        <img src="https://www.aberdeenskitchen.com/wp-content/uploads/2019/10/Easy-Classic-Minestrone-Soup-1-FI-Thumbnail-1200X1200.jpg" alt="Minestrone">
+                        <div class="recipe-badge vegetarian">Hearty Soup</div>
+                        <button class="recipe-favorite" data-recipe="minestrone">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Minestrone</h3>
+                        </div>
+                        <p class="recipe-desc">Thick vegetable soup with pasta or rice, often containing beans and seasonal vegetables.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>60 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>250 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Easy</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Soup</span><span>Vegetables</span><span>Healthy</span><span>Comfort Food</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="minestrone-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="minestrone"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 17: Ragù alla Bolognese -->
+                <div class="recipe-card" data-region="main">
+                    <div class="recipe-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyj-ZC7yDMvHfWiyk3WZChLTm3F5c_ZqXySQ&s" alt="Ragù alla Bolognese">
+                        <div class="recipe-badge">Bolognese</div>
+                        <button class="recipe-favorite" data-recipe="ragu-bolognese">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Ragù alla Bolognese</h3>
+                        </div>
+                        <p class="recipe-desc">Traditional meat sauce from Bologna with ground beef, pork, tomatoes, and milk.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>3 hrs</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>380 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Meat Sauce</span><span>Bologna</span><span>Slow Cooked</span><span>Pasta</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="ragu-bolognese-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="ragu-bolognese"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 18: Saltimbocca alla Romana -->
+                <div class="recipe-card" data-region="main">
+                    <div class="recipe-image">
+                        <img src="https://www.giallozafferano.it/images/ricette/204/20401/foto_hd/hd650x433_wm.jpg" alt="Saltimbocca alla Romana">
+                        <div class="recipe-badge">Roman</div>
+                        <button class="recipe-favorite" data-recipe="saltimbocca">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Saltimbocca alla Romana</h3>
+                        </div>
+                        <p class="recipe-desc">Roman veal dish with prosciutto and sage, cooked in white wine and butter sauce.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>30 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>420 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Veal</span><span>Rome</span><span>Quick</span><span>Elegant</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="saltimbocca-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="saltimbocca"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 19: Cacio e Pepe -->
+                <div class="recipe-card" data-region="main">
+                    <div class="recipe-image">
+                        <img src="https://assets.bonappetit.com/photos/65f995a6bb3f09a2cbbdbd01/3:2/w_5064,h_3376,c_limit/20240312_WEB_SOY_051_ret2.jpg" alt="Cacio e Pepe">
+                        <div class="recipe-badge">Roman</div>
+                        <button class="recipe-favorite" data-recipe="cacio-e-pepe">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Cacio e Pepe</h3>
+                        </div>
+                        <p class="recipe-desc">Simple Roman pasta with Pecorino Romano cheese and black pepper.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>20 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>550 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Easy</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Pasta</span><span>Rome</span><span>Simple</span><span>Cheese</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="cacio-e-pepe-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="cacio-e-pepe"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 20: Chicken Cacciatore -->
+                <div class="recipe-card" data-region="main">
+                    <div class="recipe-image">
+                        <img src="https://static01.nyt.com/images/2023/06/05/multimedia/MS-Chicken-Cacciatore-hjcq/MS-Chicken-Cacciatore-hjcq-mediumSquareAt3X.jpg" alt="Chicken Cacciatore">
+                        <div class="recipe-badge">Hunter's Stew</div>
+                        <button class="recipe-favorite" data-recipe="chicken-cacciatore">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Chicken Cacciatore</h3>
+                        </div>
+                        <p class="recipe-desc">"Hunter's chicken" braised with tomatoes, mushrooms, onions, herbs, and wine.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>90 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>450 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Chicken</span><span>Braised</span><span>Tomato</span><span>Comfort Food</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="chicken-cacciatore-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="chicken-cacciatore"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ========== SOUPS & STEWS (10 Recipes) ========== -->
+
+                <!-- Recipe 21: Ribollita -->
+                <div class="recipe-card" data-region="soup">
+                    <div class="recipe-image">
+                        <img src="https://hips.hearstapps.com/hmg-prod/images/ribollita1-1656547993.jpg?crop=1xw:0.8435812837432514xh;center,top&resize=1200:*" alt="Ribollita">
+                        <div class="recipe-badge vegetarian">Tuscan</div>
+                        <button class="recipe-favorite" data-recipe="ribollita">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Ribollita</h3>
+                        </div>
+                        <p class="recipe-desc">Tuscan bread and vegetable soup, traditionally made with leftover minestrone.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>2 hrs</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>320 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Soup</span><span>Tuscany</span><span>Bread</span><span>Hearty</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="ribollita-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="ribollita"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 22: Zuppa di Pesce -->
+                <div class="recipe-card" data-region="soup">
+                    <div class="recipe-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWtCGpqIpYEOdhC1zzEDt8yUwDUopb1Qrkxg&s" alt="Zuppa di Pesce">
+                        <div class="recipe-badge">Seafood</div>
+                        <button class="recipe-favorite" data-recipe="zuppa-di-pesce">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Zuppa di Pesce</h3>
+                        </div>
+                        <p class="recipe-desc">Italian fish stew with various seafood in tomato-based broth, served with bread.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>60 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>380 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Seafood</span><span>Stew</span><span>Coastal</span><span>Tomato</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="zuppa-di-pesce-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="zuppa-di-pesce"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 23: Pasta e Fagioli -->
+                <div class="recipe-card" data-region="soup">
+                    <div class="recipe-image">
+                        <img src="https://kristineskitchenblog.com/wp-content/uploads/2023/11/pasta-e-fagioli-23-3.jpg" alt="Pasta e Fagioli">
+                        <div class="recipe-badge vegetarian">Comfort Food</div>
+                        <button class="recipe-favorite" data-recipe="pasta-e-fagioli">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Pasta e Fagioli</h3>
+                        </div>
+                        <p class="recipe-desc">"Pasta and beans" - hearty soup with beans, pasta, vegetables, and herbs.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>90 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>350 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Easy</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Soup</span><span>Beans</span><span>Pasta</span><span>Peasant Food</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="pasta-e-fagioli-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="pasta-e-fagioli"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 24: Stracciatella -->
+                <div class="recipe-card" data-region="soup">
+                    <div class="recipe-image">
+                        <img src="https://www.recipesfromitaly.com/wp-content/uploads/2022/05/stracciatella-gelato-recipe-1200x1200-A.jpg" alt="Stracciatella">
+                        <div class="recipe-badge">Roman</div>
+                        <button class="recipe-favorite" data-recipe="stracciatella">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Stracciatella</h3>
+                        </div>
+                        <p class="recipe-desc">Roman egg drop soup with Parmesan and nutmeg, known as "Italian egg drop soup."</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>30 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>220 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Easy</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Soup</span><span>Egg</span><span>Rome</span><span>Quick</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="stracciatella-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="stracciatella"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 25: Lentil Soup -->
+                <div class="recipe-card" data-region="soup">
+                    <div class="recipe-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC8uj9DYRhXySUCMmEP8m84tGJHTOK3NC-HQ&s" alt="Lentil Soup">
+                        <div class="recipe-badge vegetarian">Healthy</div>
+                        <button class="recipe-favorite" data-recipe="lentil-soup">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Italian Lentil Soup</h3>
+                        </div>
+                        <p class="recipe-desc">Hearty soup with lentils, vegetables, and herbs, often served on New Year's for luck.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>60 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>280 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Easy</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Lentils</span><span>Healthy</span><span>New Year</span><span>Soup</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="lentil-soup-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="lentil-soup"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 26: Zuppa Toscana -->
+                <div class="recipe-card" data-region="soup">
+                    <div class="recipe-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKtpZk-Wo7MSNuErBiPWQpE6YY1hhxBCLbig&s" alt="Zuppa Toscana">
+                        <div class="recipe-badge">Tuscan</div>
+                        <button class="recipe-favorite" data-recipe="zuppa-toscana">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Zuppa Toscana</h3>
+                        </div>
+                        <p class="recipe-desc">Tuscan soup with sausage, potatoes, kale, and cream in chicken broth.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>45 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>420 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Easy</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Sausage</span><span>Tuscany</span><span>Creamy</span><span>Hearty</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="zuppa-toscana-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="zuppa-toscana"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 27: Brodo -->
+                <div class="recipe-card" data-region="soup">
+                    <div class="recipe-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzwwolKAJ7jRJ_ZpQLwc5SjK56ysk7hA_bNg&s" alt="Brodo">
+                        <div class="recipe-badge">Basic</div>
+                        <button class="recipe-favorite" data-recipe="brodo">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Brodo</h3>
+                        </div>
+                        <p class="recipe-desc">Simple Italian broth, the base for many soups and risottos, made with meat and vegetables.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>4 hrs</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>80 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Easy</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Broth</span><span>Basic</span><span>Foundation</span><span>Healing</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="brodo-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="brodo"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 28: Pappa al Pomodoro -->
+                <div class="recipe-card" data-region="soup">
+                    <div class="recipe-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr37og2IkcZcV4JpOwzOYkEEbg3fj5zQilTw&s" alt="Pappa al Pomodoro">
+                        <div class="recipe-badge vegetarian">Tuscan</div>
+                        <button class="recipe-favorite" data-recipe="pappa-al-pomodoro">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Pappa al Pomodoro</h3>
+                        </div>
+                        <p class="recipe-desc">Tuscan bread and tomato soup, thickened with stale bread and flavored with basil.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>60 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>300 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Easy</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Tomato</span><span>Bread</span><span>Tuscany</span><span>Summer</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="pappa-al-pomodoro-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="pappa-al-pomodoro"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 29: Pollo alla Cacciatore already included at #20 -->
+
+                <!-- Recipe 30: Bistecca alla Fiorentina -->
+                <div class="recipe-card" data-region="main">
+                    <div class="recipe-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKZZh8uTCj_2TqeS0svHPxrWoNHKG1E6HqIg&s" alt="Bistecca alla Fiorentina">
+                        <div class="recipe-badge">Florentine</div>
+                        <button class="recipe-favorite" data-recipe="bistecca-fiorentina">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Bistecca alla Fiorentina</h3>
+                        </div>
+                        <p class="recipe-desc">Florentine T-bone steak from Chianina cattle, grilled over wood or charcoal.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>30 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>650 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Steak</span><span>Florence</span><span>Grilled</span><span>Special Occasion</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="bistecca-fiorentina-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="bistecca-fiorentina"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ========== DESSERTS (10 Recipes) ========== -->
+
+                <!-- Recipe 31: Tiramisu -->
+                <div class="recipe-card" data-region="dessert">
+                    <div class="recipe-image">
+                        <img src="https://www.micheldumas.com/wp-content/uploads/2025/05/tiramisu1-ezgif.com-jpg-to-webp-converter-1-1.webp" alt="Tiramisu">
+                        <div class="recipe-badge vegetarian">Classic</div>
+                        <button class="recipe-favorite" data-recipe="tiramisu">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Tiramisu</h3>
+                        </div>
+                        <p class="recipe-desc">Layered dessert with coffee-soaked ladyfingers and mascarpone cream, dusted with cocoa.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>6 hrs</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>450 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Coffee</span><span>Mascarpone</span><span>Classic</span><span>No-Bake</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="tiramisu-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="tiramisu"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 32: Cannoli -->
+                <div class="recipe-card" data-region="dessert">
+                    <div class="recipe-image">
+                        <img src="https://www.allrecipes.com/thmb/1B-k_AU6LKPv0KmVjXiZFSqa2io=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/88849-cannoli-DDMFS-112-2x1-34364dde37ba444a8b6fe557a3765a0a.jpg" alt="Cannoli">
+                        <div class="recipe-badge vegetarian">Sicilian</div>
+                        <button class="recipe-favorite" data-recipe="cannoli">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Cannoli</h3>
+                        </div>
+                        <p class="recipe-desc">Sicilian pastry tubes filled with sweet ricotta cream, often with chocolate chips or pistachios.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>3 hrs</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>320 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Hard</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Pastry</span><span>Sicily</span><span>Ricotta</span><span>Fried</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="cannoli-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="cannoli"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 33: Panna Cotta -->
+                <div class="recipe-card" data-region="dessert">
+                    <div class="recipe-image">
+                        <img src="https://cakesbymk.com/wp-content/uploads/2025/02/Template-Size-for-Blog-22.jpg" alt="Panna Cotta">
+                        <div class="recipe-badge vegetarian">Creamy</div>
+                        <button class="recipe-favorite" data-recipe="panna-cotta">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Panna Cotta</h3>
+                        </div>
+                        <p class="recipe-desc">"Cooked cream" dessert from Piedmont, set with gelatin and served with berry sauce.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>6 hrs</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>380 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Easy</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Cream</span><span>Piedmont</span><span>Gelatin</span><span>Elegant</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="panna-cotta-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="panna-cotta"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 34: Affogato -->
+                <div class="recipe-card" data-region="dessert">
+                    <div class="recipe-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOM0osfgPB2JoRH1AfQ09OykcqOq3nZJ12WA&s" alt="Affogato">
+                        <div class="recipe-badge vegetarian">Simple</div>
+                        <button class="recipe-favorite" data-recipe="affogato">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Affogato</h3>
+                        </div>
+                        <p class="recipe-desc">Simple dessert of vanilla gelato or ice cream "drowned" with a shot of hot espresso.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>5 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>250 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Easy</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Coffee</span><span>Ice Cream</span><span>Quick</span><span>Simple</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="affogato-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="affogato"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 35: Zeppole already included at #8 -->
+
+                <!-- Recipe 36: Sfogliatelle -->
+                <div class="recipe-card" data-region="dessert">
+                    <div class="recipe-image">
+                        <img src="https://www.marcellinaincucina.com/wp-content/uploads/2024/06/sfogliatelle-closeup.jpg" alt="Sfogliatelle">
+                        <div class="recipe-badge vegetarian">Neapolitan</div>
+                        <button class="recipe-favorite" data-recipe="sfogliatelle">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Sfogliatelle</h3>
+                        </div>
+                        <p class="recipe-desc">Neapolitan pastries with many layers of crisp dough filled with sweet ricotta cream.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>4 hrs</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>420 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Hard</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Pastry</span><span>Naples</span><span>Layered</span><span>Ricotta</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="sfogliatelle-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="sfogliatelle"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 37: Panettone -->
+                <div class="recipe-card" data-region="dessert">
+                    <div class="recipe-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsxFhJSMPUKk4QYcJk_EZMbfTi-A6DPWp8RQ&s" alt="Panettone">
+                        <div class="recipe-badge vegetarian">Christmas</div>
+                        <button class="recipe-favorite" data-recipe="panettone">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Panettone</h3>
+                        </div>
+                        <p class="recipe-desc">Milanese Christmas bread with candied fruits and raisins, traditionally cylindrical.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>2 days</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>380 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Hard</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Christmas</span><span>Milan</span><span>Sweet Bread</span><span>Festive</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="panettone-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="panettone"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 38: Cantucci (Biscotti) -->
+                <div class="recipe-card" data-region="dessert">
+                    <div class="recipe-image">
+                        <img src="https://www.marcellinaincucina.com/wp-content/uploads/2019/09/cantucci-featured.jpg" alt="Cantucci">
+                        <div class="recipe-badge vegetarian">Tuscan</div>
+                        <button class="recipe-favorite" data-recipe="cantucci">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Cantucci</h3>
+                        </div>
+                        <p class="recipe-desc">Tuscan almond biscuits, twice-baked for crispness, traditionally dipped in Vin Santo.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>90 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>120 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Biscuits</span><span>Tuscany</span><span>Almonds</span><span>Twice-Baked</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="cantucci-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="cantucci"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="techniques-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Italian <span class="accent">Cooking</span> Techniques</h2>
+                <p>Master these methods for authentic Italian flavors</p>
+            </div>
+            
+            <div class="techniques-grid">
+                <div class="technique-card">
+                    <div class="technique-icon">
+                        <i class="fas fa-hand-sparkles"></i>
+                    </div>
+                    <h3>La Mano (The Hand)</h3>
+                    <p>Traditional pasta making by hand, feeling the texture and hydration of the dough.</p>
+                </div>
+                
+                <div class="technique-card">
+                    <div class="technique-icon">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <h3>Wood-Fired Cooking</h3>
+                    <p>Cooking pizza and bread in wood-fired ovens for authentic char and flavor.</p>
+                </div>
+                
+                <div class="technique-card">
+                    <div class="technique-icon">
+                        <i class="fas fa-wine-bottle"></i>
+                    </div>
+                    <h3>Slow Simmering</h3>
+                    <p>Developing deep flavors in sauces and stews through long, gentle cooking.</p>
+                </div>
+                
+                <div class="technique-card">
+                    <div class="technique-icon">
+                        <i class="fas fa-cheese"></i>
+                    </div>
+                    <h3>Al Dente</h3>
+                    <p>Cooking pasta to be firm to the bite, the cornerstone of Italian pasta preparation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+    <footer class="luxury-footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>© 2025 <span class="accent">kitchen Dairies</span>. All rights reserved. Connect • Create • Cook</p>
+                <div class="footer-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                    <a href="faq.html">FAQ</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Filter functionality for Italian cuisine
+        document.querySelectorAll('.region-tab').forEach(tab => {
+            tab.addEventListener('click', function() {
+                // Update active tab
+                document.querySelectorAll('.region-tab').forEach(t => t.classList.remove('active'));
+                this.classList.add('active');
+                
+                const region = this.dataset.region;
+                const recipeCards = document.querySelectorAll('.recipe-card');
+                
+                recipeCards.forEach(card => {
+                    if (region === 'all' || card.dataset.region === region) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Favorite functionality
+        document.querySelectorAll('.recipe-favorite').forEach(button => {
+            button.addEventListener('click', function() {
+                const icon = this.querySelector('i');
+                if (icon.classList.contains('far')) {
+                    icon.classList.remove('far');
+                    icon.classList.add('fas');
+                    icon.style.color = '#e63946';
+                } else {
+                    icon.classList.remove('fas');
+                    icon.classList.add('far');
+                    icon.style.color = '';
+                }
+            });
+        });
+
+        // Add to cart functionality
+        document.querySelectorAll('.add-cart-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                const cartCount = document.getElementById('cart-count');
+                let count = parseInt(cartCount.textContent);
+                count++;
+                cartCount.textContent = count;
+                
+                // Add animation
+                cartCount.style.transform = 'scale(1.5)';
+                setTimeout(() => {
+                    cartCount.style.transform = 'scale(1)';
+                }, 300);
+                
+                // Show notification (you can customize this)
+                alert('Ingredients added to cart!');
+            });
+        });
+
+        // Mobile menu toggle (placeholder)
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            alert('Mobile menu would open here in a full implementation');
+        });
+    </script>
+</body>
+</html>

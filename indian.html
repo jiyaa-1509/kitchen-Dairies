@@ -1,0 +1,1394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Recipes | kitchen Dairies</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="indian.css">
+</head>
+<body>
+    
+    <header class="premium-header">
+        <div class="header-container">
+            <div class="logo-section">
+                <a href="home.html" class="logo">
+                    <img src="C:\Users\pjiya\OneDrive\Documents\Desktop\IMG_20251218_100944.jpg" alt="kitchen Dairies Logo">
+                    <div class="logo-text">
+                        <h1>kitchen Dairies</h1>
+                        <p class="tagline">Artisanal Culinary Creations</p>
+                    </div>
+                </a>
+            </div>
+
+            <nav class="main-nav">
+                <a href="home.html" class="nav-link"><i class="fas fa-home"></i> Home</a>
+                <a href="Cuisine.html" class="nav-link active"><i class="fas fa-globe-americas"></i> Cuisine</a>
+                <a href="nutrition.html" class="nav-link"><i class="fas fa-apple-alt"></i> Nutrition</a>
+                <a href="contact.html" class="nav-link"><i class="fas fa-envelope"></i> Contact</a>
+                <a href="store.html" class="nav-link"><i class="fas fa-store"></i> Store</a>
+                <a href="cart.html" class="nav-cart">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-count" id="cart-count">0</span>
+                </a>
+                <button class="premium-cta">Join Club</button>
+            </nav>
+
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+
+    <section class="cuisine-hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span><i class="fas fa-pepper-hot"></i> Spice Journey</span>
+                </div>
+                <h1 class="hero-title">Discover <span class="highlight">Indian</span> Culinary Art</h1>
+                <p class="hero-subtitle">From aromatic curries to delicate breads, explore the rich tapestry of India's regional cuisines</p>
+                
+                <div class="cuisine-stats">
+                    <div class="stat">
+                        <i class="fas fa-clock"></i>
+                        <span>28 Regional Styles</span>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-mortar-pestle"></i>
+                        <span>50+ Core Spices</span>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-leaf"></i>
+                        <span>40% Vegetarian</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="regional-nav">
+        <div class="container">
+            <div class="section-header">
+                <h2>Explore by <span class="accent">Region</span></h2>
+                <p>India's diverse culinary landscape across states</p>
+            </div>
+            
+            <div class="region-tabs">
+                <button class="region-tab active" data-region="all">All Regions</button>
+                <button class="region-tab" data-region="north">North Indian</button>
+                <button class="region-tab" data-region="south">South Indian</button>
+                <button class="region-tab" data-region="west">West Indian</button>
+                <button class="region-tab" data-region="east">East Indian</button>
+            </div>
+        </div>
+    </section>
+
+   
+    <section class="featured-recipes">
+        <div class="container">
+            <div class="section-header">
+                <h2>Signature <span class="accent">Indian</span> Recipes</h2>
+                <p>Handpicked classics that define Indian cuisine</p>
+            </div>
+            
+            <div class="recipes-grid">
+                
+                <!-- ========== NORTH INDIAN (10 Recipes) ========== -->
+                
+                <!-- Recipe 1: Butter Chicken -->
+                <div class="recipe-card" data-region="north">
+                    <div class="recipe-image">
+                        <img src="https://masalaandchai.com/wp-content/uploads/2022/03/Butter-Chicken.jpg" alt="Butter Chicken">
+                        <div class="recipe-badge">North Indian</div>
+                        <button class="recipe-favorite" data-recipe="butter-chicken">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Butter Chicken</h3>
+                            
+                        </div>
+                        <p class="recipe-desc">Creamy tomato-based curry with tender chicken, aromatic spices, and a hint of fenugreek.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>45 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>480 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Chicken</span><span>Creamy</span><span>Spicy</span><span>Restaurant Style</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="butter-chicken-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="butter-chicken"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 2: Palak Paneer -->
+                <div class="recipe-card" data-region="north">
+                    <div class="recipe-image">
+                        <img src="https://www.indianveggiedelight.com/wp-content/uploads/2017/10/palak-paneer-recipe-featured.jpg" alt="Palak Paneer">
+                        <div class="recipe-badge vegetarian">Vegetarian</div>
+                        <button class="recipe-favorite" data-recipe="palak-paneer">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Palak Paneer</h3>
+                            
+                        </div>
+                        <p class="recipe-desc">Creamy spinach curry with soft paneer cubes, seasoned with garlic and traditional spices.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>35 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>320 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Easy</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Paneer</span><span>Spinach</span><span>Healthy</span><span>Weeknight Dinner</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="palak-paneer-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="palak-paneer"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 3: Chole Bhature -->
+                <div class="recipe-card" data-region="north">
+                    <div class="recipe-image">
+                        <img src="https://i.pinimg.com/736x/80/3f/f0/803ff029867e021b7b4193f58e1c4ad1.jpg" alt="Chole Bhature">
+                        <div class="recipe-badge">North Indian</div>
+                        <button class="recipe-favorite" data-recipe="chole-bhature">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Chole Bhature</h3>
+                            
+                        </div>
+                        <p class="recipe-desc">Spicy chickpea curry served with fluffy deep-fried bread, a North Indian breakfast favorite.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>50 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>550 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Chickpeas</span><span>Comfort Food</span><span>Weekend Brunch</span><span>Bread</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="chole-bhature-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="chole-bhature"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 4: Rogan Josh -->
+                <div class="recipe-card" data-region="north">
+                    <div class="recipe-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsz0VBZEK__ehD2ibj_wZuNh4ilGpU51XN8Q&s" alt="Rogan Josh">
+                        <div class="recipe-badge">Kashmiri</div>
+                        <button class="recipe-favorite" data-recipe="rogan-josh">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Rogan Josh</h3>
+                            
+                        </div>
+                        <p class="recipe-desc">Aromatic lamb curry from Kashmir with deep red color from Kashmiri chilies.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>75 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>520 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Hard</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Lamb</span><span>Kashmiri</span><span>Spicy</span><span>Festive</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="rogan-josh-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="rogan-josh"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 5: Aloo Paratha -->
+                <div class="recipe-card" data-region="north">
+                    <div class="recipe-image">
+                        <img src="https://cookingfromheart.com/wp-content/uploads/2020/09/Aloo-Paratha-4.jpg" alt="Aloo Paratha">
+                        <div class="recipe-badge vegetarian">Breakfast</div>
+                        <button class="recipe-favorite" data-recipe="aloo-paratha">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Aloo Paratha</h3>
+                           
+                        </div>
+                        <p class="recipe-desc">Whole wheat flatbread stuffed with spiced potato mixture, served with butter and pickle.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>40 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>320 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Breakfast</span><span>Bread</span><span>Stuffed</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="aloo-paratha-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="aloo-paratha"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 6: Rajma Masala -->
+                <div class="recipe-card" data-region="north">
+                    <div class="recipe-image">
+                        <img src="https://theflavoursofkitchen.com/wp-content/uploads/2022/04/Rajma-3-scaled.jpg" alt="Rajma Masala">
+                        <div class="recipe-badge vegetarian">Comfort Food</div>
+                        <button class="recipe-favorite" data-recipe="rajma-masala">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Rajma Masala</h3>
+                            
+                        </div>
+                        <p class="recipe-desc">Creamy kidney bean curry cooked in onion-tomato gravy with Punjabi spices.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>60 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>380 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Easy</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Kidney Beans</span><span>Protein Rich</span><span>Punjabi</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="rajma-masala-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="rajma-masala"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 7: Chicken Tikka Masala -->
+                <div class="recipe-card" data-region="north">
+                    <div class="recipe-image">
+                        <img src="https://cdn.britannica.com/40/177340-050-2F922898/Chicken-tikka-masala.jpg" alt="Chicken Tikka Masala">
+                        <div class="recipe-badge featured">Chef's Special</div>
+                        <button class="recipe-favorite" data-recipe="chicken-tikka">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Chicken Tikka Masala</h3>
+                            
+                        </div>
+                        <p class="recipe-desc">Grilled chicken chunks in rich, creamy tomato and cashew gravy.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>65 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>490 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Chicken</span><span>Creamy</span><span>Restaurant Style</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="chicken-tikka-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="chicken-tikka"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 8: Malai Kofta -->
+                <div class="recipe-card" data-region="north">
+                    <div class="recipe-image">
+                        <img src="https://carameltintedlife.com/wp-content/uploads/2020/11/Malai-Kofta-1-of-1-9.jpg" alt="Malai Kofta">
+                        <div class="recipe-badge vegetarian">Festive</div>
+                        <button class="recipe-favorite" data-recipe="malai-kofta">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Malai Kofta</h3>
+                            <div class="recipe-rating">
+                                <i class=""></i>
+                                <span></span>
+                                <span class="rating-count"></span>
+                            </div>
+                        </div>
+                        <p class="recipe-desc">Fried paneer and potato balls in rich, creamy cashew and tomato gravy.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>70 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>420 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Hard</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Paneer</span><span>Festive</span><span>Rich</span><span>Party</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="malai-kofta-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="malai-kofta"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 9: Naan -->
+                <div class="recipe-card" data-region="north">
+                    <div class="recipe-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI7tTHwOiH6ZnmvP2clMyhaqJgXF2izcVoIw&s" alt="Naan Bread">
+                        <div class="recipe-badge vegetarian">Bread</div>
+                        <button class="recipe-favorite" data-recipe="naan">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Garlic Naan</h3>
+                           
+                        </div>
+                        <p class="recipe-desc">Soft, fluffy leavened flatbread cooked in tandoor, brushed with garlic butter.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>120 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>260 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Bread</span><span>Tandoor</span><span>Garlic</span><span>Side</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="naan-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="naan"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 10: Kadhi Pakora -->
+                <div class="recipe-card" data-region="north">
+                    <div class="recipe-image">
+                        <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2023/03/kadhi-recipe-kadhi-pakora.jpg" alt="Kadhi Pakora">
+                        <div class="recipe-badge vegetarian">Comfort Food</div>
+                        <button class="recipe-favorite" data-recipe="kadhi-pakora">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Kadhi Pakora</h3>
+                            
+                        </div>
+                        <p class="recipe-desc">Yogurt-based curry with gram flour dumplings, tempered with spices.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>50 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>310 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Yogurt</span><span>Comfort Food</span><span>Punjabi</span><span>Dumplings</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="kadhi-pakora-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="kadhi-pakora"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ========== SOUTH INDIAN (10 Recipes) ========== -->
+
+                <!-- Recipe 11: Masala Dosa -->
+                <div class="recipe-card" data-region="south">
+                    <div class="recipe-image">
+                        <img src="https://www.cookwithmanali.com/wp-content/uploads/2020/05/Masala-Dosa.jpg" alt="Masala Dosa">
+                        <div class="recipe-badge">South Indian</div>
+                        <button class="recipe-favorite" data-recipe="masala-dosa">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Masala Dosa</h3>
+                            
+                        </div>
+                        <p class="recipe-desc">Crispy fermented rice crepe filled with spiced potato masala, served with chutneys.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>60 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>280 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Breakfast</span><span>Fermented</span><span>Crispy</span><span>Traditional</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="masala-dosa-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="masala-dosa"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 12: Hyderabadi Biryani -->
+                <div class="recipe-card" data-region="south">
+                    <div class="recipe-image">
+                        <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2021/12/chicken-biryani-recipe.jpg" alt="Chicken Biryani">
+                        <div class="recipe-badge featured">Chef's Special</div>
+                        <button class="recipe-favorite" data-recipe="biryani">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Hyderabadi Biryani</h3>
+                            
+                        </div>
+                        <p class="recipe-desc">Layered rice dish with marinated chicken, saffron, and aromatic spices, slow-cooked to perfection.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>90 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>620 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Hard</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Festive</span><span>Layered</span><span>Saffron</span><span>Special Occasion</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="biryani-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="biryani"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 13: Sambar -->
+                <div class="recipe-card" data-region="south">
+                    <div class="recipe-image">
+                        <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2021/05/sambar-recipe.jpg" alt="Sambar">
+                        <div class="recipe-badge vegetarian">Healthy</div>
+                        <button class="recipe-favorite" data-recipe="sambar">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Sambar</h3>
+                            
+                        </div>
+                        <p class="recipe-desc">Lentil-based vegetable stew with tamarind and sambar powder, essential South Indian accompaniment.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>45 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>180 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Lentils</span><span>Tamarind</span><span>Healthy</span><span>Traditional</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="sambar-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="sambar"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 14: Idli -->
+                <div class="recipe-card" data-region="south">
+                    <div class="recipe-image">
+                        <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2022/04/idli-recipe.jpg" alt="Idli">
+                        <div class="recipe-badge vegetarian">Breakfast</div>
+                        <button class="recipe-favorite" data-recipe="idli">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Soft Idli</h3>
+                           
+                        </div>
+                        <p class="recipe-desc">Steamed rice cakes made from fermented batter, soft and fluffy, perfect with sambar and chutney.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>8 hrs+</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>120 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Easy</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Steamed</span><span>Healthy</span><span>Breakfast</span><span>Fermented</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="idli-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="idli"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 15: Chettinad Chicken -->
+                <div class="recipe-card" data-region="south">
+                    <div class="recipe-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0VW-YsCo2_FawdQCZsWBLxGCZOH8dMS6hkQ&s" alt="Chettinad Chicken">
+                        <div class="recipe-badge">Spicy</div>
+                        <button class="recipe-favorite" data-recipe="chettinad-chicken">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Chettinad Chicken</h3>
+                            
+                        </div>
+                        <p class="recipe-desc">Fiery chicken curry from Tamil Nadu with freshly ground spices and coconut.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>55 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>450 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Spicy</span><span>Coconut</span><span>Chettinad</span><span>Traditional</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="chettinad-chicken-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="chettinad-chicken"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 16: Uttapam -->
+                <div class="recipe-card" data-region="south">
+                    <div class="recipe-image">
+                        <img src="https://www.awesomecuisine.com/wp-content/uploads/2007/12/Vegetable-Uttapam-500x500.jpg" alt="Uttapam">
+                        <div class="recipe-badge vegetarian">Breakfast</div>
+                        <button class="recipe-favorite" data-recipe="uttapam">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Vegetable Uttapam</h3>
+                            
+                        </div>
+                        <p class="recipe-desc">Thick pancake made from fermented batter, topped with vegetables.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>30 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>200 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Easy</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Breakfast</span><span>Vegetables</span><span>Fermented</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="uttapam-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="uttapam"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 17: Rava Dosa -->
+                <div class="recipe-card" data-region="south">
+                    <div class="recipe-image">
+                        <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2022/05/rava-dosa-recipe.jpg" alt="Rava Dosa">
+                        <div class="recipe-badge vegetarian">Instant</div>
+                        <button class="recipe-favorite" data-recipe="rava-dosa">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Crispy Rava Dosa</h3>
+                           
+                        </div>
+                        <p class="recipe-desc">Crispy, lacy dosa made from semolina and rice flour, no fermentation needed.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>25 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>240 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Easy</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Crispy</span><span>Instant</span><span>No Ferment</span><span>Quick</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="rava-dosa-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="rava-dosa"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 18: Pongal -->
+                <div class="recipe-card" data-region="south">
+                    <div class="recipe-image">
+                        <img src="https://www.tomatoblues.com/wp-content/uploads/2024/12/ven-pongal-3.jpg" alt="Ven Pongal">
+                        <div class="recipe-badge vegetarian">Comfort Food</div>
+                        <button class="recipe-favorite" data-recipe="pongal">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Ven Pongal</h3>
+                            
+                        </div>
+                        <p class="recipe-desc">Comforting rice and lentil porridge tempered with black pepper and cumin.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>35 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>280 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Easy</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Breakfast</span><span>Rice</span><span>Lentils</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="pongal-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="pongal"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 19: Mysore Masala Dosa -->
+                <div class="recipe-card" data-region="south">
+                    <div class="recipe-image">
+                        <img src="https://cdn.tarladalal.com/media/recipe/method/2025/01/16/step-12.mumbai-style-roadside-mysore-masala-dosa-13-185705.webp?w=800&format=webp" alt="Mysore Masala Dosa">
+                        <div class="recipe-badge">Spicy</div>
+                        <button class="recipe-favorite" data-recipe="mysore-dosa">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Mysore Masala Dosa</h3>
+                            
+                        </div>
+                        <p class="recipe-desc">Crispy dosa spread with spicy red chutney, filled with potato masala.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>65 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>300 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Spicy</span><span>Mysore</span><span>Crispy</span><span>Breakfast</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="mysore-dosa-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="mysore-dosa"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 20: Fish Curry -->
+                <div class="recipe-card" data-region="south">
+                    <div class="recipe-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7s8iaiC0Y4pLEzR7IdExUwSCl9gt9fN-2fw&s" alt="Kerala Fish Curry">
+                        <div class="recipe-badge">Kerala Style</div>
+                        <button class="recipe-favorite" data-recipe="fish-curry">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Kerala Fish Curry</h3>
+                            
+                        </div>
+                        <p class="recipe-desc">Tangy and spicy fish curry cooked in coconut and tamarind gravy.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>40 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>320 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Fish</span><span>Kerala</span><span>Coconut</span><span>Tangy</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="fish-curry-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="fish-curry"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ========== WEST INDIAN (10 Recipes) ========== -->
+
+                <!-- Recipe 21: Dhokla -->
+                <div class="recipe-card" data-region="west">
+                    <div class="recipe-image">
+                        <img src="https://c.ndtvimg.com/2025-07/vupbjb7k_food_625x300_09_July_25.jpg" alt="Dhokla">
+                        <div class="recipe-badge vegetarian">Snack</div>
+                        <button class="recipe-favorite" data-recipe="dhokla">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Khaman Dhokla</h3>
+                          
+                        </div>
+                        <p class="recipe-desc">Soft, spongy steamed gram flour cakes from Gujarat, tempered with mustard seeds.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>30 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>150 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Easy</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Gujarati</span><span>Steamed</span><span>Snack</span><span>Healthy</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="dhokla-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="dhokla"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 22: Vada Pav -->
+                <div class="recipe-card" data-region="west">
+                    <div class="recipe-image">
+                        <img src="https://www.cookwithmanali.com/wp-content/uploads/2018/04/Vada-Pav-500x500.jpg" alt="Vada Pav">
+                        <div class="recipe-badge">Maharashtrian</div>
+                        <button class="recipe-favorite" data-recipe="vada-pav">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Vada Pav</h3>
+                            
+                        </div>
+                        <p class="recipe-desc">Mumbai's favorite street food - spicy potato fritter in a bun with chutneys.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>40 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>280 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Mumbai</span><span>Street Food</span><span>Quick</span><span>Snack</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="vada-pav-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="vada-pav"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 23: Pav Bhaji -->
+                <div class="recipe-card" data-region="west">
+                    <div class="recipe-image">
+                        <img src="https://images.lifestyleasia.com/wp-content/uploads/sites/7/2022/02/01171428/YFL-Pav-Bhaji-3.jpg" alt="Pav Bhaji">
+                        <div class="recipe-badge vegetarian">Street Food</div>
+                        <button class="recipe-favorite" data-recipe="pav-bhaji">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Pav Bhaji</h3>
+                          
+                        </div>
+                        <p class="recipe-desc">Spiced vegetable mash served with buttered bread rolls, Mumbai's iconic street food.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>45 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>380 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Mumbai</span><span>Street Food</span><span>Vegetables</span><span>Buttery</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="pav-bhaji-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="pav-bhaji"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 24: Thepla -->
+                <div class="recipe-card" data-region="west">
+                    <div class="recipe-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8uaZevO3dLuttiQ849tN62EzBHb0j_o1__g&s" alt="Methi Thepla">
+                        <div class="recipe-badge vegetarian">Travel Food</div>
+                        <button class="recipe-favorite" data-recipe="thepla">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Methi Thepla</h3>
+                           
+                        </div>
+                        <p class="recipe-desc">Thin Gujarati flatbread with fenugreek leaves, stays fresh for days.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>35 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>180 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Easy</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Gujarati</span><span>Travel</span><span>Fenugreek</span><span>Flatbread</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="thepla-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="thepla"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 25: Misal Pav -->
+                <div class="recipe-card" data-region="west">
+                    <div class="recipe-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtBUEEQntLXqYCheI2623WBR__UUpwm8u5Wg&s" alt="Misal Pav">
+                        <div class="recipe-badge">Spicy</div>
+                        <button class="recipe-favorite" data-recipe="misal-pav">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Misal Pav</h3>
+                            
+                        </div>
+                        <p class="recipe-desc">Spicy sprouted bean curry served with bread rolls, garnished with farsan.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>50 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>320 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Maharashtrian</span><span>Spicy</span><span>Breakfast</span><span>Sprouts</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="misal-pav-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="misal-pav"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 26: Undhiyu -->
+                <div class="recipe-card" data-region="west">
+                    <div class="recipe-image">
+                        <img src="https://hungryhindu.com/wp-content/uploads/2021/03/EA4F2A39-35E3-4B14-AF57-EC001512711F.jpeg" alt="Undhiyu">
+                        <div class="recipe-badge vegetarian">Winter Special</div>
+                        <button class="recipe-favorite" data-recipe="undhiyu">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Undhiyu</h3>
+                            
+                        </div>
+                        <p class="recipe-desc">Gujarati mixed vegetable dish with fenugreek dumplings, traditionally cooked upside down.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>90 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>280 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Hard</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Gujarati</span><span>Winter</span><span>Festive</span><span>Vegetables</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="undhiyu-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="undhiyu"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 27: Poha -->
+                <div class="recipe-card" data-region="west">
+                    <div class="recipe-image">
+                        <img src="https://www.indianveggiedelight.com/wp-content/uploads/2022/07/poha.jpg" alt="Poha">
+                        <div class="recipe-badge vegetarian">Breakfast</div>
+                        <button class="recipe-favorite" data-recipe="poha">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Kanda Poha</h3>
+                           
+                        </div>
+                        <p class="recipe-desc">Flattened rice cooked with onions, peanuts, and spices, popular Maharashtrian breakfast.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>20 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>220 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Easy</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Breakfast</span><span>Quick</span><span>Flattened Rice</span><span>Maharashtrian</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="poha-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="poha"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 28: Puran Poli -->
+                <div class="recipe-card" data-region="west">
+                    <div class="recipe-image">
+                        <img src="https://www.jcookingodyssey.com/wp-content/uploads/2025/03/puran-poli.jpg" alt="Puran Poli">
+                        <div class="recipe-badge vegetarian">Festive</div>
+                        <button class="recipe-favorite" data-recipe="puran-poli">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Puran Poli</h3>
+                           
+                        </div>
+                        <p class="recipe-desc">Sweet flatbread stuffed with lentil and jaggery filling, festive Maharashtrian delicacy.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>60 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>320 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Hard</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Sweet</span><span>Maharashtrian</span><span>Dessert</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="puran-poli-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="puran-poli"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 29: Basundi -->
+                <div class="recipe-card" data-region="west">
+                    <div class="recipe-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/48/Basundi_in_Maharashtrian_style.jpg" alt="Basundi">
+                        <div class="recipe-badge vegetarian">Dessert</div>
+                        <button class="recipe-favorite" data-recipe="basundi">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Basundi</h3>
+                            
+                        </div>
+                        <p class="recipe-desc">Rich, creamy reduced milk dessert with nuts and cardamom, Gujarati specialty.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>60 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>380 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Dessert</span><span>Milk</span><span>Festive</span><span>Gujarati</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="basundi-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="basundi"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 30: Khandvi -->
+                <div class="recipe-card" data-region="west">
+                    <div class="recipe-image">
+                        <img src="https://rakskitchen.net/wp-content/uploads/2013/11/10921796334_c5b1f9fcda_z.jpg" alt="Khandvi">
+                        <div class="recipe-badge vegetarian">Snack</div>
+                        <button class="recipe-favorite" data-recipe="khandvi">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Khandvi</h3>
+                            
+                        </div>
+                        <p class="recipe-desc">Soft, rolled gram flour rolls tempered with mustard seeds and coconut.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>40 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>160 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Gujarati</span><span>Rolls</span><span>Snack</span><span>Gram Flour</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="khandvi-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="khandvi"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ========== EAST INDIAN (10 Recipes) ========== -->
+
+                <!-- Recipe 31: Litti Chokha -->
+                <div class="recipe-card" data-region="east">
+                    <div class="recipe-image">
+                        <img src="https://www.secondrecipe.com/wp-content/uploads/2019/11/litti-chokha-1-500x500.jpg" alt="Litti Chokha">
+                        <div class="recipe-badge vegetarian">Bihari</div>
+                        <button class="recipe-favorite" data-recipe="litti-chokha">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Litti Chokha</h3>
+                           
+                        </div>
+                        <p class="recipe-desc">Whole wheat balls stuffed with sattu, served with roasted vegetable mash.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>60 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>340 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Bihari</span><span>Traditional</span><span>Street Food</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="litti-chokha-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="litti-chokha"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 32: Macher Jhol -->
+                <div class="recipe-card" data-region="east">
+                    <div class="recipe-image">
+                        <img src="https://www.licious.in/blog/wp-content/uploads/2022/08/shutterstock_1891229332.jpg" alt="Macher Jhol">
+                        <div class="recipe-badge">Bengali</div>
+                        <button class="recipe-favorite" data-recipe="macher-jhol">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Macher Jhol</h3>
+                            
+                        </div>
+                        <p class="recipe-desc">Bengali fish curry with potatoes in light gravy, everyday comfort food.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>35 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>280 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Easy</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Fish</span><span>Bengali</span><span>Comfort Food</span><span>Light</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="macher-jhol-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="macher-jhol"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 33: Kosha Mangsho -->
+                <div class="recipe-card" data-region="east">
+                    <div class="recipe-image">
+                        <img src="https://i.pinimg.com/736x/55/e2/46/55e246a6f30a59a4e80ab329887adbf0.jpg" alt="Kosha Mangsho">
+                        <div class="recipe-badge">Festive</div>
+                        <button class="recipe-favorite" data-recipe="kosha-mangsho">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Kosha Mangsho</h3>
+                            <div class="recipe-rating">
+                               
+                            </div>
+                        </div>
+                        <p class="recipe-desc">Slow-cooked Bengali mutton curry with rich, dark gravy and aromatic spices.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>120 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>520 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Hard</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Mutton</span><span>Bengali</span><span>Festive</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="kosha-mangsho-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="kosha-mangsho"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 34: Rasgulla -->
+                <div class="recipe-card" data-region="east">
+                    <div class="recipe-image">
+                        <img src="https://www.kuchpakrahahai.in/wp-content/uploads/2020/05/Rasgulla-2BRecipe-2Bin-2BPressure-2BCooker-e1626148996679.jpg" alt="Rasgulla">
+                        <div class="recipe-badge vegetarian">Dessert</div>
+                        <button class="recipe-favorite" data-recipe="rasgulla">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Rasgulla</h3>
+                           
+                        </div>
+                        <p class="recipe-desc">Soft, spongy cottage cheese balls soaked in sugar syrup, Bengali sweet.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>60 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>150 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Dessert</span><span>Bengali</span><span>Sweet</span><span>Festive</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="rasgulla-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="rasgulla"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 35: Sandesh -->
+                <div class="recipe-card" data-region="east">
+                    <div class="recipe-image">
+                        <img src="https://www.sugarfree-india.com/images/uploads/recipe-images/sugar-free-sandesh-recipe1.jpg" alt="Sandesh">
+                        <div class="recipe-badge vegetarian">Dessert</div>
+                        <button class="recipe-favorite" data-recipe="sandesh">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Sandesh</h3>
+                            <div class="recipe-rating">
+                                
+                            </div>
+                        </div>
+                        <p class="recipe-desc">Bengali sweet made from fresh paneer and sugar, flavored with cardamom.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>40 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>120 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Easy</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Dessert</span><span>Bengali</span><span>Paneer</span><span>Sweet</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="sandesh-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="sandesh"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 36: Chingri Malai Curry -->
+                <div class="recipe-card" data-region="east">
+                    <div class="recipe-image">
+                        <img src="https://nishkitchen.com/wp-content/uploads/2025/02/IMG_7484-2.jpg" alt="Chingri Malai Curry">
+                        <div class="recipe-badge">Seafood</div>
+                        <button class="recipe-favorite" data-recipe="chingri-malai">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Chingri Malai Curry</h3>
+                            <div class="recipe-rating">
+                               
+                            </div>
+                        </div>
+                        <p class="recipe-desc">Prawn curry cooked in coconut milk with subtle spices, Bengali delicacy.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>45 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>320 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Prawn</span><span>Seafood</span><span>Coconut</span><span>Bengali</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="chingri-malai-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="chingri-malai"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 37: Aloo Posto -->
+                <div class="recipe-card" data-region="east">
+                    <div class="recipe-image">
+                        <img src="https://i0.wp.com/onewholesomemeal.com/wp-content/uploads/2020/03/Aaloo-Posto-1.jpg?fit=864%2C1080&ssl=1" alt="Aloo Posto">
+                        <div class="recipe-badge vegetarian">Bengali</div>
+                        <button class="recipe-favorite" data-recipe="aloo-posto">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Aloo Posto</h3>
+                               
+                        </div>
+                        <p class="recipe-desc">Potatoes cooked in poppy seed paste, simple yet flavorful Bengali side dish.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>30 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>220 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Easy</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Potato</span><span>Poppy Seeds</span><span>Bengali</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="aloo-posto-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="aloo-posto"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 38: Shorshe Ilish -->
+                <div class="recipe-card" data-region="east">
+                    <div class="recipe-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJSuu5vlo9O9WoD3BDgdf4rVJ4ft8E2y6rZA&s" alt="Shorshe Ilish">
+                        <div class="recipe-badge">Festive</div>
+                        <button class="recipe-favorite" data-recipe="shorshe-ilish">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Shorshe Ilish</h3>
+                            
+                        </div>
+                        <p class="recipe-desc">Hilsa fish cooked in mustard paste, signature Bengali festive dish.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>40 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>350 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Hilsa</span><span>Mustard</span><span>Festive</span><span>Bengali</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="shorshe-ilish-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="shorshe-ilish"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                 <!-- Recipe 39: Mishti Doi -->
+                <div class="recipe-card" data-region="east">
+                    <div class="recipe-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVtb7T7kHkA_qobyRxoc8jyLEVo4x9fPU2VQ&s" alt="Shorshe Ilish">
+                        <div class="recipe-badge">Dessert</div>
+                        <button class="recipe-favorite" data-recipe="mishti-doi">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Mishti Doi</h3>
+                            
+                        </div>
+                        <p class="recipe-desc">Sweetened yogurt set in earthen pots, creamy Bengali dessert.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>8 hrs+</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>180 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Easy</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Dessert</span><span>Yogurt</span><span>Bengali</span><span>Sweet</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="shorshe-ilish-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="mishti-doi"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>                
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="techniques-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Indian <span class="accent">Cooking</span> Techniques</h2>
+                <p>Master these methods for authentic flavors</p>
+            </div>
+            
+            <div class="techniques-grid">
+                <div class="technique-card">
+                    <div class="technique-icon">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <h3>Tadka (Tempering)</h3>
+                    <p>Heating whole spices in hot oil or ghee to release essential oils and flavors.</p>
+                </div>
+                
+                <div class="technique-card">
+                    <div class="technique-icon">
+                        <i class="fas fa-blender"></i>
+                    </div>
+                    <h3>Wet Masala</h3>
+                    <p>Grinding fresh ingredients like ginger, garlic, and onions into a paste for curries.</p>
+                </div>
+                
+                <div class="technique-card">
+                    <div class="technique-icon">
+                        <i class="fas fa-hourglass-half"></i>
+                    </div>
+                    <h3>Dum Cooking</h3>
+                    <p>Slow-cooking in a sealed pot to allow flavors to meld and ingredients to tenderize.</p>
+                </div>
+                
+                <div class="technique-card">
+                    <div class="technique-icon">
+                        <i class="fas fa-bread-slice"></i>
+                    </div>
+                    <h3>Tandoor</h3>
+                    <p>Clay oven cooking for breads and marinated meats, creating smoky flavors.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+    <footer class="luxury-footer">
+        <div class="container">
+             <div class="footer-bottom">
+                <p>© 2025 <span class="accent">kitchen Dairies</span>. All rights reserved. Connect • Create • Cook</p>
+                <div class="footer-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                    <a href="faq.html">FAQ</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

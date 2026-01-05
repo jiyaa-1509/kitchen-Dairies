@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrition & Wellness | kitchen Dairies</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="nutrition.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+   
+
+    <header class="premium-header">
+        <div class="header-container">
+            <div class="logo-section">
+                <a href="home.html" class="logo">
+                    <img src="C:\Users\pjiya\OneDrive\Documents\Desktop\IMG_20251218_100944.jpg" alt="kitchen Dairies Logo">
+                    <div class="logo-text">
+                        <h1>kitchen Dairies</h1>
+                        <p class="tagline">Artisanal Culinary Creations</p>
+                    </div>
+                </a>
+            </div>
+
+            <nav class="main-nav">
+                <a href="home.html" class="nav-link"><i class="fas fa-home"></i> Home</a>
+                <a href="Cuisine.html" class="nav-link"><i class="fas fa-utensils"></i> Cuisine</a>
+                <a href="nutrition.html" class="nav-link active"><i class="fas fa-apple-alt"></i> Nutrition</a>
+                <a href="contact.html" class="nav-link"><i class="fas fa-envelope"></i> Contact</a>
+                <a href="store.html" class="nav-link"><i class="fas fa-store"></i> Store</a>
+                <a href="cart.html" class="nav-cart">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-count" id="cart-count">0</span>
+                </a>
+            </nav>
+
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+   
+    <section class="nutrition-hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span><i class="fas fa-heartbeat"></i> Science-Backed Nutrition</span>
+                </div>
+                <h1 class="hero-title">Nourish Your <span class="highlight">Body</span>, Delight Your <span class="highlight">Soul</span></h1>
+                <p class="hero-subtitle">Evidence-based nutrition guidance, personalized meal planning, and wellness strategies for optimal health through food</p>
+                <div class="hero-actions">
+                    <a href="#meal-planner" class="btn-premium">
+                        <span>Start Meal Planning</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#calculator" class="btn-outline">
+                        <i class="fas fa-calculator"></i>
+                        Nutrition Calculator
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    <section class="nutrition-stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <i class="fas fa-seedling"></i>
+                    <div class="stat-content">
+                        <h3>500+</h3>
+                        <p>Nutrition-optimized Recipes</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-brain"></i>
+                    <div class="stat-content">
+                        <h3>15+</h3>
+                        <p>Dietary Plans</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-chart-line"></i>
+                    <div class="stat-content">
+                        <h3>98%</h3>
+                        <p>User Satisfaction</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-user-md"></i>
+                    <div class="stat-content">
+                        <h3>24/7</h3>
+                        <p>Nutrition Support</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    <section class="nutrition-calculator" id="calculator">
+        <div class="container">
+            <div class="calculator-wrapper">
+                <div class="calculator-intro">
+                    <h2>Personal <span class="accent">Nutrition Calculator</span></h2>
+                    <p>Calculate your daily nutritional needs based on your goals</p>
+                </div>
+                <div class="calculator-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="age"><i class="fas fa-birthday-cake"></i> Age</label>
+                            <input type="number" id="age" min="18" max="80" value="">
+                        </div>
+                        <div class="form-group">
+                            <label for="gender"><i class="fas fa-user"></i> Gender</label>
+                            <select id="gender">
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="weight"><i class="fas fa-weight"></i> Weight (kg)</label>
+                            <input type="number" id="weight" min="40" max="200" value="">
+                        </div>
+                        <div class="form-group">
+                            <label for="height"><i class="fas fa-ruler-vertical"></i> Height (cm)</label>
+                            <input type="number" id="height" min="140" max="220" value="">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="activity"><i class="fas fa-running"></i> Activity Level</label>
+                            <select id="activity">
+                                <option value="1.2">Sedentary</option>
+                                <option value="1.375">Light Activity</option>
+                                <option value="1.55" selected>Moderate Activity</option>
+                                <option value="1.725">Very Active</option>
+                                <option value="1.9">Extremely Active</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="goal"><i class="fas fa-bullseye"></i> Goal</label>
+                            <select id="goal">
+                                <option value="maintain">Maintain Weight</option>
+                                <option value="loss">Weight Loss</option>
+                                <option value="gain">Weight Gain</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button id="calculate-btn" class="btn-premium">
+                        <span>Calculate My Nutrition</span>
+                        <i class="fas fa-calculator"></i>
+                    </button>
+                </div>
+                <div class="calculator-results" id="results">
+                    <h3>Your Daily Nutrition Targets</h3>
+                    <div class="results-grid">
+                        <div class="result-card">
+                            <div class="result-value" id="calories">2000</div>
+                            <div class="result-label">Calories</div>
+                        </div>
+                        <div class="result-card">
+                            <div class="result-value" id="protein">125g</div>
+                            <div class="result-label">Protein</div>
+                        </div>
+                        <div class="result-card">
+                            <div class="result-value" id="carbs">250g</div>
+                            <div class="result-label">Carbs</div>
+                        </div>
+                        <div class="result-card">
+                            <div class="result-value" id="fats">67g</div>
+                            <div class="result-label">Fats</div>
+                        </div>
+                    </div>
+                    <canvas id="nutritionChart" width="400" height="200"></canvas>
+                </div>
+            </div>
+        </div>
+    </section>
+\
+
+    <section class="superfoods-section">
+        <div class="container">
+            <div class="section-header">
+                <h2><span class="accent">Superfood</span> Spotlight</h2>
+                <p>Nutrition powerhouses to incorporate into your diet</p>
+            </div>
+            <div class="superfoods-grid">
+                <div class="superfood-card">
+                    <div class="superfood-image">
+                        <img src="https://foodcare.in/cdn/shop/files/avocado.jpg?v=1736489196&width=416" alt="Avocado">
+                    </div>
+                    <div class="superfood-content">
+                        <h3>Avocado</h3>
+                        <div class="superfood-nutrients">
+                            <span><i class="fas fa-heart"></i> Healthy Fats</span>
+                            <span><i class="fas fa-fiber"></i> Fiber</span>
+                            <span><i class="fas fa-vitamins"></i> K, E, C</span>
+                        </div>
+                        <p>Rich in monounsaturated fats that support heart health and nutrient absorption.</p>
+                    </div>
+                </div>
+                <div class="superfood-card">
+                    <div class="superfood-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT75E3XUMLN4fq2KH5vRL2gaodKSgIjFT-HYA&s" alt="Salmon">
+                    </div>
+                    <div class="superfood-content">
+                        <h3>Wild Salmon</h3>
+                        <div class="superfood-nutrients">
+                            <span><i class="fas fa-fish"></i> Omega-3</span>
+                            <span><i class="fas fa-dna"></i> Protein</span>
+                            <span><i class="fas fa-brain"></i> DHA</span>
+                        </div>
+                        <p>Excellent source of omega-3 fatty acids crucial for brain and heart health.</p>
+                    </div>
+                </div>
+                <div class="superfood-card">
+                    <div class="superfood-image">
+                        <img src="https://images.unsplash.com/photo-1592924357228-91a4daadcfea" alt="Berries">
+                    </div>
+                    <div class="superfood-content">
+                        <h3>Mixed Berries</h3>
+                        <div class="superfood-nutrients">
+                            <span><i class="fas fa-shield-alt"></i> Antioxidants</span>
+                            <span><i class="fas fa-virus-slash"></i> Vitamin C</span>
+                            <span><i class="fas fa-seedling"></i> Fiber</span>
+                        </div>
+                        <p>Packed with antioxidants that combat oxidative stress and inflammation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    <section class="meal-planner" id="meal-planner">
+        <div class="container">
+            <div class="section-header">
+                <h2><span class="accent">Meal Planner</span></h2>
+                <p>Structured nutrition for a balanced week</p>
+            </div>
+            <div class="planner-container">
+                <div class="planner-content">
+                    <div class="meal-day active" id="monday">
+                        <div class="meal-card">
+                            <div class="meal-header">
+                                <h3><i class="fas fa-sun"></i> Breakfast</h3>
+                                <span class="meal-calories">450 kcal</span>
+                            </div>
+                            <p>Greek yogurt with berries, chia seeds, and honey</p>
+                            <div class="meal-macros">
+                                <span>Protein: 25g</span>
+                                <span>Carbs: 45g</span>
+                                <span>Fat: 12g</span>
+                            </div>
+                        </div>
+                        <div class="meal-card">
+                            <div class="meal-header">
+                                <h3><i class="fas fa-cloud-sun"></i> Lunch</h3>
+                                <span class="meal-calories">650 kcal</span>
+                            </div>
+                            <p>Quinoa salad with grilled chicken, avocado, and lemon dressing</p>
+                            <div class="meal-macros">
+                                <span>Protein: 35g</span>
+                                <span>Carbs: 55g</span>
+                                <span>Fat: 18g</span>
+                            </div>
+                        </div>
+                        <div class="meal-card">
+                            <div class="meal-header">
+                                <h3><i class="fas fa-moon"></i> Dinner</h3>
+                                <span class="meal-calories">600 kcal</span>
+                            </div>
+                            <p>Baked salmon with roasted vegetables and sweet potato</p>
+                            <div class="meal-macros">
+                                <span>Protein: 40g</span>
+                                <span>Carbs: 40g</span>
+                                <span>Fat: 20g</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    <footer class="luxury-footer">
+        <div class="container">
+             <div class="footer-bottom">
+                <p>© 2025 <span class="accent">kitchen Dairies</span>. All rights reserved. Explore • Cook • Enjoy</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,1317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indonesian Recipes | kitchen Dairies</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="indian.css">
+</head>
+<body>
+    
+    <header class="premium-header">
+        <div class="header-container">
+            <div class="logo-section">
+                <a href="home.html" class="logo">
+                    <img src="C:\Users\pjiya\OneDrive\Documents\Desktop\IMG_20251218_100944.jpg" alt="kitchen Dairies Logo">
+                    <div class="logo-text">
+                        <h1>kitchen Dairies</h1>
+                        <p class="tagline">Artisanal Culinary Creations</p>
+                    </div>
+                </a>
+            </div>
+
+            <nav class="main-nav">
+                <a href="home.html" class="nav-link"><i class="fas fa-home"></i> Home</a>
+                <a href="Cuisine.html" class="nav-link active"><i class="fas fa-globe-americas"></i> Cuisine</a>
+                <a href="nutrition.html" class="nav-link"><i class="fas fa-apple-alt"></i> Nutrition</a>
+                <a href="contact.html" class="nav-link"><i class="fas fa-envelope"></i> Contact</a>
+                <a href="store.html" class="nav-link"><i class="fas fa-store"></i> Store</a>
+                <a href="cart.html" class="nav-cart">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-count" id="cart-count">0</span>
+                </a>
+                <button class="premium-cta">Join Club</button>
+            </nav>
+
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+
+    <section class="cuisine-hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span><i class="fas fa-utensils"></i> Selamat Makan!</span>
+                </div>
+                <h1 class="hero-title">Discover <span class="highlight">Indonesian</span> Culinary Art</h1>
+                <p class="hero-subtitle">From aromatic Rendang to refreshing Gado-gado, explore the rich diversity of Indonesia's archipelago cuisine</p>
+                
+                <div class="cuisine-stats">
+                    <div class="stat">
+                        <i class="fas fa-clock"></i>
+                        <span>17,000+ Islands</span>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-mortar-pestle"></i>
+                        <span>300+ Ethnic Groups</span>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-leaf"></i>
+                        <span>Spice Islands</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="regional-nav">
+        <div class="container">
+            <div class="section-header">
+                <h2>Explore by <span class="accent">Category</span></h2>
+                <p>Indonesia's diverse culinary traditions</p>
+            </div>
+            
+            <div class="region-tabs">
+                <button class="region-tab active" data-region="all">All Dishes</button>
+                <button class="region-tab" data-region="street">Street Food</button>
+                <button class="region-tab" data-region="main">Main Dishes</button>
+                <button class="region-tab" data-region="soup">Soups & Stews</button>
+                <button class="region-tab" data-region="dessert">Desserts</button>
+            </div>
+        </div>
+    </section>
+
+   
+    <section class="featured-recipes">
+        <div class="container">
+            <div class="section-header">
+                <h2>Signature <span class="accent">Indonesian</span> Recipes</h2>
+                <p>Handpicked classics that define Indonesian cuisine</p>
+            </div>
+            
+            <div class="recipes-grid">
+                
+                <!-- ========== STREET FOOD (10 Recipes) ========== -->
+                
+                <!-- Recipe 1: Nasi Goreng -->
+                <div class="recipe-card" data-region="street">
+                    <div class="recipe-image">
+                        <img src="https://takestwoeggs.com/wp-content/uploads/2025/03/Overhead-plate-Nasi-Goreng-Indonesian-Fried-Rice.jpg" alt="Nasi Goreng">
+                        <div class="recipe-badge">National Dish</div>
+                        <button class="recipe-favorite" data-recipe="nasi-goreng">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Nasi Goreng</h3>
+                        </div>
+                        <p class="recipe-desc">Indonesian fried rice with sweet soy sauce, shallots, garlic, and usually topped with fried egg.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>30 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>450 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Easy</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Optional Meat</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Rice</span><span>Fried</span><span>National Dish</span><span>Quick</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="nasi-goreng-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="nasi-goreng"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 2: Satay -->
+                <div class="recipe-card" data-region="street">
+                    <div class="recipe-image">
+                        <img src="https://www.elmundoeats.com/wp-content/uploads/2024/07/Malaysian-chicken-satay-with-peanut-sauce-500x500.jpg" alt="Satay">
+                        <div class="recipe-badge">Street Food</div>
+                        <button class="recipe-favorite" data-recipe="satay">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Satay</h3>
+                        </div>
+                        <p class="recipe-desc">Grilled meat skewers with peanut sauce, Indonesia's most famous street food.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>60 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>320 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Skewers</span><span>Grilled</span><span>Peanut Sauce</span><span>Street Food</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="satay-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="satay"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 3: Martabak -->
+                <div class="recipe-card" data-region="street">
+                    <div class="recipe-image">
+                        <img src="https://cdn.assets.prezly.com/1f915782-be0f-4c14-8090-e6d500c1e06e/HappyFresh_resep_martabak.jpg" alt="Martabak">
+                        <div class="recipe-badge">Savory/Sweet</div>
+                        <button class="recipe-favorite" data-recipe="martabak">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Martabak</h3>
+                        </div>
+                        <p class="recipe-desc">Stuffed pancake or pan-fried bread, comes in savory (meat) or sweet (chocolate, cheese) versions.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>45 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>380 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Optional Meat</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Pancake</span><span>Street Food</span><span>Fried</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="martabak-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="martabak"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 4: Pempek -->
+                <div class="recipe-card" data-region="street">
+                    <div class="recipe-image">
+                        <img src="https://www.cooksifu.com/wp-content/uploads/2022/03/Pempek-Palembang.webp" alt="Pempek">
+                        <div class="recipe-badge">Palembang</div>
+                        <button class="recipe-favorite" data-recipe="pempek">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Pempek</h3>
+                        </div>
+                        <p class="recipe-desc">Fish cake delicacy from Palembang, served with vinegar-based sauce called cuko.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>90 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>280 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Fish Cake</span><span>Palembang</span><span>Fried</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="pempek-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="pempek"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 5: Bakso -->
+                <div class="recipe-card" data-region="street">
+                    <div class="recipe-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT81YSxrIiikarHoxdMT5OOAg77p9Ub69vGZA&s" alt="Bakso">
+                        <div class="recipe-badge">Meatball Soup</div>
+                        <button class="recipe-favorite" data-recipe="bakso">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Bakso</h3>
+                        </div>
+                        <p class="recipe-desc">Indonesian meatball soup with noodles, tofu, and vegetables in beef broth.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>120 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>350 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Meatballs</span><span>Soup</span><span>Street Food</span><span>Comfort</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="bakso-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="bakso"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 6: Soto -->
+                <div class="recipe-card" data-region="street">
+                    <div class="recipe-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOJL_kWcaRFZ-gZ6Vo0nTa5GcyA12TpcMwkg&s" alt="Soto">
+                        <div class="recipe-badge">Traditional Soup</div>
+                        <button class="recipe-favorite" data-recipe="soto">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Soto</h3>
+                        </div>
+                        <p class="recipe-desc">Traditional Indonesian soup with meat and vegetables in turmeric-based broth.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>90 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>280 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Soup</span><span>Turmeric</span><span>Traditional</span><span>Regional</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="soto-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="soto"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 7: Batagor -->
+                <div class="recipe-card" data-region="street">
+                    <div class="recipe-image">
+                        <img src="https://expatindonesia.id/wp-content/uploads/2025/09/harianbanyuasin.jpg" alt="Batagor">
+                        <div class="recipe-badge">Bandung</div>
+                        <button class="recipe-favorite" data-recipe="batagor">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Batagor</h3>
+                        </div>
+                        <p class="recipe-desc">Fried fish dumplings with tofu from Bandung, served with peanut sauce.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>60 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>320 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Fish Dumplings</span><span>Fried</span><span>Peanut Sauce</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="batagor-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="batagor"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 8: Cilok -->
+                <div class="recipe-card" data-region="street">
+                    <div class="recipe-image">
+                        <img src="https://www.shutterstock.com/image-photo/cilok-made-tapioca-axi-abd-260nw-1791558536.jpg" alt="Cilok">
+                        <div class="recipe-badge vegetarian">Chewy</div>
+                        <button class="recipe-favorite" data-recipe="cilok">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Cilok</h3>
+                        </div>
+                        <p class="recipe-desc">Chewy tapioca balls with various fillings, a popular Bandung street snack.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>45 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>220 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Easy</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Tapioca</span><span>Bandung</span><span>Snack</span><span>Chewy</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="cilok-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="cilok"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 9: Siomay -->
+                <div class="recipe-card" data-region="street">
+                    <div class="recipe-image">
+                        <img src="https://image.idntimes.com/post/20250113/screenshot-2025-0113-2130552-579c18e74dce0f8e75e98443de8e9b79-ebe9761a87d5a310181918a6e331d2db.jpg" alt="Siomay">
+                        <div class="recipe-badge">Steamed</div>
+                        <button class="recipe-favorite" data-recipe="siomay">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Siomay</h3>
+                        </div>
+                        <p class="recipe-desc">Indonesian version of Chinese dim sum, steamed fish dumplings with peanut sauce.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>60 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>280 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Dumplings</span><span>Steamed</span><span>Peanut Sauce</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="siomay-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="siomay"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 10: Gorengan -->
+                <div class="recipe-card" data-region="street">
+                    <div class="recipe-image">
+                        <img src="https://cdn-brilio-net.akamaized.net/news/2025/01/22/318652/1200xauto-trik-membuat-gorengan-renyah-dan-tak-menyerap-minyak-tanpa-pakai-tepung-beras-250122d.jpg" alt="Gorengan">
+                        <div class="recipe-badge vegetarian">Fried Snacks</div>
+                        <button class="recipe-favorite" data-recipe="gorengan">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Gorengan</h3>
+                        </div>
+                        <p class="recipe-desc">Assorted Indonesian fritters including tempeh, tofu, bananas, and vegetables.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>30 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>250 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Easy</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Fritters</span><span>Fried</span><span>Snacks</span><span>Assorted</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="gorengan-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="gorengan"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ========== MAIN DISHES (10 Recipes) ========== -->
+
+                <!-- Recipe 11: Rendang -->
+                <div class="recipe-card" data-region="main">
+                    <div class="recipe-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThwfGXoM9VX6S6SrNdiQyJDceV0HagM0S5IA&s" alt="Rendang">
+                        <div class="recipe-badge featured">World's Best</div>
+                        <button class="recipe-favorite" data-recipe="rendang">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Rendang</h3>
+                        </div>
+                        <p class="recipe-desc">West Sumatran slow-cooked beef in coconut milk and spices, voted world's most delicious food.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>4 hrs</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>480 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Hard</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>West Sumatra</span><span>Slow Cooked</span><span>Coconut</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="rendang-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="rendang"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 12: Gado-gado -->
+                <div class="recipe-card" data-region="main">
+                    <div class="recipe-image">
+                        <img src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/gado-gado-salad-876c31a.jpg" alt="Gado-gado">
+                        <div class="recipe-badge vegetarian">Salad</div>
+                        <button class="recipe-favorite" data-recipe="gado-gado">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Gado-gado</h3>
+                        </div>
+                        <p class="recipe-desc">Indonesian vegetable salad with peanut sauce dressing, eggs, and tofu/tempeh.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>45 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>350 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Easy</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Salad</span><span>Vegetables</span><span>Peanut Sauce</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="gado-gado-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="gado-gado"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 13: Ayam Goreng -->
+                <div class="recipe-card" data-region="main">
+                    <div class="recipe-image">
+                        <img src="https://www.cookmeindonesian.com/wp-content/uploads/2021/11/ayam-goreng-lengkuas-fin1.jpg" alt="Ayam Goreng">
+                        <div class="recipe-badge">Fried Chicken</div>
+                        <button class="recipe-favorite" data-recipe="ayam-goreng">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Ayam Goreng</h3>
+                        </div>
+                        <p class="recipe-desc">Indonesian fried chicken marinated in turmeric and spices, twice-fried for extra crispiness.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>60 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>420 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Chicken</span><span>Fried</span><span>Crispy</span><span>Turmeric</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="ayam-goreng-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="ayam-goreng"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 14: Sate Padang -->
+                <div class="recipe-card" data-region="main">
+                    <div class="recipe-image">
+                        <img src="https://delishglobe.com/wp-content/uploads/2025/07/Sate-Padang-Padang-Style-Satay.png" alt="Sate Padang">
+                        <div class="recipe-badge">Padang</div>
+                        <button class="recipe-favorite" data-recipe="sate-padang">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Sate Padang</h3>
+                        </div>
+                        <p class="recipe-desc">Padang-style satay with beef or offal in thick yellow sauce made from rice flour.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>3 hrs</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>380 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Satay</span><span>Padang</span><span>Beef</span><span>Yellow Sauce</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="sate-padang-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="sate-padang"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 15: Nasi Padang -->
+                <div class="recipe-card" data-region="main">
+                    <div class="recipe-image">
+                        <img src="https://thumbs.dreamstime.com/b/nasi-padang-indonesian-food-originates-west-sumatra-indonesia-comprises-many-different-dishes-can-be-177546193.jpg" alt="Nasi Padang">
+                        <div class="recipe-badge">West Sumatra</div>
+                        <button class="recipe-favorite" data-recipe="nasi-padang">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Nasi Padang</h3>
+                        </div>
+                        <p class="recipe-desc">Padang-style steamed rice served with various dishes like Rendang, Gulai, and Sambal.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>Varies</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>550 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Rice</span><span>Padang</span><span>Multiple Dishes</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="nasi-padang-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="nasi-padang"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 16: Soto Ayam -->
+                <div class="recipe-card" data-region="soup">
+                    <div class="recipe-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ8y9Ac_2LeiIIwnQWBRDRWxve5J-28xrSEQ&s" alt="Soto Ayam">
+                        <div class="recipe-badge">Chicken Soup</div>
+                        <button class="recipe-favorite" data-recipe="soto-ayam">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Soto Ayam</h3>
+                        </div>
+                        <p class="recipe-desc">Indonesian chicken soup with turmeric broth, noodles, and various garnishes.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>90 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>320 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Chicken</span><span>Soup</span><span>Turmeric</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="soto-ayam-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="soto-ayam"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 17: Rawon -->
+                <div class="recipe-card" data-region="soup">
+                    <div class="recipe-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJSBRUBLi1it79yAcpqWpTLXSlWFz77z-h4g&s" alt="Rawon">
+                        <div class="recipe-badge">East Java</div>
+                        <button class="recipe-favorite" data-recipe="rawon">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Rawon</h3>
+                        </div>
+                        <p class="recipe-desc">East Javanese black beef soup with keluak nuts giving distinctive dark color and flavor.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>3 hrs</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>380 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>East Java</span><span>Black Soup</span><span>Keluak</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="rawon-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="rawon"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 18: Ikan Bakar -->
+                <div class="recipe-card" data-region="main">
+                    <div class="recipe-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9jzt0Lc6B69JxUqnWiHxM3pej6ri2rdGwIg&s" alt="Ikan Bakar">
+                        <div class="recipe-badge">Grilled Fish</div>
+                        <button class="recipe-favorite" data-recipe="ikan-bakar">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Ikan Bakar</h3>
+                        </div>
+                        <p class="recipe-desc">Indonesian grilled fish with sweet soy sauce (kecap manis) and spice marinade.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>60 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>320 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Easy</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Fish</span><span>Grilled</span><span>Sweet Soy</span><span>Coastal</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="ikan-bakar-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="ikan-bakar"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 19: Tempeh Orek -->
+                <div class="recipe-card" data-region="main">
+                    <div class="recipe-image">
+                        <img src="https://muchbutter.com/wp-content/uploads/2024/03/Tempeh-Orek-28-768x1024.jpg" alt="Tempeh Orek">
+                        <div class="recipe-badge vegetarian">Protein</div>
+                        <button class="recipe-favorite" data-recipe="tempeh-orek">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Tempeh Orek</h3>
+                        </div>
+                        <p class="recipe-desc">Indonesian stir-fried tempeh with sweet soy sauce, a staple protein source.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>30 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>280 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Easy</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Tempeh</span><span>Stir-fry</span><span>Protein</span><span>Traditional</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="tempeh-orek-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="tempeh-orek"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 20: Pepes Ikan -->
+                <div class="recipe-card" data-region="main">
+                    <div class="recipe-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhlJOn8psp_TVQHwypVEeFyDqZnSZGSOiQ9w&s" alt="Pepes Ikan">
+                        <div class="recipe-badge">Steamed in Banana Leaf</div>
+                        <button class="recipe-favorite" data-recipe="pepes-ikan">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Pepes Ikan</h3>
+                        </div>
+                        <p class="recipe-desc">Fish steamed in banana leaves with spices, creating aromatic and tender results.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>60 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>280 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Fish</span><span>Steamed</span><span>Banana Leaf</span><span>Aromatic</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="pepes-ikan-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="pepes-ikan"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ========== SOUPS & STEWS (10 Recipes) ========== -->
+
+                <!-- Recipe 21: Sayur Asem -->
+                <div class="recipe-card" data-region="soup">
+                    <div class="recipe-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcATt6eZI3KPhyzqGQR0bbNhowBwBM3RRAZA&s" alt="Sayur Asem">
+                        <div class="recipe-badge vegetarian">Sour Vegetable Soup</div>
+                        <button class="recipe-favorite" data-recipe="sayur-asem">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Sayur Asem</h3>
+                        </div>
+                        <p class="recipe-desc">Indonesian sour vegetable soup with tamarind, corn, peanuts, and various vegetables.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>60 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>220 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Easy</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Soup</span><span>Vegetables</span><span>Tamarind</span><span>Refreshing</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="sayur-asem-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="sayur-asem"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 22: Sop Buntut -->
+                <div class="recipe-card" data-region="soup">
+                    <div class="recipe-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR989JXwdjnrPX6xHUErEZSLemY5Vr80343jw&s" alt="Sop Buntut">
+                        <div class="recipe-badge">Oxtail Soup</div>
+                        <button class="recipe-favorite" data-recipe="sop-buntut">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Sop Buntut</h3>
+                        </div>
+                        <p class="recipe-desc">Indonesian oxtail soup with vegetables, slow-cooked until the meat is tender.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>4 hrs</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>420 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Oxtail</span><span>Soup</span><span>Slow Cooked</span><span>Hearty</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="sop-buntut-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="sop-buntut"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 23: Gulai -->
+                <div class="recipe-card" data-region="soup">
+                    <div class="recipe-image">
+                        <img src="https://theplatedscene.com/wp-content/uploads/2025/07/Gulai-Ayam-02.webp" alt="Gulai">
+                        <div class="recipe-badge">Curry</div>
+                        <button class="recipe-favorite" data-recipe="gulai">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Gulai</h3>
+                        </div>
+                        <p class="recipe-desc">Indonesian curry with coconut milk, less thick than Indian curry but rich in spices.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>90 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>350 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Optional Meat</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Curry</span><span>Coconut Milk</span><span>Spices</span><span>Rich</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="gulai-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="gulai"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 24: Sop Kambing -->
+                <div class="recipe-card" data-region="soup">
+                    <div class="recipe-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjFNBewnBAOwnzIUbyWzc4YPrzwswbauqvTA&s" alt="Sop Kambing">
+                        <div class="recipe-badge">Goat Soup</div>
+                        <button class="recipe-favorite" data-recipe="sop-kambing">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Sop Kambing</h3>
+                        </div>
+                        <p class="recipe-desc">Indonesian goat soup with aromatic spices, often served during Eid al-Adha.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>3 hrs</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>320 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Goat</span><span>Soup</span><span>Aromatic</span><span>Festive</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="sop-kambing-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="sop-kambing"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 25: Soto Betawi -->
+                <div class="recipe-card" data-region="soup">
+                    <div class="recipe-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS34hETWScYzDWRO5RWxOJvyKv6uLPrY6UJ9A&s" alt="Soto Betawi">
+                        <div class="recipe-badge">Jakarta</div>
+                        <button class="recipe-favorite" data-recipe="soto-betawi">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Soto Betawi</h3>
+                        </div>
+                        <p class="recipe-desc">Jakarta-style beef soup with coconut milk or milk, served with rice or lontong.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>120 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>380 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                           <span>Jakarta</span><span>Coconut Milk</span><span>Creamy</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="soto-betawi-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="soto-betawi"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 26: Lodeh -->
+                <div class="recipe-card" data-region="soup">
+                    <div class="recipe-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/8/8f/Lodeh.jpg" alt="Lodeh">
+                        <div class="recipe-badge vegetarian">Vegetable Stew</div>
+                        <button class="recipe-favorite" data-recipe="lodeh">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Sayur Lodeh</h3>
+                        </div>
+                        <p class="recipe-desc">Javanese vegetable stew in coconut milk broth with various vegetables and tofu/tempeh.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>60 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>250 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Easy</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Stew</span><span>Vegetables</span><span>Coconut Milk</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="lodeh-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="lodeh"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 27: Sop Konro -->
+                <div class="recipe-card" data-region="soup">
+                    <div class="recipe-image">
+                        <img src="https://www.luxcrato.com/wp-content/uploads/2025/08/img-featured-sop-konro-makassar.jpg" alt="Sop Konro">
+                        <div class="recipe-badge">South Sulawesi</div>
+                        <button class="recipe-favorite" data-recipe="sop-konro">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Sop Konro</h3>
+                        </div>
+                        <p class="recipe-desc">Makassar beef rib soup with rich spices and keluak nuts, from South Sulawesi.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>4 hrs</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>420 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Beef Ribs</span><span>Makassar</span><span>Spicy</span><span>Rich</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="sop-konro-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="sop-konro"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 28: Soto Medan -->
+                <div class="recipe-card" data-region="soup">
+                    <div class="recipe-image">
+                        <img src="https://static.promediateknologi.id/crop/0x591:1079x1461/0x0/webp/photo/p2/74/2025/01/11/Screenshot_20250111_051243-2004922351.jpg" alt="Soto Medan">
+                        <div class="recipe-badge">North Sumatra</div>
+                        <button class="recipe-favorite" data-recipe="soto-medan">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Soto Medan</h3>
+                        </div>
+                        <p class="recipe-desc">North Sumatran chicken soup with coconut milk and rich spices, distinctively yellow.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>90 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>350 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Chicken</span><span>Medan</span><span>Coconut Milk</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="soto-medan-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="soto-medan"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 29: Ayam Betutu -->
+                <div class="recipe-card" data-region="main">
+                    <div class="recipe-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcIBqIAkYBxipch47wVfx6hIbWlolwoMgmrw&s" alt="Ayam Betutu">
+                        <div class="recipe-badge">Bali</div>
+                        <button class="recipe-favorite" data-recipe="ayam-betutu">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Ayam Betutu</h3>
+                        </div>
+                        <p class="recipe-desc">Balinese steamed then roasted chicken with rich spice paste, a ceremonial dish.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>6 hrs</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>450 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Hard</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Chicken</span><span>Bali</span><span>Ceremonial</span><span>Spices</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="ayam-betutu-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="ayam-betutu"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- ========== DESSERTS (10 Recipes) ========== -->
+
+                <!-- Recipe 31: Es Teler -->
+                <div class="recipe-card" data-region="dessert">
+                    <div class="recipe-image">
+                        <img src="https://bandarpowder.com/wp-content/uploads/2025/04/resep-membuat-es-teller-kental-distributor-bubuk-minuman.png" alt="Es Teler">
+                        <div class="recipe-badge vegetarian">Fruit Cocktail</div>
+                        <button class="recipe-favorite" data-recipe="es-teler">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Es Teler</h3>
+                        </div>
+                        <p class="recipe-desc">Indonesian fruit cocktail with avocado, coconut, jackfruit, and condensed milk over ice.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>30 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>320 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Easy</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Dessert</span><span>Fruit</span><span>Cold</span><span>Refreshing</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="es-teler-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="es-teler"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 32: Klepon -->
+                <div class="recipe-card" data-region="dessert">
+                    <div class="recipe-image">
+                        <img src="https://www.wandercooks.com/wp-content/uploads/2025/03/klepon-recipe-ft-1.jpg" alt="Klepon">
+                        <div class="recipe-badge vegetarian">Rice Balls</div>
+                        <button class="recipe-favorite" data-recipe="klepon">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Klepon</h3>
+                        </div>
+                        <p class="recipe-desc">Green rice cake balls filled with liquid palm sugar, coated with grated coconut.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>60 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>180 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Rice Cake</span><span>Sweet</span><span>Palm Sugar</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="klepon-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="klepon"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 33: Dadar Gulung -->
+                <div class="recipe-card" data-region="dessert">
+                    <div class="recipe-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdtk3V14IXssQ782aCWN2dHvfsP2DxLXuU3A&s" alt="Dadar Gulung">
+                        <div class="recipe-badge vegetarian">Pancake</div>
+                        <button class="recipe-favorite" data-recipe="dadar-gulung">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Dadar Gulung</h3>
+                        </div>
+                        <p class="recipe-desc">Green pandan pancakes filled with sweet coconut, a popular Indonesian dessert.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>45 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>220 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Pancake</span><span>Pandan</span><span>Coconut</span><span>Sweet</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="dadar-gulung-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="dadar-gulung"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 34: Bika Ambon -->
+                <div class="recipe-card" data-region="dessert">
+                    <div class="recipe-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQO4__Iw_rw3vJk58qp_Joz5-rC8naWXwtHQ&s  " alt="Bika Ambon">
+                        <div class="recipe-badge vegetarian">Medan</div>
+                        <button class="recipe-favorite" data-recipe="bika-ambon">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Bika Ambon</h3>
+                        </div>
+                        <p class="recipe-desc">Yellow sponge cake from Medan with honeycomb texture, flavored with pandan or coconut.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>4 hrs</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>280 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Hard</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Cake</span><span>Medan</span><span>Honeycomb</span><span>Traditional</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="bika-ambon-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="bika-ambon"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 35: Es Campur -->
+                <div class="recipe-card" data-region="dessert">
+                    <div class="recipe-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFNUW6cuyGkpkGBCzXUt_v2ahi70-SNdzlLQ&s" alt="Es Campur">
+                        <div class="recipe-badge vegetarian">Mixed Ice</div>
+                        <button class="recipe-favorite" data-recipe="es-campur">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Es Campur</h3>
+                        </div>
+                        <p class="recipe-desc">"Mixed ice" dessert with various jellies, fruits, beans, and syrup served with shaved ice.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>60 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>250 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Shaved Ice</span><span>Mixed</span><span>Refreshing</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="es-campur-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="es-campur"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 36: Kue Lapis -->
+                <div class="recipe-card" data-region="dessert">
+                    <div class="recipe-image">
+                        <img src="https://newposkomanado.id/wp-content/uploads/2025/09/InShot_20240917_174309921-3291567991.webp" alt="Kue Lapis">
+                        <div class="recipe-badge vegetarian">Layered Cake</div>
+                        <button class="recipe-favorite" data-recipe="kue-lapis">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Kue Lapis</h3>
+                        </div>
+                        <p class="recipe-desc">Indonesian steamed layered cake with colorful rice flour layers, popular during celebrations.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>3 hrs</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>220 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Hard</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Steamed Cake</span><span>Layered</span><span>Colorful</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="kue-lapis-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="kue-lapis"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 37: Wingko Babat -->
+                <div class="recipe-card" data-region="dessert">
+                    <div class="recipe-image">
+                        <img src="https://img-global.cpcdn.com/recipes/b6c6d95843b661c5/680x781f0.5_0.477375_1.0q80/wingko-babat-teflon-foto-resep-utama.jpg" alt="Wingko Babat">
+                        <div class="recipe-badge vegetarian">Semarang</div>
+                        <button class="recipe-favorite" data-recipe="wingko-babat">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Wingko Babat</h3>
+                        </div>
+                        <p class="recipe-desc">Traditional Javanese coconut cake from Semarang, grilled or baked until golden.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>90 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>280 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Coconut Cake</span><span>Semarang</span><span>Sweet</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="wingko-babat-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="wingko-babat"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                
+               
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="techniques-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Indonesian <span class="accent">Cooking</span> Techniques</h2>
+                <p>Master these methods for authentic Indonesian flavors</p>
+            </div>
+            
+            <div class="techniques-grid">
+                <div class="technique-card">
+                    <div class="technique-icon">
+                        <i class="fas fa-mortar-pestle"></i>
+                    </div>
+                    <h3>Ulek (Spice Pounding)</h3>
+                    <p>Traditional method of grinding spices with cobek (stone mortar) and ulekan (pestle) for authentic flavors.</p>
+                </div>
+                
+                <div class="technique-card">
+                    <div class="technique-icon">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <h3>Slow Simmering (Empal Gentong)</h3>
+                    <p>Long, gentle cooking in clay pots to develop deep flavors in soups and stews.</p>
+                </div>
+                
+                <div class="technique-card">
+                    <div class="technique-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Banana Leaf Wrapping</h3>
+                    <p>Cooking foods wrapped in banana leaves for aroma and moisture retention (Pepes, Botok).</p>
+                </div>
+                
+                <div class="technique-card">
+                    <div class="technique-icon">
+                        <i class="fas fa-pepper-hot"></i>
+                    </div>
+                    <h3>Sambal Making</h3>
+                    <p>Art of creating various chili pastes - raw, cooked, fried - each with different flavor profiles.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+    <footer class="luxury-footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>© 2025 <span class="accent">kitchen Dairies</span>. All rights reserved. Connect • Create • Cook</p>
+                <div class="footer-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                    <a href="faq.html">FAQ</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Filter functionality for Indonesian cuisine
+        document.querySelectorAll('.region-tab').forEach(tab => {
+            tab.addEventListener('click', function() {
+                // Update active tab
+                document.querySelectorAll('.region-tab').forEach(t => t.classList.remove('active'));
+                this.classList.add('active');
+                
+                const region = this.dataset.region;
+                const recipeCards = document.querySelectorAll('.recipe-card');
+                
+                recipeCards.forEach(card => {
+                    if (region === 'all' || card.dataset.region === region) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Favorite functionality
+        document.querySelectorAll('.recipe-favorite').forEach(button => {
+            button.addEventListener('click', function() {
+                const icon = this.querySelector('i');
+                if (icon.classList.contains('far')) {
+                    icon.classList.remove('far');
+                    icon.classList.add('fas');
+                    icon.style.color = '#e63946';
+                } else {
+                    icon.classList.remove('fas');
+                    icon.classList.add('far');
+                    icon.style.color = '';
+                }
+            });
+        });
+
+        // Add to cart functionality
+        document.querySelectorAll('.add-cart-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                const cartCount = document.getElementById('cart-count');
+                let count = parseInt(cartCount.textContent);
+                count++;
+                cartCount.textContent = count;
+                
+                // Add animation
+                cartCount.style.transform = 'scale(1.5)';
+                setTimeout(() => {
+                    cartCount.style.transform = 'scale(1)';
+                }, 300);
+                
+                // Show notification (you can customize this)
+                alert('Ingredients added to cart!');
+            });
+        });
+
+        // Mobile menu toggle (placeholder)
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            alert('Mobile menu would open here in a full implementation');
+        });
+    </script>
+</body>
+</html>

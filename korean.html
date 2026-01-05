@@ -1,0 +1,1404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Korean Recipes | kitchen Dairies</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="indian.css">
+</head>
+<body>
+    
+    <header class="premium-header">
+        <div class="header-container">
+            <div class="logo-section">
+                <a href="home.html" class="logo">
+                    <img src="C:\Users\pjiya\OneDrive\Documents\Desktop\IMG_20251218_100944.jpg" alt="kitchen Dairies Logo">
+                    <div class="logo-text">
+                        <h1>kitchen Dairies</h1>
+                        <p class="tagline">Artisanal Culinary Creations</p>
+                    </div>
+                </a>
+            </div>
+
+            <nav class="main-nav">
+                <a href="home.html" class="nav-link"><i class="fas fa-home"></i> Home</a>
+                <a href="Cuisine.html" class="nav-link active"><i class="fas fa-globe-americas"></i> Cuisine</a>
+                <a href="nutrition.html" class="nav-link"><i class="fas fa-apple-alt"></i> Nutrition</a>
+                <a href="contact.html" class="nav-link"><i class="fas fa-envelope"></i> Contact</a>
+                <a href="store.html" class="nav-link"><i class="fas fa-store"></i> Store</a>
+                <a href="cart.html" class="nav-cart">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-count" id="cart-count">0</span>
+                </a>
+                <button class="premium-cta">Join Club</button>
+            </nav>
+
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+
+    <section class="cuisine-hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span><i class="fas fa-pepper-hot"></i> Hansik Journey</span>
+                </div>
+                <h1 class="hero-title">Discover <span class="highlight">Korean</span> Culinary Art</h1>
+                <p class="hero-subtitle">From fiery kimchi to comforting stews, explore the balanced harmony of Korea's royal and regional cuisines</p>
+                
+                <div class="cuisine-stats">
+                    <div class="stat">
+                        <i class="fas fa-clock"></i>
+                        <span>8 Provinces</span>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-mortar-pestle"></i>
+                        <span>30+ Banchan</span>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-leaf"></i>
+                        <span>Healing Foods</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="regional-nav">
+        <div class="container">
+            <div class="section-header">
+                <h2>Explore by <span class="accent">Category</span></h2>
+                <p>Korea's diverse culinary traditions</p>
+            </div>
+            
+            <div class="region-tabs">
+                <button class="region-tab active" data-region="all">All Dishes</button>
+                <button class="region-tab" data-region="royal">Royal Cuisine</button>
+                <button class="region-tab" data-region="street">Street Food</button>
+                <button class="region-tab" data-region="stew">Stews & Soups</button>
+                <button class="region-tab" data-region="bbq">Korean BBQ</button>
+            </div>
+        </div>
+    </section>
+
+   
+    <section class="featured-recipes">
+        <div class="container">
+            <div class="section-header">
+                <h2>Signature <span class="accent">Korean</span> Recipes</h2>
+                <p>Handpicked classics that define Korean cuisine</p>
+            </div>
+            
+            <div class="recipes-grid">
+                
+                <!-- ========== ROYAL CUISINE (10 Recipes) ========== -->
+                
+                <!-- Recipe 1: Bibimbap -->
+                <div class="recipe-card" data-region="royal">
+                    <div class="recipe-image">
+                        <img src="https://www.siftandsimmer.com/wp-content/uploads/2023/05/bibimbap-featured.jpg" alt="Bibimbap">
+                        <div class="recipe-badge">Royal Cuisine</div>
+                        <button class="recipe-favorite" data-recipe="bibimbap">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Bibimbap</h3>
+                        </div>
+                        <p class="recipe-desc">Mixed rice bowl with assorted vegetables, meat, fried egg, and gochujang sauce.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>45 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>520 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Optional Meat</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Rice Bowl</span><span>Vegetables</span><span>Gochujang</span><span>Balanced</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="bibimbap-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="bibimbap"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 2: Japchae -->
+                <div class="recipe-card" data-region="royal">
+                    <div class="recipe-image">
+                        <img src="https://www.wokandskillet.com/wp-content/uploads/2016/11/easy-japchae-10.jpg" alt="Japchae">
+                        <div class="recipe-badge vegetarian">Festive</div>
+                        <button class="recipe-favorite" data-recipe="japchae">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Japchae</h3>
+                        </div>
+                        <p class="recipe-desc">Glass noodles stir-fried with vegetables and beef in sesame oil and soy sauce.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>40 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>380 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Optional Meat</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Glass Noodles</span><span>Festive</span><span>Sesame</span><span>Stir Fry</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="japchae-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="japchae"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 3: Galbi Jjim -->
+                <div class="recipe-card" data-region="royal">
+                    <div class="recipe-image">
+                        <img src="https://stellanspice.com/wp-content/uploads/2023/04/galbi-jjim-braised-short-ribs.jpg" alt="Galbi Jjim">
+                        <div class="recipe-badge">Royal</div>
+                        <button class="recipe-favorite" data-recipe="galbi-jjim">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Galbi Jjim</h3>
+                        </div>
+                        <p class="recipe-desc">Braised short ribs with chestnuts, dates, and vegetables in soy-based sauce.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>120 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>580 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Hard</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Short Ribs</span><span>Braised</span><span>Festive</span><span>Royal</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="galbi-jjim-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="galbi-jjim"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 4: Bossam -->
+                <div class="recipe-card" data-region="royal">
+                    <div class="recipe-image">
+                        <img src="https://delishglobe.com/wp-content/uploads/2024/12/Bossam-Boiled-Pork-Wraps.png" alt="Bossam">
+                        <div class="recipe-badge">Traditional</div>
+                        <button class="recipe-favorite" data-recipe="bossam">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Bossam</h3>
+                        </div>
+                        <p class="recipe-desc">Boiled pork belly wraps with kimchi and ssamjang, served with oysters.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>90 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>480 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Pork Belly</span><span>Wraps</span><span>Kimchi</span><span>Festive</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="bossam-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="bossam"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 5: Gujeolpan -->
+                <div class="recipe-card" data-region="royal">
+                    <div class="recipe-image">
+                        <img src="https://t3.ftcdn.net/jpg/05/62/39/38/360_F_562393859_DDQf7OS2QCeGVgRWgePvP0VcjJtOG9KV.jpg" alt="Gujeolpan">
+                        <div class="recipe-badge vegetarian">Royal Court</div>
+                        <button class="recipe-favorite" data-recipe="gujeolpan">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Gujeolpan</h3>
+                        </div>
+                        <p class="recipe-desc">Nine-section platter with colorful ingredients for wrapping in thin pancakes.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>120 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>320 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Hard</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Royal Court</span><span>Platter</span><span>Colorful</span><span>Festive</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="gujeolpan-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="gujeolpan"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 6:   -->
+                <div class="recipe-card" data-region="royal">
+                    <div class="recipe-image">
+                        <img src="https://koreancuisinerecipes.com/wp-content/uploads/2022/01/sinseollo.jpeg" alt="Sinseollo">
+                        <div class="recipe-badge">Royal Hot Pot</div>
+                        <button class="recipe-favorite" data-recipe="sinseollo">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Sinseollo</h3>
+                        </div>
+                        <p class="recipe-desc">Royal hot pot with meatballs, vegetables, and mushrooms in rich broth.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>90 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>420 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Hard</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Hot Pot</span><span>Royal</span><span>Winter</span><span>Meatballs</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="sinseollo-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="sinseollo"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 7: Yukhoe -->
+                <div class="recipe-card" data-region="royal">
+                    <div class="recipe-image">
+                        <img src="https://stellanspice.com/wp-content/uploads/2021/06/IMG_E3030-1-e1627514256799.jpg" alt="Yukhoe">
+                        <div class="recipe-badge featured">Chef's Special</div>
+                        <button class="recipe-favorite" data-recipe="yukhoe">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Yukhoe</h3>
+                        </div>
+                        <p class="recipe-desc">Korean beef tartare with pear, pine nuts, and egg yolk, seasoned with soy and sesame.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>30 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>350 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Beef Tartare</span><span>Raw</span><span>Pear</span><span>Premium</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="yukhoe-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="yukhoe"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 8: Jeon -->
+                <div class="recipe-card" data-region="royal">
+                    <div class="recipe-image">
+                        <img src="https://babomakgeolli.com/cdn/shop/articles/jeon_recipe_55c4baa5-36e4-42dc-8cb5-c5bb6cf8b240-293775.jpg?v=1747597490x" alt="Jeon">
+                        <div class="recipe-badge vegetarian">Festive</div>
+                        <button class="recipe-favorite" data-recipe="jeon">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Jeon</h3>
+                        </div>
+                        <p class="recipe-desc">Korean pancake with various ingredients like seafood, kimchi, or vegetables.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>35 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>280 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Easy</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Optional Meat</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Pancake</span><span>Festive</span><span>Appetizer</span><span>Crispy</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="jeon-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="jeon"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 9: Tteokguk -->
+                <div class="recipe-card" data-region="royal">
+                    <div class="recipe-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGip8wCda-NMA2HCqqk8umi6f1tIQZQqyWMQ&s" alt="Tteokguk">
+                        <div class="recipe-badge">New Year</div>
+                        <button class="recipe-favorite" data-recipe="tteokguk">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Tteokguk</h3>
+                        </div>
+                        <p class="recipe-desc">Rice cake soup eaten on Korean New Year for good luck and aging.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>60 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>320 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Optional Meat</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Rice Cake</span><span>New Year</span><span>Soup</span><span>Traditional</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="tteokguk-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="tteokguk"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 10: Hobakjuk -->
+                <div class="recipe-card" data-region="royal">
+                    <div class="recipe-image">
+                        <img src="https://c8.alamy.com/comp/2B07NDY/hobak-juk-korean-traditional-pumpkin-porridge-soup-with-rice-balls-2B07NDY.jpg" alt="Hobakjuk">
+                        <div class="recipe-badge vegetarian">Comfort Food</div>
+                        <button class="recipe-favorite" data-recipe="hobakjuk">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Hobakjuk</h3>
+                        </div>
+                        <p class="recipe-desc">Silky pumpkin porridge sweetened with rice flour balls, royal comfort food.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>50 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>220 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Pumpkin</span><span>Porridge</span><span>Comfort Food</span><span>Royal</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="hobakjuk-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="hobakjuk"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ========== STREET FOOD (10 Recipes) ========== -->
+
+                <!-- Recipe 11: Tteokbokki -->
+                <div class="recipe-card" data-region="street">
+                    <div class="recipe-image">
+                        <img src="https://www.maangchi.com/wp-content/uploads/2014/06/tteokbokki.jpg" alt="Tteokbokki">
+                        <div class="recipe-badge">Street Food</div>
+                        <button class="recipe-favorite" data-recipe="tteokbokki">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Tteokbokki</h3>
+                        </div>
+                        <p class="recipe-desc">Spicy stir-fried rice cakes in sweet and spicy gochujang sauce.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>25 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>380 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Easy</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Rice Cakes</span><span>Spicy</span><span>Gochujang</span><span>Popular</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="tteokbokki-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="tteokbokki"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 12: Kimbap -->
+                <div class="recipe-card" data-region="street">
+                    <div class="recipe-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPLpB5vK-tAT8mj7t9LGO0os_yS67TL1lPtQ&s" alt="Kimbap">
+                        <div class="recipe-badge featured">Chef's Special</div>
+                        <button class="recipe-favorite" data-recipe="kimbap">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Kimbap</h3>
+                        </div>
+                        <p class="recipe-desc">Seaweed rice rolls with various fillings, Korea's answer to sushi.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>45 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>320 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Optional Meat</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Rice Rolls</span><span>Seaweed</span><span>Picnic</span><span>Lunchbox</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="kimbap-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="kimbap"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 13: Hotteok -->
+                <div class="recipe-card" data-region="street">
+                    <div class="recipe-image">
+                        <img src="https://www.cherryonmysundae.com/wp-content/uploads/2020/10/pumpkin-hotteok-final-feature.jpg" alt="Hotteok">
+                        <div class="recipe-badge vegetarian">Sweet</div>
+                        <button class="recipe-favorite" data-recipe="hotteok">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Hotteok</h3>
+                        </div>
+                        <p class="recipe-desc">Sweet Korean pancakes filled with brown sugar, nuts, and cinnamon.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>60 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>280 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Sweet Pancake</span><span>Winter</span><span>Street Food</span><span>Dessert</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="hotteok-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="hotteok"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 14: Sundae -->
+                <div class="recipe-card" data-region="street">
+                    <div class="recipe-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGKqBf-bFGQ-SdMPYDhjns6bb8HcYv6-Q11w&s" alt="Sundae">
+                        <div class="recipe-badge">Traditional</div>
+                        <button class="recipe-favorite" data-recipe="sundae">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Sundae</h3>
+                        </div>
+                        <p class="recipe-desc">Korean blood sausage made with noodles, barley, and pork blood.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>90 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>420 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Hard</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Blood Sausage</span><span>Street Food</span><span>Traditional</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="sundae-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="sundae"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 15: Dakkochi -->
+                <div class="recipe-card" data-region="street">
+                    <div class="recipe-image">
+                        <img src="https://tarasmulticulturaltable.com/wp-content/uploads/2012/11/Dak-kkochi-Korean-Sweet-and-Spicy-Chicken-Skewers-3-of-3-500x500.jpg" alt="Dakkochi">
+                        <div class="recipe-badge">Grilled</div>
+                        <button class="recipe-favorite" data-recipe="dakkochi">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Dakkochi</h3>
+                        </div>
+                        <p class="recipe-desc">Grilled chicken skewers glazed with gochujang sauce.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>40 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>280 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Easy</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Chicken</span><span>Skewers</span><span>Grilled</span><span>Street Food</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="dakkochi-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="dakkochi"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 16: Twigim -->
+                <div class="recipe-card" data-region="street">
+                    <div class="recipe-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFs31AjzGV9wzxIsTK4xB0Ip4JZP-UrEh06A&s" alt="Twigim">
+                        <div class="recipe-badge vegetarian">Snack</div>
+                        <button class="recipe-favorite" data-recipe="twigim">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Twigim</h3>
+                        </div>
+                        <p class="recipe-desc">Korean-style tempura with vegetables, seafood, or kimchi in light batter.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>30 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>320 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Easy</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Optional Meat</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Tempura</span><span>Fried</span><span>Snack</span><span>Street Food</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="twigim-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="twigim"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 17: Bungeoppang -->
+                <div class="recipe-card" data-region="street">
+                    <div class="recipe-image">
+                        <img src="https://png.pngtree.com/png-clipart/20250619/original/pngtree-bungeoppang-with-sweet-red-bean-filling-png-image_21209732.png" alt="Bungeoppang">
+                        <div class="recipe-badge vegetarian">Winter</div>
+                        <button class="recipe-favorite" data-recipe="bungeoppang">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Bungeoppang</h3>
+                        </div>
+                        <p class="recipe-desc">Fish-shaped pastry filled with sweet red bean paste, winter street food.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>60 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>220 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Fish-shaped</span><span>Red Bean</span><span>Winter</span><span>Sweet</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="bungeoppang-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="bungeoppang"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 18: Gyeranppang -->
+                <div class="recipe-card" data-region="street">
+                    <div class="recipe-image">
+                        <img src="https://img-global.cpcdn.com/recipes/bfc2aaa49c45ba48/680x781f0.58294_0.5_1.0q80/gyeran-ppang-korean-egg-bread-snack-recipe-main-photo.jpg" alt="Gyeranppang">
+                        <div class="recipe-badge">Quick</div>
+                        <button class="recipe-favorite" data-recipe="gyeranppang">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Gyeranppang</h3>
+                        </div>
+                        <p class="recipe-desc">Egg bread - sweet bread baked with a whole egg on top.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>25 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>280 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Easy</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Egg Bread</span><span>Street Food</span><span>Quick</span><span>Breakfast</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="gyeranppang-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="gyeranppang"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 19: Odeng -->
+                <div class="recipe-card" data-region="street">
+                    <div class="recipe-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuZ_23J1qcrFU95mYWBpPv4rF6ZN1SAdH83A&s" alt="Odeng">
+                        <div class="recipe-badge">Comfort</div>
+                        <button class="recipe-favorite" data-recipe="odeng">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Odeng</h3>
+                        </div>
+                        <p class="recipe-desc">Fish cake skewers served in warm broth, popular winter street food.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>30 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>180 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Easy</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Optional Meat</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Fish Cake</span><span>Broth</span><span>Winter</span><span>Street Food</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="odeng-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="odeng"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 20: Pajeon -->
+                <div class="recipe-card" data-region="street">
+                    <div class="recipe-image">
+                        <img src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2019/7/16/5/scallion-pancake-pajeon-7130252.jpg.rend.hgtvcom.1280.720.suffix/1563298863613.webp" alt="Pajeon">
+                        <div class="recipe-badge">Rainy Day</div>
+                        <button class="recipe-favorite" data-recipe="pajeon">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Pajeon</h3>
+                        </div>
+                        <p class="recipe-desc">Green onion pancake, often eaten on rainy days with makgeolli.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>30 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>320 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Easy</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Green Onion</span><span>Pancake</span><span>Rainy Day</span><span>Comfort</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="pajeon-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="pajeon"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ========== STEWS & SOUPS (10 Recipes) ========== -->
+
+                <!-- Recipe 21: Kimchi Jjigae -->
+                <div class="recipe-card" data-region="stew">
+                    <div class="recipe-image">
+                        <img src="https://www.maangchi.com/wp-content/uploads/2007/11/kimchijjigae.jpg" alt="Kimchi Jjigae">
+                        <div class="recipe-badge">Comfort Food</div>
+                        <button class="recipe-favorite" data-recipe="kimchi-jjigae">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Kimchi Jjigae</h3>
+                        </div>
+                        <p class="recipe-desc">Spicy stew made with aged kimchi, tofu, pork, and vegetables.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>40 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>320 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Easy</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Optional Meat</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Kimchi</span><span>Stew</span><span>Comfort Food</span><span>Spicy</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="kimchi-jjigae-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="kimchi-jjigae"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 22: Doenjang Jjigae -->
+                <div class="recipe-card" data-region="stew">
+                    <div class="recipe-image">
+                        <img src="https://thekoreanvegan.com/wp-content/uploads/2025/02/20250222-Screenshot-2025-02-22-at-3.55.50%E2%80%AFPM-2.jpg" alt="Doenjang Jjigae">
+                        <div class="recipe-badge">Healthy</div>
+                        <button class="recipe-favorite" data-recipe="doenjang-jjigae">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Doenjang Jjigae</h3>
+                        </div>
+                        <p class="recipe-desc">Fermented soybean paste stew with tofu, vegetables, and seafood.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>30 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>280 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Easy</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Optional Meat</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Soybean Paste</span><span>Stew</span><span>Healthy</span><span>Fermented</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="doenjang-jjigae-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="doenjang-jjigae"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 23: Samgyetang -->
+                <div class="recipe-card" data-region="stew">
+                    <div class="recipe-image">
+                        <img src="https://www.maangchi.com/wp-content/uploads/2007/10/samgyetang11.jpg" alt="Samgyetang">
+                        <div class="recipe-badge">Summer</div>
+                        <button class="recipe-favorite" data-recipe="samgyetang">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Samgyetang</h3>
+                        </div>
+                        <p class="recipe-desc">Ginseng chicken soup with glutinous rice, eaten on hot summer days.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>120 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>420 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Ginseng</span><span>Chicken</span><span>Summer</span><span>Health</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="samgyetang-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="samgyetang"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 24: Yukgaejang -->
+                <div class="recipe-card" data-region="stew">
+                    <div class="recipe-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb5RKNcC1i-my9rKLutTqiyf01LkAQ9Mon8g&s" alt="Yukgaejang">
+                        <div class="recipe-badge">Spicy</div>
+                        <button class="recipe-favorite" data-recipe="yukgaejang">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Yukgaejang</h3>
+                        </div>
+                        <p class="recipe-desc">Spicy beef soup with vegetables and fernbrake, known for recovery.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>90 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>380 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Beef</span><span>Spicy Soup</span><span>Recovery</span><span>Fernbrake</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="yukgaejang-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="yukgaejang"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 25: Sundubu Jjigae -->
+                <div class="recipe-card" data-region="stew">
+                    <div class="recipe-image">
+                        <img src="https://omnivorescookbook.com/wp-content/uploads/2020/09/200806_Soondubu-Jjigae_800.jpg" alt="Sundubu Jjigae">
+                        <div class="recipe-badge">Soft Tofu</div>
+                        <button class="recipe-favorite" data-recipe="sundubu-jjigae">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Sundubu Jjigae</h3>
+                        </div>
+                        <p class="recipe-desc">Soft tofu stew with seafood or meat, served bubbling hot.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>30 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>280 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Easy</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Optional Meat</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Soft Tofu</span><span>Stew</span><span>Seafood</span><span>Comfort</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="sundubu-jjigae-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="sundubu-jjigae"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 26: Gamjatang -->
+                <div class="recipe-card" data-region="stew">
+                    <div class="recipe-image">
+                        <img src="https://tastecooking.com/wp-content/uploads/2019/01/gamjatang-e1546970451164.png" alt="Gamjatang">
+                        <div class="recipe-badge">Pork Bone</div>
+                        <button class="recipe-favorite" data-recipe="gamjatang">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Gamjatang</h3>
+                        </div>
+                        <p class="recipe-desc">Pork bone soup with potatoes and perilla leaves, hearty and spicy.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>150 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>480 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Hard</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Pork Bone</span><span>Potato</span><span>Spicy</span><span>Hearty</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="gamjatang-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="gamjatang"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 27: Miyeok Guk -->
+                <div class="recipe-card" data-region="stew">
+                    <div class="recipe-image">
+                        <img src="https://www.koreanbapsang.com/wp-content/uploads/2013/12/DSC_3942-e1459309071500.jpg" alt="Miyeok Guk">
+                        <div class="recipe-badge">Birthday</div>
+                        <button class="recipe-favorite" data-recipe="miyeok-guk">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Miyeok Guk</h3>
+                        </div>
+                        <p class="recipe-desc">Seaweed soup with beef, traditionally eaten on birthdays.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>60 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>220 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Seaweed</span><span>Birthday</span><span>Beef</span><span>Tradition</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="miyeok-guk-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="miyeok-guk"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 28: Kongnamul Guk -->
+                <div class="recipe-card" data-region="stew">
+                    <div class="recipe-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfZ9ZBcixFWUNTQuNhGNLLNzhwvLZTqKqH6g&s" alt="Kongnamul Guk">
+                        <div class="recipe-badge vegetarian">Simple</div>
+                        <button class="recipe-favorite" data-recipe="kongnamul-guk">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Kongnamul Guk</h3>
+                        </div>
+                        <p class="recipe-desc">Simple soybean sprout soup, light and refreshing.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>20 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>120 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Easy</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Soybean Sprout</span><span>Light</span><span>Simple</span><span>Everyday</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="kongnamul-guk-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="kongnamul-guk"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 29: Galbitang -->
+                <div class="recipe-card" data-region="stew">
+                    <div class="recipe-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdDlnPxvenFMkbb9sbjeovQREFO96zOwbrlA&s" alt="Galbitang">
+                        <div class="recipe-badge">Clear Soup</div>
+                        <button class="recipe-favorite" data-recipe="galbitang">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Galbitang</h3>
+                        </div>
+                        <p class="recipe-desc">Clear beef short rib soup with radish, clean and savory.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>180 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>380 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Hard</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Short Rib</span><span>Clear Soup</span><span>Savory</span><span>Traditional</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="galbitang-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="galbitang"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 30: Mandu Guk -->
+                <div class="recipe-card" data-region="stew">
+                    <div class="recipe-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxtLNCJgmvrg3fz4qE09KWkTEJSKyJ8s1nmQ&s" alt="Mandu Guk">
+                        <div class="recipe-badge">New Year</div>
+                        <button class="recipe-favorite" data-recipe="mandu-guk">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Mandu Guk</h3>
+                        </div>
+                        <p class="recipe-desc">Dumpling soup traditionally eaten on Korean New Year.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>60 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>320 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Optional Meat</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Dumpling</span><span>Soup</span><span>New Year</span><span>Traditional</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="mandu-guk-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="mandu-guk"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ========== KOREAN BBQ (10 Recipes) ========== -->
+
+                <!-- Recipe 31: Bulgogi -->
+                <div class="recipe-card" data-region="bbq">
+                    <div class="recipe-image">
+                        <img src="https://www.onceuponachef.com/images/2022/07/bulgogi.jpg" alt="Bulgogi">
+                        <div class="recipe-badge">Marinated</div>
+                        <button class="recipe-favorite" data-recipe="bulgogi">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Bulgogi</h3>
+                        </div>
+                        <p class="recipe-desc">Thinly sliced beef marinated in sweet soy sauce, sesame, and pear.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>60 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>380 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Easy</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Beef</span><span>Marinated</span><span>Grilled</span><span>Sweet Soy</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="bulgogi-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="bulgogi"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 32: Samgyeopsal -->
+                <div class="recipe-card" data-region="bbq">
+                    <div class="recipe-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGLbAdwGLuabfekmpNxapqn4ettLkN_SYNIA&s" alt="Samgyeopsal">
+                        <div class="recipe-badge">Pork Belly</div>
+                        <button class="recipe-favorite" data-recipe="samgyeopsal">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Samgyeopsal</h3>
+                        </div>
+                        <p class="recipe-desc">Grilled pork belly slices served with ssamjang and lettuce wraps.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>30 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>520 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Easy</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Pork Belly</span><span>Grilled</span><span>Lettuce Wraps</span><span>Social</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="samgyeopsal-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="samgyeopsal"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 33: Galbi -->
+                <div class="recipe-card" data-region="bbq">
+                    <div class="recipe-image">
+                        <img src="https://www.unileverfoodsolutions.eg/dam/global-ufs/mcos/meps/arabia/calcmenu/recipes/EG-recipes/In-Development/korean-beef-ribs-(galbi-gui)/main-header.jpg" alt="Galbi">
+                        <div class="recipe-badge featured">Chef's Special</div>
+                        <button class="recipe-favorite" data-recipe="galbi">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Galbi</h3>
+                        </div>
+                        <p class="recipe-desc">Marinated beef short ribs grilled to caramelized perfection.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>4 hrs+</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>580 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Short Ribs</span><span>Marinated</span><span>Grilled</span><span>Caramelized</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="galbi-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="galbi"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 34: Dak Galbi -->
+                <div class="recipe-card" data-region="bbq">
+                    <div class="recipe-image">
+                        <img src="https://www.maangchi.com/wp-content/uploads/2013/11/dakgalbi-recipe1-scaled.jpg" alt="Dak Galbi">
+                        <div class="recipe-badge">Spicy Chicken</div>
+                        <button class="recipe-favorite" data-recipe="dak-galbi">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Dak Galbi</h3>
+                        </div>
+                        <p class="recipe-desc">Spicy stir-fried chicken with vegetables, often cooked at the table.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>45 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>420 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Chicken</span><span>Spicy</span><span>Stir-fried</span><span>Table Cooked</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="dak-galbi-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="dak-galbi"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 35: Jeyuk Bokkeum -->
+                <div class="recipe-card" data-region="bbq">
+                    <div class="recipe-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCpz712Rs0FP12L-72TS20wYgQcSugPW1-jg&s" alt="Jeyuk Bokkeum">
+                        <div class="recipe-badge">Spicy Pork</div>
+                        <button class="recipe-favorite" data-recipe="jeyuk-bokkeum">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Jeyuk Bokkeum</h3>
+                        </div>
+                        <p class="recipe-desc">Spicy stir-fried pork with gochujang and vegetables.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>40 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>380 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Easy</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Pork</span><span>Spicy</span><span>Gochujang</span><span>Stir-fry</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="jeyuk-bokkeum-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="jeyuk-bokkeum"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 36: Gopchang -->
+                <div class="recipe-card" data-region="bbq">
+                    <div class="recipe-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrXWuKiQiNwrcdy90d-Py1Fg9TgAhUbN-3ug&s" alt="Gopchang">
+                        <div class="recipe-badge">Intestines</div>
+                        <button class="recipe-favorite" data-recipe="gopchang">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Gopchang</h3>
+                        </div>
+                        <p class="recipe-desc">Grilled beef or pork intestines, chewy and rich in flavor.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>60 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>480 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Intestines</span><span>Grilled</span><span>Chewy</span><span>Specialty</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="gopchang-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="gopchang"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 38: Yangnyeom Tongdak -->
+                <div class="recipe-card" data-region="bbq">
+                    <div class="recipe-image">
+                        <img src="https://i.ytimg.com/vi/XnLWBoZn710/maxresdefault.jpg" alt="Yangnyeom Tongdak">
+                        <div class="recipe-badge">Fried Chicken</div>
+                        <button class="recipe-favorite" data-recipe="yangnyeom-tongdak">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Yangnyeom Tongdak</h3>
+                        </div>
+                        <p class="recipe-desc">Korean-style fried chicken coated in sweet and spicy sauce.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>60 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>520 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Fried Chicken</span><span>Sweet Spicy</span><span>Crispy</span><span>Beer Food</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="yangnyeom-tongdak-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="yangnyeom-tongdak"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 39: Saengseon Gui -->
+                <div class="recipe-card" data-region="bbq">
+                    <div class="recipe-image">
+                        <img src="https://kikkomanusa.com/foodservice/wp-content/uploads/sites/2/2022/04/Saengseon-Gui-FS-Website.jpg" alt="Saengseon Gui">
+                        <div class="recipe-badge">Grilled Fish</div>
+                        <button class="recipe-favorite" data-recipe="saengseon-gui">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Saengseon Gui</h3>
+                        </div>
+                        <p class="recipe-desc">Grilled fish, usually mackerel or yellow croaker, simple and healthy.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>30 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>280 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Easy</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Grilled Fish</span><span>Healthy</span><span>Simple</span><span>Mackerel</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="saengseon-gui-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="saengseon-gui"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 40: Makchang -->
+                <div class="recipe-card" data-region="bbq">
+                    <div class="recipe-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzPthuYLHLJCryjzloThiuTEyqgf54ZoixZg&s" alt="Makchang">
+                        <div class="recipe-badge">Specialty</div>
+                        <button class="recipe-favorite" data-recipe="makchang">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Makchang</h3>
+                        </div>
+                        <p class="recipe-desc">Grilled pork large intestine, crispy outside and chewy inside.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>45 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>520 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Large Intestine</span><span>Grilled</span><span>Crispy</span><span>Specialty</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="makchang-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="makchang"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="techniques-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Korean <span class="accent">Cooking</span> Techniques</h2>
+                <p>Master these methods for authentic Korean flavors</p>
+            </div>
+            
+            <div class="techniques-grid">
+                <div class="technique-card">
+                    <div class="technique-icon">
+                        <i class="fas fa-jar"></i>
+                    </div>
+                    <h3>Jang (Fermentation)</h3>
+                    <p>Mastering doenjang, ganjang, and gochujang - Korea's essential fermented sauces.</p>
+                </div>
+                
+                <div class="technique-card">
+                    <div class="technique-icon">
+                        <i class="fas fa-temperature-high"></i>
+                    </div>
+                    <h3>Table Grilling</h3>
+                    <p>Cooking meats at the table on grill plates for fresh, hot Korean BBQ experience.</p>
+                </div>
+                
+                <div class="technique-card">
+                    <div class="technique-icon">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <h3>Banchan Preparation</h3>
+                    <p>Creating multiple side dishes that complement the main meal with balance and variety.</p>
+                </div>
+                
+                <div class="technique-card">
+                    <div class="technique-icon">
+                        <i class="fas fa-hand-holding-heart"></i>
+                    </div>
+                    <h3>Ssam (Wrapping)</h3>
+                    <p>Art of wrapping grilled meats in lettuce or perilla leaves with sauces and sides.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+    <footer class="luxury-footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>© 2025 <span class="accent">kitchen Dairies</span>. All rights reserved. Connect • Create • Cook</p>
+                <div class="footer-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                    <a href="faq.html">FAQ</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Filter functionality for Korean cuisine
+        document.querySelectorAll('.region-tab').forEach(tab => {
+            tab.addEventListener('click', function() {
+                // Update active tab
+                document.querySelectorAll('.region-tab').forEach(t => t.classList.remove('active'));
+                this.classList.add('active');
+                
+                const region = this.dataset.region;
+                const recipeCards = document.querySelectorAll('.recipe-card');
+                
+                recipeCards.forEach(card => {
+                    if (region === 'all' || card.dataset.region === region) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Favorite functionality
+        document.querySelectorAll('.recipe-favorite').forEach(button => {
+            button.addEventListener('click', function() {
+                const icon = this.querySelector('i');
+                if (icon.classList.contains('far')) {
+                    icon.classList.remove('far');
+                    icon.classList.add('fas');
+                    icon.style.color = '#e63946';
+                } else {
+                    icon.classList.remove('fas');
+                    icon.classList.add('far');
+                    icon.style.color = '';
+                }
+            });
+        });
+
+        // Add to cart functionality
+        document.querySelectorAll('.add-cart-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                const cartCount = document.getElementById('cart-count');
+                let count = parseInt(cartCount.textContent);
+                count++;
+                cartCount.textContent = count;
+                
+                // Add animation
+                cartCount.style.transform = 'scale(1.5)';
+                setTimeout(() => {
+                    cartCount.style.transform = 'scale(1)';
+                }, 300);
+                
+                // Show notification (you can customize this)
+                alert('Ingredients added to cart!');
+            });
+        });
+
+        // Mobile menu toggle (placeholder)
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            alert('Mobile menu would open here in a full implementation');
+        });
+    </script>
+</body>
+</html>

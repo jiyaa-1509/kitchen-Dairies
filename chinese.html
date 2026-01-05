@@ -1,0 +1,1406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chinese Recipes | kitchen Dairies</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="indian.css">
+</head>
+<body>
+    
+    <header class="premium-header">
+        <div class="header-container">
+            <div class="logo-section">
+                <a href="home.html" class="logo">
+                    <img src="C:\Users\pjiya\OneDrive\Documents\Desktop\IMG_20251218_100944.jpg" alt="kitchen Dairies Logo">
+                    <div class="logo-text">
+                        <h1>kitchen Dairies</h1>
+                        <p class="tagline">Artisanal Culinary Creations</p>
+                    </div>
+                </a>
+            </div>
+
+            <nav class="main-nav">
+                <a href="home.html" class="nav-link"><i class="fas fa-home"></i> Home</a>
+                <a href="Cuisine.html" class="nav-link active"><i class="fas fa-globe-americas"></i> Cuisine</a>
+                <a href="nutrition.html" class="nav-link"><i class="fas fa-apple-alt"></i> Nutrition</a>
+                <a href="contact.html" class="nav-link"><i class="fas fa-envelope"></i> Contact</a>
+                <a href="store.html" class="nav-link"><i class="fas fa-store"></i> Store</a>
+                <a href="cart.html" class="nav-cart">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-count" id="cart-count">0</span>
+                </a>
+                <button class="premium-cta">Join Club</button>
+            </nav>
+
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+
+    <section class="cuisine-hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span><i class="fas fa-utensils"></i> 吃饭了! (Let's Eat!)</span>
+                </div>
+                <h1 class="hero-title">Discover <span class="highlight">Chinese</span> Culinary Art</h1>
+                <p class="hero-subtitle">From delicate dim sum to fiery Sichuan dishes, explore the rich tapestry of China's regional cuisines</p>
+                
+                <div class="cuisine-stats">
+                    <div class="stat">
+                        <i class="fas fa-clock"></i>
+                        <span>8 Culinary Regions</span>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-mortar-pestle"></i>
+                        <span>5000+ Years History</span>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-leaf"></i>
+                        <span>Yin-Yang Balance</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="regional-nav">
+        <div class="container">
+            <div class="section-header">
+                <h2>Explore by <span class="accent">Category</span></h2>
+                <p>China's diverse culinary traditions</p>
+            </div>
+            
+            <div class="region-tabs">
+                <button class="region-tab active" data-region="all">All Dishes</button>
+                <button class="region-tab" data-region="street">Street Food</button>
+                <button class="region-tab" data-region="main">Main Dishes</button>
+                <button class="region-tab" data-region="soup">Soups & Noodles</button>
+                <button class="region-tab" data-region="dessert">Desserts</button>
+            </div>
+        </div>
+    </section>
+
+   
+    <section class="featured-recipes">
+        <div class="container">
+            <div class="section-header">
+                <h2>Signature <span class="accent">Chinese</span> Recipes</h2>
+                <p>Handpicked classics that define Chinese cuisine</p>
+            </div>
+            
+            <div class="recipes-grid">
+                
+                <!-- ========== STREET FOOD (10 Recipes) ========== -->
+                
+                <!-- Recipe 1: Jianbing (Chinese Crepe) -->
+                <div class="recipe-card" data-region="street">
+                    <div class="recipe-image">
+                        <img src="https://redhousespice.com/wp-content/uploads/2020/06/Jian-Bing-Chinese-Crepes-3-scaled.jpg" alt="Jianbing">
+                        <div class="recipe-badge">Street Food</div>
+                        <button class="recipe-favorite" data-recipe="jianbing">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Jianbing</h3>
+                        </div>
+                        <p class="recipe-desc">Chinese breakfast crepe with egg, crispy wonton, scallions, and hoisin sauce.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>30 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>350 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Breakfast</span><span>Crepe</span><span>Beijing</span><span>Quick</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="jianbing-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="jianbing"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 2: Baozi (Steamed Buns) -->
+                <div class="recipe-card" data-region="street">
+                    <div class="recipe-image">
+                        <img src="https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:eco,c_fill,g_auto,w_1500,ar_3:2/k%2FPhoto%2FRecipes%2F2024-03-steamed-buns%2FSteamed-Pork-Buns-0200" alt="Baozi">
+                        <div class="recipe-badge vegetarian">Street Food</div>
+                        <button class="recipe-favorite" data-recipe="baozi">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Baozi</h3>
+                        </div>
+                        <p class="recipe-desc">Fluffy steamed buns filled with pork, vegetables, or sweet red bean paste.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>2 hrs</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>280 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Optional Meat</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Steamed</span><span>Buns</span><span>Breakfast</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="baozi-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="baozi"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 3: Spring Rolls -->
+                <div class="recipe-card" data-region="street">
+                    <div class="recipe-image">
+                        <img src="https://thaicaliente.com/wp-content/uploads/2020/09/Spring-Roll-Feature.jpg" alt="Spring Rolls">
+                        <div class="recipe-badge vegetarian">Quick</div>
+                        <button class="recipe-favorite" data-recipe="spring-rolls">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Spring Rolls</h3>
+                        </div>
+                        <p class="recipe-desc">Crispy fried rolls filled with vegetables, sometimes with pork or shrimp.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>45 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>120 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Optional Meat</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Crispy</span><span>Fried</span><span>Appetizer</span><span>Festive</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="spring-rolls-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="spring-rolls"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 4: Scallion Pancakes -->
+                <div class="recipe-card" data-region="street">
+                    <div class="recipe-image">
+                        <img src="https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_1:1/k%2FPhoto%2FRecipes%2F2023-12-scallion-pancakes%2Fscallion-pancakes-341" alt="Scallion Pancakes">
+                        <div class="recipe-badge vegetarian">Snack</div>
+                        <button class="recipe-favorite" data-recipe="scallion-pancakes">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Scallion Pancakes</h3>
+                        </div>
+                        <p class="recipe-desc">Flaky, layered pancakes with scallions, pan-fried until crispy.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>60 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>250 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Savory</span><span>Pancake</span><span>Street Food</span><span>Flaky</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="scallion-pancakes-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="scallion-pancakes"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 5: Stinky Tofu -->
+                <div class="recipe-card" data-region="street">
+                    <div class="recipe-image">
+                        <img src="https://s.alicdn.com/@sc02/kf/H933faf6a893d4cd08491264e005fa492K.jpg" alt="Stinky Tofu">
+                        <div class="recipe-badge">Adventurous</div>
+                        <button class="recipe-favorite" data-recipe="stinky-tofu">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Stinky Tofu</h3>
+                        </div>
+                        <p class="recipe-desc">Fermented tofu with strong aroma, deep-fried and served with chili sauce.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>3+ days</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>180 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Hard</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Fermented</span><span>Tofu</span><span>Street Food</span><span>Unique</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="stinky-tofu-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="stinky-tofu"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 6: Roujiamo (Chinese Burger) -->
+                <div class="recipe-card" data-region="street">
+                    <div class="recipe-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwSm6eRTgRo9pn5Y6fbx7jUikIe4GmJVY2Rg&s" alt="Roujiamo">
+                        <div class="recipe-badge">Shanxi</div>
+                        <button class="recipe-favorite" data-recipe="roujiamo">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Roujiamo</h3>
+                        </div>
+                        <p class="recipe-desc">Chinese hamburger with braised pork stuffed in flatbread, from Shaanxi province.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>3 hrs</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>450 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Burger</span><span>Pork</span><span>Shaanxi</span><span>Street Food</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="roujiamo-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="roujiamo"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 7: Jian dui (Sesame Balls) -->
+                <div class="recipe-card" data-region="street">
+                    <div class="recipe-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkY_j-HXgUd9jLk6088RTacnKEXzyfFXjRcA&s" alt="Jian Dui">
+                        <div class="recipe-badge vegetarian">Dessert</div>
+                        <button class="recipe-favorite" data-recipe="jian-dui">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Jian Dui</h3>
+                        </div>
+                        <p class="recipe-desc">Deep-fried glutinous rice balls coated with sesame seeds, filled with red bean paste.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>90 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>220 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Dessert</span><span>Fried</span><span>Sesame</span><span>Festive</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="jian-dui-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="jian-dui"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 8: Chuanr (Chinese Kebabs) -->
+                <div class="recipe-card" data-region="street">
+                    <div class="recipe-image">
+                        <img src="https://t3.ftcdn.net/jpg/17/11/82/16/360_F_1711821671_IOfiRk9IItwiHqTh9kuNG2WwL7gLHvu7.jpg" alt="Chuanr">
+                        <div class="recipe-badge">Xinjiang</div>
+                        <button class="recipe-favorite" data-recipe="chuanr">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Chuanr</h3>
+                        </div>
+                        <p class="recipe-desc">Xinjiang-style lamb skewers with cumin and chili powder, grilled over charcoal.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>60 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>280 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Easy</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Skewers</span><span>Lamb</span><span>Xinjiang</span><span>Grilled</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="chuanr-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="chuanr"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 9: Bubble Tea -->
+                <div class="recipe-card" data-region="street">
+                    <div class="recipe-image">
+                        <img src="https://ep-website-media.s3.ap-southeast-1.amazonaws.com/my/wp-content/uploads/2025/08/Classic-Milk-Tea-with-Pearls-1.jpg" alt="Bubble Tea">
+                        <div class="recipe-badge vegetarian">Drink</div>
+                        <button class="recipe-favorite" data-recipe="bubble-tea">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Bubble Tea</h3>
+                        </div>
+                        <p class="recipe-desc">Taiwanese tea drink with milk and chewy tapioca pearls, now popular worldwide.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>60 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>300 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Drink</span><span>Taiwan</span><span>Boba</span><span>Trendy</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="bubble-tea-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="bubble-tea"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 10: Shengjian Bao -->
+                <div class="recipe-card" data-region="street">
+                    <div class="recipe-image">
+                        <img src="https://redhousespice.com/wp-content/uploads/2017/08/Sheng-Jian-Bao-Pan-fried-pork-buns-landscape1.jpg" alt="Shengjian Bao">
+                        <div class="recipe-badge">Shanghai</div>
+                        <button class="recipe-favorite" data-recipe="shengjian-bao">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Shengjian Bao</h3>
+                        </div>
+                        <p class="recipe-desc">Shanghai pan-fried pork buns with juicy filling and crispy bottom.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>2 hrs</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>320 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Hard</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Pan-fried</span><span>Buns</span><span>Shanghai</span><span>Juicy</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="shengjian-bao-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="shengjian-bao"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ========== MAIN DISHES (10 Recipes) ========== -->
+
+                <!-- Recipe 11: Kung Pao Chicken -->
+                <div class="recipe-card" data-region="main">
+                    <div class="recipe-image">
+                        <img src="https://cafedelites.com/wp-content/uploads/2018/04/Best-Kung-Pao-Chicken-IMAGE-2.jpg" alt="Kung Pao Chicken">
+                        <div class="recipe-badge featured">Sichuan Classic</div>
+                        <button class="recipe-favorite" data-recipe="kung-pao-chicken">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Kung Pao Chicken</h3>
+                        </div>
+                        <p class="recipe-desc">Sichuan stir-fry with chicken, peanuts, vegetables, and chili peppers.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>30 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>380 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Easy</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Sichuan</span><span>Spicy</span><span>Stir-fry</span><span>Peanuts</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="kung-pao-chicken-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="kung-pao-chicken"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 12: Mapo Tofu -->
+                <div class="recipe-card" data-region="main">
+                    <div class="recipe-image">
+                        <img src="https://thewoksoflife.com/wp-content/uploads/2019/06/mapo-tofu-10.jpg" alt="Mapo Tofu">
+                        <div class="recipe-badge">Spicy</div>
+                        <button class="recipe-favorite" data-recipe="mapo-tofu">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Mapo Tofu</h3>
+                        </div>
+                        <p class="recipe-desc">Sichuan tofu dish in spicy chili bean sauce with minced pork.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>30 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>280 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Easy</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Tofu</span><span>Sichuan</span><span>Spicy</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="mapo-tofu-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="mapo-tofu"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 13: Peking Duck -->
+                <div class="recipe-card" data-region="main">
+                    <div class="recipe-image">
+                        <img src="https://redhousespice.com/wp-content/uploads/2022/01/sliced-peking-duck-with-pancakes-scaled.jpg" alt="Peking Duck">
+                        <div class="recipe-badge">Imperial</div>
+                        <button class="recipe-favorite" data-recipe="peking-duck">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Peking Duck</h3>
+                        </div>
+                        <p class="recipe-desc">Crispy-skinned duck served with pancakes, scallions, cucumber, and hoisin sauce.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>2 days</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>450 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Hard</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Duck</span><span>Beijing</span><span>Festive</span><span>Traditional</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="peking-duck-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="peking-duck"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 14: Sweet and Sour Pork -->
+                <div class="recipe-card" data-region="main">
+                    <div class="recipe-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu427GmSVwrxjx9SLQ581_3Kh21gQXqsnENA&s" alt="Sweet and Sour Pork">
+                        <div class="recipe-badge">Cantonese</div>
+                        <button class="recipe-favorite" data-recipe="sweet-sour-pork">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Sweet & Sour Pork</h3>
+                        </div>
+                        <p class="recipe-desc">Crispy fried pork in tangy sweet and sour sauce with pineapple and vegetables.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>45 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>420 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Pork</span><span>Cantonese</span><span>Crispy</span><span>Tangy</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="sweet-sour-pork-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="sweet-sour-pork"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 15: Dumplings (Jiaozi) -->
+                <div class="recipe-card" data-region="main">
+                    <div class="recipe-image">
+                        <img src="https://www.eatingwell.com/thmb/V2APcFtrdizdyeAxYyvqesdD-pg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/8025596-turkey-pork-chive-dumplings-beauty-square-7f1842714fae4d01b11dff13f6678220.jpg" alt="Dumplings">
+                        <div class="recipe-badge">Festive</div>
+                        <button class="recipe-favorite" data-recipe="dumplings">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Chinese Dumplings</h3>
+                        </div>
+                        <p class="recipe-desc">Boiled or pan-fried dumplings with pork and vegetable filling, served with dipping sauce.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>90 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>280 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Dumplings</span><span>New Year</span><span>Handmade</span> 
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="dumplings-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="dumplings"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 16: Hot Pot -->
+                <div class="recipe-card" data-region="soup">
+                    <div class="recipe-image">
+                        <img src="https://getvoila.com/cdn/shop/files/hp3-min_1024x.jpg?v=1731330153" alt="Hot Pot">
+                        <div class="recipe-badge">Communal</div>
+                        <button class="recipe-favorite" data-recipe="hot-pot">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Chinese Hot Pot</h3>
+                        </div>
+                        <p class="recipe-desc">Communal cooking with meats, vegetables, and noodles cooked in simmering broth.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>60 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>Varies</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Easy</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Optional Meat</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Communal</span><span>Winter</span><span>Interactive</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="hot-pot-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="hot-pot"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 17: Char Siu (BBQ Pork) -->
+                <div class="recipe-card" data-region="main">
+                    <div class="recipe-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIdwfKBOtAwYNeHLYX02yquSQsTqnunjYdvw&s" alt="Char Siu">
+                        <div class="recipe-badge">Cantonese</div>
+                        <button class="recipe-favorite" data-recipe="char-siu">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Char Siu</h3>
+                        </div>
+                        <p class="recipe-desc">Cantonese BBQ pork with sweet honey glaze, often served with rice or noodles.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>4 hrs</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>380 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>BBQ</span><span>Pork</span><span>Cantonese</span><span>Sweet</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="char-siu-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="char-siu"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 18: Dongpo Pork -->
+                <div class="recipe-card" data-region="main">
+                    <div class="recipe-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsleANwjaPY-VOMiQEN7uj95w6i_80g1OUKg&s" alt="Dongpo Pork">
+                        <div class="recipe-badge">Hangzhou</div>
+                        <button class="recipe-favorite" data-recipe="dongpo-pork">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Dongpo Pork</h3>
+                        </div>
+                        <p class="recipe-desc">Hangzhou-style braised pork belly slow-cooked in soy sauce, wine, and sugar.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>3 hrs</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>520 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Pork Belly</span><span>Braised</span><span>Hangzhou</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="dongpo-pork-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="dongpo-pork"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 19: Fried Rice -->
+                <div class="recipe-card" data-region="main">
+                    <div class="recipe-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7rN1DaYDwwABWlfeMtr8Rol1MdjPyDgkzlg&s" alt="Fried Rice">
+                        <div class="recipe-badge">Versatile</div>
+                        <button class="recipe-favorite" data-recipe="fried-rice">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Yangzhou Fried Rice</h3>
+                        </div>
+                        <p class="recipe-desc">Classic fried rice with shrimp, ham, eggs, and mixed vegetables.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>30 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>350 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Easy</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Rice</span><span>Quick</span><span>Leftovers</span><span>Versatile</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="fried-rice-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="fried-rice"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 20: General Tso's Chicken -->
+                <div class="recipe-card" data-region="main">
+                    <div class="recipe-image">
+                        <img src="https://www.recipetineats.com/tachyon/2020/10/General-Tsao-Chicken_1-SQ.jpg" alt="General Tso's Chicken">
+                        <div class="recipe-badge">American-Chinese</div>
+                        <button class="recipe-favorite" data-recipe="general-tsos">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>General Tso's Chicken</h3>
+                        </div>
+                        <p class="recipe-desc">Crispy fried chicken in sweet, spicy, and tangy sauce, popular in the US.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>45 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>420 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Chicken</span><span>Crispy</span><span>Sweet-Spicy</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="general-tsos-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="general-tsos"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ========== SOUPS & NOODLES (10 Recipes) ========== -->
+
+                <!-- Recipe 21: Wonton Soup -->
+                <div class="recipe-card" data-region="soup">
+                    <div class="recipe-image">
+                        <img src="https://iamhomesteader.com/wp-content/uploads/2022/03/wonton-soup-1.jpg" alt="Wonton Soup">
+                        <div class="recipe-badge">Comforting</div>
+                        <button class="recipe-favorite" data-recipe="wonton-soup">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Wonton Soup</h3>
+                        </div>
+                        <p class="recipe-desc">Delicate pork-filled wontons in clear chicken broth with bok choy.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>60 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>280 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Soup</span><span>Wontons</span><span>Comfort</span><span>Light</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="wonton-soup-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="wonton-soup"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 22: Dan Dan Noodles -->
+                <div class="recipe-card" data-region="soup">
+                    <div class="recipe-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKgcPuJFSX7xAQ0FTIzS6HeTtmQ5wgkgxq-g&s" alt="Dan Dan Noodles">
+                        <div class="recipe-badge">Sichuan</div>
+                        <button class="recipe-favorite" data-recipe="dan-dan-noodles">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Dan Dan Noodles</h3>
+                        </div>
+                        <p class="recipe-desc">Sichuan noodles with spicy minced pork, chili oil, and Sichuan peppercorns.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>30 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>420 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Easy</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Noodles</span><span>Spicy</span><span>Sichuan</span><span>Street Food</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="dan-dan-noodles-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="dan-dan-noodles"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 23: Hot and Sour Soup -->
+                <div class="recipe-card" data-region="soup">
+                    <div class="recipe-image">
+                        <img src="https://www.cookwithmanali.com/wp-content/uploads/2024/01/Hot-and-Sour-Soup-Vegetarian.jpg" alt="Hot and Sour Soup">
+                        <div class="recipe-badge">Classic</div>
+                        <button class="recipe-favorite" data-recipe="hot-sour-soup">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Hot & Sour Soup</h3>
+                        </div>
+                        <p class="recipe-desc">Tangy and spicy soup with tofu, mushrooms, bamboo shoots, and egg ribbons.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>40 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>180 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Easy</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Soup</span><span>Tangy</span><span>Spicy</span><span>Comfort</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="hot-sour-soup-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="hot-sour-soup"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 24: Beef Noodle Soup -->
+                <div class="recipe-card" data-region="soup">
+                    <div class="recipe-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmsQFj3rnxeJmedB_DTabZZf0ASv97cQJBow&s" alt="Beef Noodle Soup">
+                        <div class="recipe-badge">Taiwanese</div>
+                        <button class="recipe-favorite" data-recipe="beef-noodle-soup">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Beef Noodle Soup</h3>
+                        </div>
+                        <p class="recipe-desc">Taiwanese national dish with tender braised beef, noodles, and bok choy.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>3 hrs</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>480 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Beef</span><span>Noodles</span><span>Taiwan</span><span>Hearty</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="beef-noodle-soup-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="beef-noodle-soup"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 25: Lo Mein -->
+                <div class="recipe-card" data-region="soup">
+                    <div class="recipe-image">
+                        <img src="https://www.recipetineats.com/tachyon/2019/11/Lo-Mein_5.jpg" alt="Lo Mein">
+                        <div class="recipe-badge">Quick Meal</div>
+                        <button class="recipe-favorite" data-recipe="lo-mein">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Lo Mein</h3>
+                        </div>
+                        <p class="recipe-desc">Stir-fried wheat noodles with vegetables, protein, and savory sauce.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>25 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>380 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Easy</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Optional Meat</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Noodles</span><span>Stir-fry</span><span>Quick</span><span>Versatile</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="lo-mein-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="lo-mein"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 26: Chicken Corn Soup -->
+                <div class="recipe-card" data-region="soup">
+                    <div class="recipe-image">
+                        <img src="https://www.kitchensanctuary.com/wp-content/uploads/2023/06/Chicken-and-Sweetcorn-Soup-square-FS.jpg" alt="Chicken Corn Soup">
+                        <div class="recipe-badge">Creamy</div>
+                        <button class="recipe-favorite" data-recipe="chicken-corn-soup">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Chicken Corn Soup</h3>
+                        </div>
+                        <p class="recipe-desc">Creamy soup with chicken, corn, and egg ribbons, thickened with cornstarch.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>30 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>220 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Easy</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Soup</span><span>Chicken</span><span>Creamy</span><span>Comfort</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="chicken-corn-soup-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="chicken-corn-soup"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 27: Zha Jiang Mian -->
+                <div class="recipe-card" data-region="soup">
+                    <div class="recipe-image">
+                        <img src="https://images.squarespace-cdn.com/content/v1/59fc898ee5dd5ba72fb6e7e5/1592448056189-1M4Q5G0MOIF0VQ4YJ28Z/DSC_0833.jpg" alt="Zha Jiang Mian">
+                        <div class="recipe-badge">Beijing</div>
+                        <button class="recipe-favorite" data-recipe="zha-jiang-mian">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Zha Jiang Mian</h3>
+                        </div>
+                        <p class="recipe-desc">Beijing noodles with fermented soybean paste and minced pork sauce.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>40 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>450 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Noodles</span><span>Beijing</span><span>Soybean Paste</span><span>Hearty</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="zha-jiang-mian-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="zha-jiang-mian"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 28: Buddha's Delight -->
+                <div class="recipe-card" data-region="soup">
+                    <div class="recipe-image">
+                        <img src="https://www.eatingwell.com/thmb/h-ZodRMReM7QbZhXH-ekBuQ5KiI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Buddhas-Delight-Beauty-1x1_33646_preview_maxWidth_4000_maxHeight_4000_ppi_300_quality_100-9c6db511eaa14b65b5b78366b76636af.jpg" alt="Buddha's Delight">
+                        <div class="recipe-badge vegetarian">Vegetarian</div>
+                        <button class="recipe-favorite" data-recipe="buddhas-delight">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Buddha's Delight</h3>
+                        </div>
+                        <p class="recipe-desc">Vegetarian stew with mushrooms, tofu, and vegetables, eaten during Lunar New Year.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>60 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>220 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Vegetarian</span><span>Healthy</span><span>Stew</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="buddhas-delight-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="buddhas-delight"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 29: Chongqing Spicy Chicken -->
+                <div class="recipe-card" data-region="main">
+                    <div class="recipe-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd19r5CODpRDYHkB3Ta5HQjVNe2t1LyZ_TwQ&s" alt="Chongqing Chicken">
+                        <div class="recipe-badge">Sichuan</div>
+                        <button class="recipe-favorite" data-recipe="chongqing-chicken">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Chongqing Chicken</h3>
+                        </div>
+                        <p class="recipe-desc">Deep-fried chicken chunks with dried chilies and Sichuan peppercorns.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>45 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>380 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Chicken</span><span>Spicy</span><span>Chongqing</span><span>Fried</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="chongqing-chicken-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="chongqing-chicken"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 30: Lion's Head Meatballs -->
+                <div class="recipe-card" data-region="main">
+                    <div class="recipe-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYOBuSiPvGvZq9UXhtgpJeBvXCCPm0r4qSVQ&s" alt="Lion's Head Meatballs">
+                        <div class="recipe-badge">Shanghai</div>
+                        <button class="recipe-favorite" data-recipe="lions-head">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Lion's Head Meatballs</h3>
+                        </div>
+                        <p class="recipe-desc">Large pork meatballs braised with cabbage, named for their resemblance to lion heads.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>90 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>420 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Meatballs</span><span>Shanghai</span><span>Braised</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="lions-head-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="lions-head"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ========== DESSERTS (10 Recipes) ========== -->
+
+                <!-- Recipe 31: Mango Pudding -->
+                <div class="recipe-card" data-region="dessert">
+                    <div class="recipe-image">
+                        <img src="https://www.yummytummyaarthi.com/wp-content/uploads/2012/05/mango-pudding-1-.jpg" alt="Mango Pudding">
+                        <div class="recipe-badge vegetarian">Refreshing</div>
+                        <button class="recipe-favorite" data-recipe="mango-pudding">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Mango Pudding</h3>
+                        </div>
+                        <p class="recipe-desc">Creamy, refreshing dessert made with mango puree, gelatin, and evaporated milk.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>4 hrs</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>220 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Easy</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Pudding</span><span>Refreshing</span><span>Summer</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="mango-pudding-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="mango-pudding"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 32: Mooncakes -->
+                <div class="recipe-card" data-region="dessert">
+                    <div class="recipe-image">
+                        <img src="https://redhousespice.com/wp-content/uploads/2020/08/Mooncakes-with-salted-egg-yolks-foodgawker-500x375.jpg" alt="Mooncakes">
+                        <div class="recipe-badge vegetarian">Festive</div>
+                        <button class="recipe-favorite" data-recipe="mooncakes">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Mooncakes</h3>
+                        </div>
+                        <p class="recipe-desc">Traditional pastries filled with lotus seed paste and salted egg yolks, for Mid-Autumn Festival.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>3 hrs</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>350 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Hard</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                        <span>Pastry</span><span>Mid-Autumn</span><span>Traditional</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="mooncakes-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="mooncakes"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 33: Tangyuan -->
+                <div class="recipe-card" data-region="dessert">
+                    <div class="recipe-image">
+                        <img src="https://mayskawaiikitchen.com/wp-content/uploads/2024/08/IMG_7686.1.jpg" alt="Tangyuan">
+                        <div class="recipe-badge vegetarian">Winter Solstice</div>
+                        <button class="recipe-favorite" data-recipe="tangyuan">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Tangyuan</h3>
+                        </div>
+                        <p class="recipe-desc">Glutinous rice balls filled with sweet sesame or peanut paste, served in ginger syrup.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>60 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>280 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Rice Balls</span><span>Winter</span><span>Sweet</span><span>Festive</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="tangyuan-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="tangyuan"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 34: Almond Float -->
+                <div class="recipe-card" data-region="dessert">
+                    <div class="recipe-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrEsRGCcsI3N8RErbZ0YT5ZO6eEir5NO_A-w&s" alt="Almond Float">
+                        <div class="recipe-badge vegetarian">Classic</div>
+                        <button class="recipe-favorite" data-recipe="almond-float">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Almond Float</h3>
+                        </div>
+                        <p class="recipe-desc">Almond-flavored gelatin dessert served with mixed fruit cocktail.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>4 hrs</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>180 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Easy</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Almond</span><span>Gelatin</span><span>Classic</span><span>Fruit</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="almond-float-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="almond-float"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 35: Egg Tarts -->
+                <div class="recipe-card" data-region="dessert">
+                    <div class="recipe-image">
+                        <img src="https://assets.bonappetit.com/photos/59b807037f7c9a1ef926e5f6/1:1/w_3332,h_3332,c_limit/portuguese-egg-custard-tarts.jpg" alt="Egg Tarts">
+                        <div class="recipe-badge vegetarian">Hong Kong</div>
+                        <button class="recipe-favorite" data-recipe="egg-tarts">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Hong Kong Egg Tarts</h3>
+                        </div>
+                        <p class="recipe-desc">Flaky pastry shells filled with sweet, silky egg custard.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>90 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>220 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Egg Custard</span><span>Pastry</span><span>Dim Sum</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="egg-tarts-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="egg-tarts"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 36: Red Bean Soup -->
+                <div class="recipe-card" data-region="dessert">
+                    <div class="recipe-image">
+                        <img src="https://www.foodtechlife.com/wp-content/uploads/2025/04/Savory-Red-Bean-Soup.webp" alt="Red Bean Soup">
+                        <div class="recipe-badge vegetarian">Comfort</div>
+                        <button class="recipe-favorite" data-recipe="red-bean-soup">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Red Bean Soup</h3>
+                        </div>
+                        <p class="recipe-desc">Sweet soup made from adzuki beans, often served with glutinous rice balls.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>90 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>200 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Easy</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Red Bean</span><span>Soup</span><span>Dessert</span><span>Comfort</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="red-bean-soup-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="red-bean-soup"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 37: Eight Treasure Rice -->
+                <div class="recipe-card" data-region="dessert">
+                    <div class="recipe-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyR9VEzn87C5L3WezQRzGjiitJvhO6AIqPjw&s" alt="Eight Treasure Rice">
+                        <div class="recipe-badge vegetarian">New Year</div>
+                        <button class="recipe-favorite" data-recipe="eight-treasure-rice">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Eight Treasure Rice</h3>
+                        </div>
+                        <p class="recipe-desc">Steamed glutinous rice with eight different sweet ingredients, for celebrations.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>2 hrs</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>320 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Hard</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Rice</span><span>New Year</span><span>Festive</span><span>Steamed</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="eight-treasure-rice-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="eight-treasure-rice"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 38: Sesame Balls (Jian Dui) already included at #7 -->
+
+                <!-- Recipe 39: Pineapple Buns -->
+                <div class="recipe-card" data-region="dessert">
+                    <div class="recipe-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvyWVxGNeTb9BlONg5X3Wz36yrcpcDUYp7ug&s" alt="Pineapple Buns">
+                        <div class="recipe-badge vegetarian">Hong Kong</div>
+                        <button class="recipe-favorite" data-recipe="pineapple-buns">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Pineapple Buns</h3>
+                        </div>
+                        <p class="recipe-desc">Sweet buns with crisscross sugar crust (no pineapple inside), Hong Kong classic.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>3 hrs</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>280 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Hard</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Buns</span><span>Hong Kong</span><span>Sweet</span><span>Bakery</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="pineapple-buns-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="pineapple-buns"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 40: Sweet Ginger Milk Curd -->
+                <div class="recipe-card" data-region="dessert">
+                    <div class="recipe-image">
+                        <img src="https://www.chinasichuanfood.com/wp-content/uploads/2017/04/ginger-milk-curd-7-copy.jpg" alt="Ginger Milk Curd">
+                        <div class="recipe-badge vegetarian">Healing</div>
+                        <button class="recipe-favorite" data-recipe="ginger-milk-curd">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Ginger Milk Curd</h3>
+                        </div>
+                        <p class="recipe-desc">Warm dessert of milk curdled with ginger juice, sweetened with sugar.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>20 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>180 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Easy</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Ginger</span><span>Milk</span><span>Warm</span><span>Comfort</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="ginger-milk-curd-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="ginger-milk-curd"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="techniques-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Chinese <span class="accent">Cooking</span> Techniques</h2>
+                <p>Master these methods for authentic Chinese flavors</p>
+            </div>
+            
+            <div class="techniques-grid">
+                <div class="technique-card">
+                    <div class="technique-icon">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <h3>Wok Hei (Breath of Wok)</h3>
+                    <p>High-heat stir-frying that gives food the distinctive smoky flavor and aroma.</p>
+                </div>
+                
+                <div class="technique-card">
+                    <div class="technique-icon">
+                        <i class="fas fa-utensil-spoon"></i>
+                    </div>
+                    <h3>Red Cooking</h3>
+                    <p>Slow-braising meat in soy sauce, giving it a reddish-brown color and rich flavor.</p>
+                </div>
+                
+                <div class="technique-card">
+                    <div class="technique-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Steaming</h3>
+                    <p>Traditional method for dumplings, buns, and fish to retain moisture and nutrients.</p>
+                </div>
+                
+                <div class="technique-card">
+                    <div class="technique-icon">
+                        <i class="fas fa-pepper-hot"></i>
+                    </div>
+                    <h3>Double Cooking</h3>
+                    <p>Boiling then stir-frying, used for dishes like Twice-Cooked Pork.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+    <footer class="luxury-footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>© 2025 <span class="accent">kitchen Dairies</span>. All rights reserved. Connect • Create • Cook</p>
+                <div class="footer-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                    <a href="faq.html">FAQ</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Filter functionality for Chinese cuisine
+        document.querySelectorAll('.region-tab').forEach(tab => {
+            tab.addEventListener('click', function() {
+                // Update active tab
+                document.querySelectorAll('.region-tab').forEach(t => t.classList.remove('active'));
+                this.classList.add('active');
+                
+                const region = this.dataset.region;
+                const recipeCards = document.querySelectorAll('.recipe-card');
+                
+                recipeCards.forEach(card => {
+                    if (region === 'all' || card.dataset.region === region) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Favorite functionality
+        document.querySelectorAll('.recipe-favorite').forEach(button => {
+            button.addEventListener('click', function() {
+                const icon = this.querySelector('i');
+                if (icon.classList.contains('far')) {
+                    icon.classList.remove('far');
+                    icon.classList.add('fas');
+                    icon.style.color = '#e63946';
+                } else {
+                    icon.classList.remove('fas');
+                    icon.classList.add('far');
+                    icon.style.color = '';
+                }
+            });
+        });
+
+        // Add to cart functionality
+        document.querySelectorAll('.add-cart-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                const cartCount = document.getElementById('cart-count');
+                let count = parseInt(cartCount.textContent);
+                count++;
+                cartCount.textContent = count;
+                
+                // Add animation
+                cartCount.style.transform = 'scale(1.5)';
+                setTimeout(() => {
+                    cartCount.style.transform = 'scale(1)';
+                }, 300);
+                
+                // Show notification (you can customize this)
+                alert('Ingredients added to cart!');
+            });
+        });
+
+        // Mobile menu toggle (placeholder)
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            alert('Mobile menu would open here in a full implementation');
+        });
+    </script>
+</body>
+</html>

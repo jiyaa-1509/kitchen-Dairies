@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Cuisines | kitchen Dairies</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cuisine.css">
+</head>
+<body>
+    
+    <header class="premium-header">
+        <div class="header-container">
+            <div class="logo-section">
+                <a href="home.html" class="logo">
+                    <img src="C:\Users\pjiya\OneDrive\Documents\Desktop\IMG_20251218_100944.jpg" alt="kitchen Dairies Logo">
+                    <div class="logo-text">
+                        <h1>kitchen Dairies</h1>
+                        <p class="tagline">Artisanal Culinary Creations</p>
+                    </div>
+                </a>
+            </div>
+
+            <nav class="main-nav">
+                <a href="home.html" class="nav-link"><i class="fas fa-home"></i> Home</a>
+                <a href="Cuisine.html" class="nav-link active"><i class="fas fa-utensils"></i> Cuisine</a>
+                <a href="nutrition.html" class="nav-link"><i class="fas fa-apple-alt"></i> Nutrition</a>
+                <a href="contact.html" class="nav-link"><i class="fas fa-envelope"></i> Contact</a>
+                <a href="store.html" class="nav-link"><i class="fas fa-store"></i> Store</a>
+                <a href="cart.html" class="nav-cart">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-count" id="cart-count">0</span>
+                </a>
+                
+            </nav>
+
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    
+    <section class="cuisine-hero">
+        <div class="container">
+            <h1 class="hero-title">Explore <span class="highlight">World</span> Cuisines</h1>
+            <p class="hero-subtitle">Journey through authentic flavors from every corner of the globe. Discover traditional recipes, cooking techniques, and culinary stories.</p>
+            <div class="search-bar">
+                <input type="text" placeholder="Search cuisines or recipes...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </section>
+
+    
+    <main class="cuisine-content">
+        
+        <div class="section-header">
+            <h2>Global <span class="accent">Culinary</span> Collection</h2>
+            <p>Select a cuisine to explore authentic recipes, cooking techniques, and culinary traditions</p>
+        </div>
+
+        <div class="cuisine-grid" id="cuisine-grid">
+            
+            
+
+            <div class="cuisine-card" data-category="asia">
+                <div class="cuisine-image">
+                    <img src="https://nfcihospitality.com/wp-content/uploads/2024/09/traditional-Indian-Food.jpg" alt="Indian Cuisine">
+                </div>
+                <div class="cuisine-content-card">
+                    <h3>Indian</h3>
+                    <p class="cuisine-desc">Aromatic spices, rich curries, and diverse regional specialties from across the subcontinent.</p>
+                    <div class="cuisine-tags">
+                        <span>Vegetarian-Friendly</span>
+                        <span>Spicy</span>
+                    </div>
+                    <a href="indian.html" class="cuisine-btn">
+                        Explore Recipes
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            
+            <div class="cuisine-card" data-category="americas">
+                <div class="cuisine-image">
+                    <img src="https://www.thecookingtwins.com/wp-content/uploads/2025/09/authentic-mexican-ground-beef-taco-recipe-featured.webp" alt="Mexican Cuisine">
+                </div>
+                <div class="cuisine-content-card">
+                    <h3>Mexican</h3>
+                    <p class="cuisine-desc">Bold flavors, fresh ingredients, and vibrant dishes from tacos to complex moles.</p>
+                    <div class="cuisine-tags">
+                        <span>Corn-based</span>
+                        <span>Spicy</span>
+                        <span>Street Food</span>
+                    </div>
+                    <a href="mexican.html" class="cuisine-btn">
+                        Explore Recipes
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="cuisine-card" data-category="asia">
+                <div class="cuisine-image">
+                    <img src="https://static.toiimg.com/thumb/82085026.cms?resizemode=4&width=1200" alt="Korean Cuisine">
+                </div>
+                <div class="cuisine-content-card">
+                    <h3>Korean</h3>
+                    <p class="cuisine-desc">Fermented flavors, BBQ traditions, and balanced side dishes culture.</p>
+                    <div class="cuisine-tags">
+                        <span>Fermented</span>
+                        <span>BBQ</span>
+                        <span>Healthy</span>
+                    </div>
+                    <a href="korean.html" class="cuisine-btn">
+                        Explore Recipes
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+           
+            <div class="cuisine-card" data-category="asia">
+                <div class="cuisine-image">
+                    <img src="https://user-assets.sxlcdn.com/images/68944/FhbSF4B-OAbVyAEiMDsf7NHbj94f.jpeg?imageMogr2/strip/auto-orient/thumbnail/1200x9000%3E/quality/90!/interlace/1/format/jpg" alt="Chinese Cuisine">
+                </div>
+                <div class="cuisine-content-card">
+                    <h3>Chinese</h3>
+                    <p class="cuisine-desc">Diverse regional styles from Sichuan spicy to Cantonese dim sum.</p>
+                    <div class="cuisine-tags">
+                        <span>Wok Cooking</span>
+                        <span>Regional</span>
+                        <span>Noodles</span>
+                    </div>
+                    <a href="chinese.html" class="cuisine-btn">
+                        Explore Recipes
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            
+            <div class="cuisine-card" data-category="europe">
+                <div class="cuisine-image">
+                    <img src="https://img.freepik.com/premium-photo/authentic-italian-cuisine-traditional-pasta-dishes-homemade-pizza-italian-food-plating-classic-r_980716-78560.jpg" alt="Italian Cuisine">
+                </div>
+                <div class="cuisine-content-card">
+                    <h3>Italian</h3>
+                    <p class="cuisine-desc">Simple, quality ingredients transformed into pasta, pizza, and regional classics.</p>
+                    <div class="cuisine-tags">
+                        <span>Pasta</span>
+                        <span>Mediterranean</span>
+                        <span>Cheese</span>
+                    </div>
+                    <a href="itilian.html" class="cuisine-btn">
+                        Explore Recipes
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+           
+            <div class="cuisine-card" data-category="asia">
+                <div class="cuisine-image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8OmMdrV4_9LH017PgU9FHenCCDmFj0WkPWg&s" alt="Indonesian Cuisine">
+                </div>
+                <div class="cuisine-content-card">
+                    <h3>Indonesian</h3>
+                    <p class="cuisine-desc">Rich flavors from the archipelago - satay, rendang, and complex spice pastes.</p>
+                    <div class="cuisine-tags">
+                        <span>Spicy</span>
+                        <span>Coconut</span>
+                        <span>Rice-based</span>
+                    </div>
+                    <a href="Indonesian.html" class="cuisine-btn">
+                        Explore Recipes
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            
+            <div class="cuisine-card" data-category="asia">
+                <div class="cuisine-image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcSPnPkXCEfweJP5aiq9oddhy1mtzh-qL2RA&s" alt="Thai Cuisine">
+                </div>
+                <div class="cuisine-content-card">
+                    <h3>Thai</h3>
+                    <p class="cuisine-desc">Perfect balance of sweet, sour, salty, and spicy in curries and stir-fries.</p>
+                    <div class="cuisine-tags">
+                        <span>Balanced Flavors</span>
+                        <span>Coconut Milk</span>
+                    </div>
+                    <a href="thailand.html" class="cuisine-btn">
+                        Explore Recipes
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+           
+            <div class="cuisine-card" data-category="europe">
+                <div class="cuisine-image">
+                    <img src="https://www.tastingtable.com/img/gallery/20-french-dishes-you-need-to-try-at-least-once/french-onion-soup-1687539608.jpg" alt="French Cuisine">
+                </div>
+                <div class="cuisine-content-card">
+                    <h3>French</h3>
+                    <p class="cuisine-desc">Classic techniques, rich sauces, pastries, and regional specialties.</p>
+                    <div class="cuisine-tags">
+                        <span>Technical</span>
+                        <span>Sauces</span>
+                        <span>Baking</span>
+                    </div>
+                    <a href="france.html" class="cuisine-btn">
+                        Explore Recipes
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+          
+            <div class="cuisine-card" data-category="asia">
+                <div class="cuisine-image">
+                    <img src="https://www.asiamarket.ie/media/wysiwyg/recipes/L-Recipe-Slide-Onigiri.jpg" alt="Japanese Cuisine">
+                </div>
+                <div class="cuisine-content-card">
+                    <h3>Japanese</h3>
+                    <p class="cuisine-desc">Precision, simplicity, and umami in sushi, ramen, and tempura.</p>
+                    <div class="cuisine-tags">
+                        <span>Precision</span>
+                        <span>Umami</span>
+                        <span>Seafood</span>
+                    </div>
+                    <a href="japanese.html" class="cuisine-btn">
+                        Explore Recipes
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+      
+        <div class="culinary-tips">
+            <div class="section-header">
+                <h2>Culinary <span class="accent">Tips</span> & Insights</h2>
+                <p>Enhance your cooking journey with expert advice</p>
+            </div>
+            <div class="tips-grid">
+                <div class="tip-card">
+                    <div class="tip-icon">
+                        <i class="fas fa-mortar-pestle"></i>
+                    </div>
+                    <h3>Spice Blending</h3>
+                    <p>Learn how to toast and blend spices for authentic flavor profiles in various cuisines.</p>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-icon">
+                        <i class="fas fa-knife"></i>
+                    </div>
+                    <h3>Knife Skills</h3>
+                    <p>Master basic cuts for different cuisines - essential techniques for perfect preparation.</p>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-icon">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <h3>Heat Control</h3>
+                    <p>Understand when to use high heat for wok cooking vs. low and slow for braising.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    
+    <footer class="luxury-footer">
+        
+            <div class="footer-bottom">
+                <p>© 2025 <span class="accent">kitchen Dairies</span>. All rights reserved. Explore • Cook • Enjoy</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+    </footer>
+
+    <script src="cuisine.js"></script>
+</body>
+</html>
