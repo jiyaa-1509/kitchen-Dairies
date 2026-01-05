@@ -1,0 +1,1373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>French Recipes | kitchen Dairies</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="indian.css">
+</head>
+<body>
+    
+    <header class="premium-header">
+        <div class="header-container">
+            <div class="logo-section">
+                <a href="home.html" class="logo">
+                    <img src="C:\Users\pjiya\OneDrive\Documents\Desktop\IMG_20251218_100944.jpg" alt="kitchen Dairies Logo">
+                    <div class="logo-text">
+                        <h1>kitchen Dairies</h1>
+                        <p class="tagline">Artisanal Culinary Creations</p>
+                    </div>
+                </a>
+            </div>
+
+            <nav class="main-nav">
+                <a href="home.html" class="nav-link"><i class="fas fa-home"></i> Home</a>
+                <a href="Cuisine.html" class="nav-link active"><i class="fas fa-globe-americas"></i> Cuisine</a>
+                <a href="nutrition.html" class="nav-link"><i class="fas fa-apple-alt"></i> Nutrition</a>
+                <a href="contact.html" class="nav-link"><i class="fas fa-envelope"></i> Contact</a>
+                <a href="store.html" class="nav-link"><i class="fas fa-store"></i> Store</a>
+                <a href="cart.html" class="nav-cart">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-count" id="cart-count">0</span>
+                </a>
+                <button class="premium-cta">Join Club</button>
+            </nav>
+
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+
+    <section class="cuisine-hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span><i class="fas fa-utensils"></i> Bon Appétit!</span>
+                </div>
+                <h1 class="hero-title">Discover <span class="highlight">French</span> Culinary Art</h1>
+                <p class="hero-subtitle">From buttery Croissants to rich Coq au Vin, explore the elegance and technique of France's world-renowned cuisine</p>
+                
+                <div class="cuisine-stats">
+                    <div class="stat">
+                        <i class="fas fa-clock"></i>
+                        <span>24+ Regions</span>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-mortar-pestle"></i>
+                        <span>400+ Cheeses</span>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-leaf"></i>
+                        <span>Wine Country</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="regional-nav">
+        <div class="container">
+            <div class="section-header">
+                <h2>Explore by <span class="accent">Category</span></h2>
+                <p>France's diverse culinary traditions</p>
+            </div>
+            
+            <div class="region-tabs">
+                <button class="region-tab active" data-region="all">All Dishes</button>
+                <button class="region-tab" data-region="street">Bistro Classics</button>
+                <button class="region-tab" data-region="main">Main Dishes</button>
+                <button class="region-tab" data-region="soup">Soups & Stews</button>
+                <button class="region-tab" data-region="dessert">Pastries & Desserts</button>
+            </div>
+        </div>
+    </section>
+
+   
+    <section class="featured-recipes">
+        <div class="container">
+            <div class="section-header">
+                <h2>Signature <span class="accent">French</span> Recipes</h2>
+                <p>Handpicked classics that define French cuisine</p>
+            </div>
+            
+            <div class="recipes-grid">
+                
+                <!-- ========== BISTRO CLASSICS (10 Recipes) ========== -->
+                
+                <!-- Recipe 1: Croissant -->
+                <div class="recipe-card" data-region="street">
+                    <div class="recipe-image">
+                        <img src="https://images.unsplash.com/photo-1555507036-ab794f27d2e9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Croissant">
+                        <div class="recipe-badge">French Icon</div>
+                        <button class="recipe-favorite" data-recipe="croissant">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Croissant</h3>
+                        </div>
+                        <p class="recipe-desc">Buttery, flaky, viennoiserie pastry of Austrian origin, but associated with France.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>8 hrs</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>280 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Hard</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Pastry</span><span>Breakfast</span><span>Buttery</span><span>Iconic</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="croissant-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="croissant"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 2: Quiche Lorraine -->
+                <div class="recipe-card" data-region="street">
+                    <div class="recipe-image">
+                        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1180&q=80" alt="Quiche Lorraine">
+                        <div class="recipe-badge">Lorraine</div>
+                        <button class="recipe-favorite" data-recipe="quiche-lorraine">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Quiche Lorraine</h3>
+                        </div>
+                        <p class="recipe-desc">Savory tart with cream, eggs, and bacon or lardons in pastry crust.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>90 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>420 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Tart</span><span>Savory</span><span>Bistro</span><span>Creamy</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="quiche-lorraine-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="quiche-lorraine"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 3: Crêpes -->
+                <div class="recipe-card" data-region="street">
+                    <div class="recipe-image">
+                        <img src="https://images.unsplash.com/photo-1568625363452-5e2d4c4f1d8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Crêpes">
+                        <div class="recipe-badge">Brittany</div>
+                        <button class="recipe-favorite" data-recipe="crepes">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Crêpes</h3>
+                        </div>
+                        <p class="recipe-desc">Thin pancakes from Brittany, served sweet (with sugar, jam) or savory (galettes).</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>30 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>150 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Easy</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Pancakes</span><span>Brittany</span><span>Versatile</span><span>Street Food</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="crepes-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="crepes"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 4: Croque Monsieur -->
+                <div class="recipe-card" data-region="street">
+                    <div class="recipe-image">
+                        <img src="https://images.unsplash.com/photo-1481070555726-e2fe83577d52?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Croque Monsieur">
+                        <div class="recipe-badge">Parisian</div>
+                        <button class="recipe-favorite" data-recipe="croque-monsieur">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Croque Monsieur</h3>
+                        </div>
+                        <p class="recipe-desc">Grilled ham and cheese sandwich with béchamel sauce, a French café classic.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>25 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>450 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Easy</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Sandwich</span><span>Café</span><span>Cheese</span><span>Quick</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="croque-monsieur-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="croque-monsieur"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 5: French Onion Soup -->
+                <div class="recipe-card" data-region="street">
+                    <div class="recipe-image">
+                        <img src="https://images.unsplash.com/photo-1547592166-23ac45744acd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80" alt="French Onion Soup">
+                        <div class="recipe-badge">Comfort Food</div>
+                        <button class="recipe-favorite" data-recipe="french-onion-soup">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>French Onion Soup</h3>
+                        </div>
+                        <p class="recipe-desc">Rich onion soup with beef broth, topped with bread and melted cheese.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>90 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>320 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Soup</span><span>Onion</span><span>Cheese</span><span>Comfort</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="french-onion-soup-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="french-onion-soup"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 6: Ratatouille -->
+                <div class="recipe-card" data-region="street">
+                    <div class="recipe-image">
+                        <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Ratatouille">
+                        <div class="recipe-badge vegetarian">Provençal</div>
+                        <button class="recipe-favorite" data-recipe="ratatouille">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Ratatouille</h3>
+                        </div>
+                        <p class="recipe-desc">Provençal vegetable stew with eggplant, zucchini, bell peppers, and tomatoes.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>90 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>180 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Stew</span><span>Vegetables</span><span>Provence</span><span>Healthy</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="ratatouille-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="ratatouille"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 7: Salade Niçoise -->
+                <div class="recipe-card" data-region="street">
+                    <div class="recipe-image">
+                        <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1174&q=80" alt="Salade Niçoise">
+                        <div class="recipe-badge">Nice</div>
+                        <button class="recipe-favorite" data-recipe="salade-nicoise">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Salade Niçoise</h3>
+                        </div>
+                        <p class="recipe-desc">Traditional salad from Nice with tuna, hard-boiled eggs, tomatoes, and anchovies.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>30 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>320 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Easy</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Salad</span><span>Nice</span><span>Light</span><span>Summer</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="salade-nicoise-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="salade-nicoise"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 8: Escargots -->
+                <div class="recipe-card" data-region="street">
+                    <div class="recipe-image">
+                        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Escargots">
+                        <div class="recipe-badge">Burgundy</div>
+                        <button class="recipe-favorite" data-recipe="escargots">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Escargots</h3>
+                        </div>
+                        <p class="recipe-desc">Snails cooked with garlic butter and parsley, served in their shells.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>45 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>280 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Snails</span><span>Appetizer</span><span>Garlic Butter</span><span>Classic</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="escargots-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="escargots"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 9: Moules Marinières -->
+                <div class="recipe-card" data-region="street">
+                    <div class="recipe-image">
+                        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Moules Marinières">
+                        <div class="recipe-badge">Normandy</div>
+                        <button class="recipe-favorite" data-recipe="moules-marinieres">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Moules Marinières</h3>
+                        </div>
+                        <p class="recipe-desc">Mussels cooked in white wine with shallots, parsley, and butter.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>30 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>250 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Easy</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Mussels</span><span>Seafood</span><span>White Wine</span><span>Coastal</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="moules-marinieres-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="moules-marinieres"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 10: Steak Frites -->
+                <div class="recipe-card" data-region="street">
+                    <div class="recipe-image">
+                        <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Steak Frites">
+                        <div class="recipe-badge">Brasserie</div>
+                        <button class="recipe-favorite" data-recipe="steak-frites">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Steak Frites</h3>
+                        </div>
+                        <p class="recipe-desc">Steak with French fries, the quintessential French brasserie dish.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>45 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>650 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Steak</span><span>Fries</span><span>Brasserie</span><span>Classic</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="steak-frites-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="steak-frites"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ========== MAIN DISHES (10 Recipes) ========== -->
+
+                <!-- Recipe 11: Coq au Vin -->
+                <div class="recipe-card" data-region="main">
+                    <div class="recipe-image">
+                        <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Coq au Vin">
+                        <div class="recipe-badge featured">Burgundy</div>
+                        <button class="recipe-favorite" data-recipe="coq-au-vin">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Coq au Vin</h3>
+                        </div>
+                        <p class="recipe-desc">Chicken braised with wine, lardons, mushrooms, and garlic, from Burgundy.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>3 hrs</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>520 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Chicken</span><span>Wine</span><span>Braised</span><span>Classic</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="coq-au-vin-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="coq-au-vin"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 12: Boeuf Bourguignon -->
+                <div class="recipe-card" data-region="main">
+                    <div class="recipe-image">
+                        <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Boeuf Bourguignon">
+                        <div class="recipe-badge">Burgundy</div>
+                        <button class="recipe-favorite" data-recipe="boeuf-bourguignon">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Boeuf Bourguignon</h3>
+                        </div>
+                        <p class="recipe-desc">Beef stew braised in red wine with carrots, onions, and mushrooms.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>4 hrs</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>580 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Beef</span><span>Stew</span><span>Red Wine</span><span>Comfort</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="boeuf-bourguignon-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="boeuf-bourguignon"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 13: Duck Confit -->
+                <div class="recipe-card" data-region="main">
+                    <div class="recipe-image">
+                        <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Duck Confit">
+                        <div class="recipe-badge">Gascony</div>
+                        <button class="recipe-favorite" data-recipe="duck-confit">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Duck Confit</h3>
+                        </div>
+                        <p class="recipe-desc">Duck leg cured in salt, then slow-cooked in its own fat until tender.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>48 hrs</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>480 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Hard</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Duck</span><span>Preserved</span><span>Slow Cooked</span><span>Rich</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="duck-confit-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="duck-confit"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 14: Bouillabaisse -->
+                <div class="recipe-card" data-region="main">
+                    <div class="recipe-image">
+                        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Bouillabaisse">
+                        <div class="recipe-badge">Marseille</div>
+                        <button class="recipe-favorite" data-recipe="bouillabaisse">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Bouillabaisse</h3>
+                        </div>
+                        <p class="recipe-desc">Provençal fish stew from Marseille with various fish and shellfish.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>120 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>380 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Fish Stew</span><span>Marseille</span><span>Seafood</span><span>Provençal</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="bouillabaisse-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="bouillabaisse"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 15: Cassoulet -->
+                <div class="recipe-card" data-region="main">
+                    <div class="recipe-image">
+                        <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Cassoulet">
+                        <div class="recipe-badge">Southwest</div>
+                        <button class="recipe-favorite" data-recipe="cassoulet">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Cassoulet</h3>
+                        </div>
+                        <p class="recipe-desc">Slow-cooked casserole from southwest France with meat and white beans.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>6 hrs</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>620 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Hard</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Casserole</span><span>Beans</span><span>Slow Cooked</span><span>Hearty</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="cassoulet-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="cassoulet"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 16: Blanquette de Veau -->
+                <div class="recipe-card" data-region="soup">
+                    <div class="recipe-image">
+                        <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Blanquette de Veau">
+                        <div class="recipe-badge">Veal Stew</div>
+                        <button class="recipe-favorite" data-recipe="blanquette-de-veau">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Blanquette de Veau</h3>
+                        </div>
+                        <p class="recipe-desc">Veal stew in white sauce with mushrooms, carrots, and pearl onions.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>3 hrs</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>480 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Veal</span><span>Stew</span><span>White Sauce</span><span>Classic</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="blanquette-de-veau-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="blanquette-de-veau"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 17: Lapin à la Moutarde -->
+                <div class="recipe-card" data-region="main">
+                    <div class="recipe-image">
+                        <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Lapin à la Moutarde">
+                        <div class="recipe-badge">Rabbit</div>
+                        <button class="recipe-favorite" data-recipe="lapin-a-la-moutarde">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Lapin à la Moutarde</h3>
+                        </div>
+                        <p class="recipe-desc">Rabbit cooked in mustard and cream sauce, a French country classic.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>90 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>380 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Rabbit</span><span>Mustard</span><span>Cream Sauce</span><span>Country</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="lapin-a-la-moutarde-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="lapin-a-la-moutarde"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 18: Sole Meunière -->
+                <div class="recipe-card" data-region="main">
+                    <div class="recipe-image">
+                        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Sole Meunière">
+                        <div class="recipe-badge">Classic Fish</div>
+                        <button class="recipe-favorite" data-recipe="sole-meuniere">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Sole Meunière</h3>
+                        </div>
+                        <p class="recipe-desc">Dover sole dredged in flour, pan-fried in butter with lemon and parsley.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>30 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>320 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Fish</span><span>Pan-fried</span><span>Butter</span><span>Simple</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="sole-meuniere-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="sole-meuniere"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 19: Gratin Dauphinois -->
+                <div class="recipe-card" data-region="main">
+                    <div class="recipe-image">
+                        <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Gratin Dauphinois">
+                        <div class="recipe-badge vegetarian">Dauphiné</div>
+                        <button class="recipe-favorite" data-recipe="gratin-dauphinois">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Gratin Dauphinois</h3>
+                        </div>
+                        <p class="recipe-desc">Potato gratin with cream, from the Dauphiné region, no cheese in traditional version.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>90 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>420 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Potato</span><span>Gratin</span><span>Cream</span><span>Side Dish</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="gratin-dauphinois-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="gratin-dauphinois"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 20: Tarte Tatin -->
+                <div class="recipe-card" data-region="main">
+                    <div class="recipe-image">
+                        <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1167&q=80" alt="Tarte Tatin">
+                        <div class="recipe-badge vegetarian">Upside-down Tart</div>
+                        <button class="recipe-favorite" data-recipe="tarte-tatin">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Tarte Tatin</h3>
+                        </div>
+                        <p class="recipe-desc">Upside-down caramelized apple tart, created by the Tatin sisters.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>75 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>380 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Dessert</span><span>Apple</span><span>Caramel</span><span>Classic</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="tarte-tatin-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="tarte-tatin"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ========== SOUPS & STEWS (10 Recipes) ========== -->
+
+                <!-- Recipe 21: Pot-au-Feu -->
+                <div class="recipe-card" data-region="soup">
+                    <div class="recipe-image">
+                        <img src="https://images.unsplash.com/photo-1547592166-23ac45744acd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80" alt="Pot-au-Feu">
+                        <div class="recipe-badge">National Dish</div>
+                        <button class="recipe-favorite" data-recipe="pot-au-feu">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Pot-au-Feu</h3>
+                        </div>
+                        <p class="recipe-desc">Traditional French boiled dinner with beef, vegetables, and broth.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>4 hrs</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>450 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Beef</span><span>Boiled</span><span>Traditional</span><span>Family</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="pot-au-feu-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="pot-au-feu"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 22: Soupe à l'Oignon -->
+                <div class="recipe-card" data-region="soup">
+                    <div class="recipe-image">
+                        <img src="https://images.unsplash.com/photo-1547592166-23ac45744acd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80" alt="French Onion Soup">
+                        <div class="recipe-badge">Parisian</div>
+                        <button class="recipe-favorite" data-recipe="soupe-a-l-oignon">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Soupe à l'Oignon</h3>
+                        </div>
+                        <p class="recipe-desc">Caramelized onion soup with beef broth, topped with bread and Gruyère.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>90 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>320 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Soup</span><span>Onion</span><span>Cheese</span><span>Comfort</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="soupe-a-l-oignon-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="soupe-a-l-oignon"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 23: Soupe au Pistou -->
+                <div class="recipe-card" data-region="soup">
+                    <div class="recipe-image">
+                        <img src="https://images.unsplash.com/photo-1547592166-23ac45744acd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80" alt="Soupe au Pistou">
+                        <div class="recipe-badge vegetarian">Provençal</div>
+                        <button class="recipe-favorite" data-recipe="soupe-au-pistou">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Soupe au Pistou</h3>
+                        </div>
+                        <p class="recipe-desc">Provençal vegetable soup with basil, garlic, and olive oil paste (pistou).</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>60 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>220 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Easy</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Soup</span><span>Vegetable</span><span>Basil</span><span>Provençal</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="soupe-au-pistou-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="soupe-au-pistou"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 24: Vichyssoise -->
+                <div class="recipe-card" data-region="soup">
+                    <div class="recipe-image">
+                        <img src="https://images.unsplash.com/photo-1547592166-23ac45744acd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80" alt="Vichyssoise">
+                        <div class="recipe-badge vegetarian">Cold Soup</div>
+                        <button class="recipe-favorite" data-recipe="vichyssoise">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Vichyssoise</h3>
+                        </div>
+                        <p class="recipe-desc">Creamy potato and leek soup, served cold, invented by French chefs in America.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>60 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>280 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Easy</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Soup</span><span>Cold</span><span>Potato</span><span>Leek</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="vichyssoise-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="vichyssoise"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 25: Soupe de Poisson -->
+                <div class="recipe-card" data-region="soup">
+                    <div class="recipe-image">
+                        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Soupe de Poisson">
+                        <div class="recipe-badge">Mediterranean</div>
+                        <button class="recipe-favorite" data-recipe="soupe-de-poisson">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Soupe de Poisson</h3>
+                        </div>
+                        <p class="recipe-desc">Mediterranean fish soup with rouille (garlic saffron mayonnaise) and croutons.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>90 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>250 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Fish Soup</span><span>Mediterranean</span><span>Rouille</span><span>Provençal</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="soupe-de-poisson-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="soupe-de-poisson"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 26: Soupe aux Choux -->
+                <div class="recipe-card" data-region="soup">
+                    <div class="recipe-image">
+                        <img src="https://images.unsplash.com/photo-1547592166-23ac45744acd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80" alt="Soupe aux Choux">
+                        <div class="recipe-badge">Cabbage Soup</div>
+                        <button class="recipe-favorite" data-recipe="soupe-aux-choux">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Soupe aux Choux</h3>
+                        </div>
+                        <p class="recipe-desc">Traditional cabbage soup with various vegetables, sometimes with meat.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>120 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>180 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Easy</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Optional Meat</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Soup</span><span>Cabbage</span><span>Healthy</span><span>Traditional</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="soupe-aux-choux-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="soupe-aux-choux"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 27: Garbure -->
+                <div class="recipe-card" data-region="soup">
+                    <div class="recipe-image">
+                        <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Garbure">
+                        <div class="recipe-badge">Southwest</div>
+                        <button class="recipe-favorite" data-recipe="garbure">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Garbure</h3>
+                        </div>
+                        <p class="recipe-desc">Hearty vegetable and meat soup from Gascony, often with duck confit.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>3 hrs</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>380 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Soup</span><span>Hearty</span><span>Gascony</span><span>Winter</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="garbure-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="garbure"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 28: Soupe à la Bière -->
+                <div class="recipe-card" data-region="soup">
+                    <div class="recipe-image">
+                        <img src="https://images.unsplash.com/photo-1547592166-23ac45744acd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80" alt="Soupe à la Bière">
+                        <div class="recipe-badge">Alsace</div>
+                        <button class="recipe-favorite" data-recipe="soupe-a-la-biere">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Soupe à la Bière</h3>
+                        </div>
+                        <p class="recipe-desc">Beer soup from Alsace, often made with Munster cheese and rye bread.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>45 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>320 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Easy</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Soup</span><span>Beer</span><span>Alsace</span><span>Cheese</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="soupe-a-la-biere-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="soupe-a-la-biere"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ========== DESSERTS (10 Recipes) ========== -->
+
+                <!-- Recipe 31: Crème Brûlée -->
+                <div class="recipe-card" data-region="dessert">
+                    <div class="recipe-image">
+                        <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1167&q=80" alt="Crème Brûlée">
+                        <div class="recipe-badge vegetarian">Custard</div>
+                        <button class="recipe-favorite" data-recipe="creme-brulee">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Crème Brûlée</h3>
+                        </div>
+                        <p class="recipe-desc">Rich custard base topped with layer of hardened caramelized sugar.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>4 hrs</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>450 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Dessert</span><span>Custard</span><span>Caramel</span><span>Classic</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="creme-brulee-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="creme-brulee"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 32: Éclair -->
+                <div class="recipe-card" data-region="dessert">
+                    <div class="recipe-image">
+                        <img src="https://images.unsplash.com/photo-1555507036-ab794f27d2e9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Éclair">
+                        <div class="recipe-badge vegetarian">Choux Pastry</div>
+                        <button class="recipe-favorite" data-recipe="eclair">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Éclair</h3>
+                        </div>
+                        <p class="recipe-desc">Oblong choux pastry filled with cream and topped with chocolate icing.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>90 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>280 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Pastry</span><span>Chocolate</span><span>Cream</span><span>Patisserie</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="eclair-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="eclair"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 33: Macarons -->
+                <div class="recipe-card" data-region="dessert">
+                    <div class="recipe-image">
+                        <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1167&q=80" alt="Macarons">
+                        <div class="recipe-badge vegetarian">Meringue</div>
+                        <button class="recipe-favorite" data-recipe="macarons">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Macarons</h3>
+                        </div>
+                        <p class="recipe-desc">Sweet meringue-based confection with ganache, buttercream or jam filling.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>2 hrs</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>120 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Hard</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Pastry</span><span>Meringue</span><span>Colorful</span><span>Delicate</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="macarons-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="macarons"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 34: Mille-Feuille -->
+                <div class="recipe-card" data-region="dessert">
+                    <div class="recipe-image">
+                        <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1167&q=80" alt="Mille-Feuille">
+                        <div class="recipe-badge vegetarian">Layers</div>
+                        <button class="recipe-favorite" data-recipe="mille-feuille">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Mille-Feuille</h3>
+                        </div>
+                        <p class="recipe-desc">"Thousand leaves" pastry with layers of puff pastry and pastry cream.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>3 hrs</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>380 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Hard</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Pastry</span><span>Layers</span><span>Puff Pastry</span><span>Classic</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="mille-feuille-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="mille-feuille"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 35: Profiteroles -->
+                <div class="recipe-card" data-region="dessert">
+                    <div class="recipe-image">
+                        <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1167&q=80" alt="Profiteroles">
+                        <div class="recipe-badge vegetarian">Choux Balls</div>
+                        <button class="recipe-favorite" data-recipe="profiteroles">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Profiteroles</h3>
+                        </div>
+                        <p class="recipe-desc">Choux pastry balls filled with cream and topped with chocolate sauce.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>75 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>320 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Pastry</span><span>Choux</span><span>Chocolate</span><span>Dessert</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="profiteroles-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="profiteroles"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 36: Opéra Cake -->
+                <div class="recipe-card" data-region="dessert">
+                    <div class="recipe-image">
+                        <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1167&q=80" alt="Opéra Cake">
+                        <div class="recipe-badge vegetarian">Layered Cake</div>
+                        <button class="recipe-favorite" data-recipe="opera-cake">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Opéra Cake</h3>
+                        </div>
+                        <p class="recipe-desc">French cake with layers of almond sponge, coffee buttercream, and chocolate ganache.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>4 hrs</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>420 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Hard</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Cake</span><span>Layered</span><span>Chocolate</span><span>Coffee</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="opera-cake-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="opera-cake"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 37: Madeleines -->
+                <div class="recipe-card" data-region="dessert">
+                    <div class="recipe-image">
+                        <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1167&q=80" alt="Madeleines">
+                        <div class="recipe-badge vegetarian">Shell-shaped</div>
+                        <button class="recipe-favorite" data-recipe="madeleines">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Madeleines</h3>
+                        </div>
+                        <p class="recipe-desc">Small shell-shaped cakes from Commercy, immortalized by Proust.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>60 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>180 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Cake</span><span>Shell</span><span>Tea Cake</span><span>Classic</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="madeleines-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="madeleines"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 38: Canelés -->
+                <div class="recipe-card" data-region="dessert">
+                    <div class="recipe-image">
+                        <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1167&q=80" alt="Canelés">
+                        <div class="recipe-badge vegetarian">Bordeaux</div>
+                        <button class="recipe-favorite" data-recipe="caneles">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Canelés</h3>
+                        </div>
+                        <p class="recipe-desc">Small French pastry with soft custard center and dark caramelized crust.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>24 hrs</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>220 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Hard</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Pastry</span><span>Bordeaux</span><span>Custard</span><span>Caramelized</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="caneles-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="caneles"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 39: Paris-Brest -->
+                <div class="recipe-card" data-region="dessert">
+                    <div class="recipe-image">
+                        <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1167&q=80" alt="Paris-Brest">
+                        <div class="recipe-badge vegetarian">Wheel-shaped</div>
+                        <button class="recipe-favorite" data-recipe="paris-brest">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Paris-Brest</h3>
+                        </div>
+                        <p class="recipe-desc">Wheel-shaped choux pastry filled with praline cream, created for Paris-Brest bicycle race.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>3 hrs</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>380 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Hard</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Pastry</span><span>Choux</span><span>Praline</span><span>Wheel-shaped</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="paris-brest-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="paris-brest"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 40: Kouign-Amann -->
+                <div class="recipe-card" data-region="dessert">
+                    <div class="recipe-image">
+                        <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1167&q=80" alt="Kouign-Amann">
+                        <div class="recipe-badge vegetarian">Brittany</div>
+                        <button class="recipe-favorite" data-recipe="kouign-amann">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Kouign-Amann</h3>
+                        </div>
+                        <p class="recipe-desc">Breton cake with laminated dough and caramelized sugar, "butter cake" in Breton.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>5 hrs</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>450 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Hard</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Pastry</span><span>Brittany</span><span>Butter</span><span>Caramelized</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="kouign-amann-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="kouign-amann"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="techniques-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>French <span class="accent">Cooking</span> Techniques</h2>
+                <p>Master these methods for authentic French cuisine</p>
+            </div>
+            
+            <div class="techniques-grid">
+                <div class="technique-card">
+                    <div class="technique-icon">
+                        <i class="fas fa-mortar-pestle"></i>
+                    </div>
+                    <h3>Mirepoix</h3>
+                    <p>Classic flavor base of diced onions, carrots, and celery sautéed in butter or oil.</p>
+                </div>
+                
+                <div class="technique-card">
+                    <div class="technique-icon">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <h3>Braising</h3>
+                    <p>Slow cooking meat in liquid (wine, broth) to develop deep flavors in dishes like Coq au Vin.</p>
+                </div>
+                
+                <div class="technique-card">
+                    <div class="technique-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Pâte à Choux</h3>
+                    <p>Mastering choux pastry for éclairs, profiteroles, and other French pastries.</p>
+                </div>
+                
+                <div class="technique-card">
+                    <div class="technique-icon">
+                        <i class="fas fa-pepper-hot"></i>
+                    </div>
+                    <h3>Sauces Mères</h3>
+                    <p>The five "mother sauces" of French cuisine: béchamel, velouté, espagnole, hollandaise, and tomato.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+    <footer class="luxury-footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>© 2025 <span class="accent">kitchen Dairies</span>. All rights reserved. Connect • Create • Cook</p>
+                <div class="footer-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                    <a href="faq.html">FAQ</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Filter functionality for French cuisine
+        document.querySelectorAll('.region-tab').forEach(tab => {
+            tab.addEventListener('click', function() {
+                // Update active tab
+                document.querySelectorAll('.region-tab').forEach(t => t.classList.remove('active'));
+                this.classList.add('active');
+                
+                const region = this.dataset.region;
+                const recipeCards = document.querySelectorAll('.recipe-card');
+                
+                recipeCards.forEach(card => {
+                    if (region === 'all' || card.dataset.region === region) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Favorite functionality
+        document.querySelectorAll('.recipe-favorite').forEach(button => {
+            button.addEventListener('click', function() {
+                const icon = this.querySelector('i');
+                if (icon.classList.contains('far')) {
+                    icon.classList.remove('far');
+                    icon.classList.add('fas');
+                    icon.style.color = '#e63946';
+                } else {
+                    icon.classList.remove('fas');
+                    icon.classList.add('far');
+                    icon.style.color = '';
+                }
+            });
+        });
+
+        // Add to cart functionality
+        document.querySelectorAll('.add-cart-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                const cartCount = document.getElementById('cart-count');
+                let count = parseInt(cartCount.textContent);
+                count++;
+                cartCount.textContent = count;
+                
+                // Add animation
+                cartCount.style.transform = 'scale(1.5)';
+                setTimeout(() => {
+                    cartCount.style.transform = 'scale(1)';
+                }, 300);
+                
+                // Show notification (you can customize this)
+                alert('Ingredients added to cart!');
+            });
+        });
+
+        // Mobile menu toggle (placeholder)
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            alert('Mobile menu would open here in a full implementation');
+        });
+    </script>
+</body>
+</html>

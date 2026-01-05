@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thai Recipes | kitchen Dairies</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="indian.css">
+</head>
+<body>
+    
+    <header class="premium-header">
+        <div class="header-container">
+            <div class="logo-section">
+                <a href="home.html" class="logo">
+                    <img src="C:\Users\pjiya\OneDrive\Documents\Desktop\IMG_20251218_100944.jpg" alt="kitchen Dairies Logo">
+                    <div class="logo-text">
+                        <h1>kitchen Dairies</h1>
+                        <p class="tagline">Artisanal Culinary Creations</p>
+                    </div>
+                </a>
+            </div>
+
+            <nav class="main-nav">
+                <a href="home.html" class="nav-link"><i class="fas fa-home"></i> Home</a>
+                <a href="Cuisine.html" class="nav-link active"><i class="fas fa-globe-americas"></i> Cuisine</a>
+                <a href="nutrition.html" class="nav-link"><i class="fas fa-apple-alt"></i> Nutrition</a>
+                <a href="contact.html" class="nav-link"><i class="fas fa-envelope"></i> Contact</a>
+                <a href="store.html" class="nav-link"><i class="fas fa-store"></i> Store</a>
+                <a href="cart.html" class="nav-cart">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-count" id="cart-count">0</span>
+                </a>
+                <button class="premium-cta">Join Club</button>
+            </nav>
+
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+
+    <section class="cuisine-hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span><i class="fas fa-utensils"></i> อร่อย! (Delicious!)</span>
+                </div>
+                <h1 class="hero-title">Discover <span class="highlight">Thai</span> Culinary Art</h1>
+                <p class="hero-subtitle">From fiery Tom Yum to creamy Green Curry, explore the perfect balance of sweet, sour, salty, and spicy in Thailand's iconic cuisine</p>
+                
+                <div class="cuisine-stats">
+                    <div class="stat">
+                        <i class="fas fa-clock"></i>
+                        <span>4 Regional Styles</span>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-mortar-pestle"></i>
+                        <span>5 Essential Tastes</span>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-leaf"></i>
+                        <span>Street Food Paradise</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="regional-nav">
+        <div class="container">
+            <div class="section-header">
+                <h2>Explore by <span class="accent">Category</span></h2>
+                <p>Thailand's diverse culinary traditions</p>
+            </div>
+            
+            <div class="region-tabs">
+                <button class="region-tab active" data-region="all">All Dishes</button>
+                <button class="region-tab" data-region="street">Street Food</button>
+                <button class="region-tab" data-region="main">Main Dishes</button>
+                <button class="region-tab" data-region="soup">Soups & Curries</button>
+                <button class="region-tab" data-region="dessert">Desserts</button>
+            </div>
+        </div>
+    </section>
+
+   
+    <section class="featured-recipes">
+        <div class="container">
+            <div class="section-header">
+                <h2>Signature <span class="accent">Thai</span> Recipes</h2>
+                <p>Handpicked classics that define Thai cuisine</p>
+            </div>
+            
+            <div class="recipes-grid">
+                
+                <!-- ========== STREET FOOD (10 Recipes) ========== -->
+                
+                <!-- Recipe 1: Pad Thai -->
+                <div class="recipe-card" data-region="street">
+                    <div class="recipe-image">
+                        <img src="https://www.recipetineats.com/tachyon/2020/01/Chicken-Pad-Thai_9-SQ.jpg" alt="Pad Thai">
+                        <div class="recipe-badge">National Dish</div>
+                        <button class="recipe-favorite" data-recipe="pad-thai">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Pad Thai</h3>
+                        </div>
+                        <p class="recipe-desc">Stir-fried rice noodles with tofu, shrimp, bean sprouts, peanuts, and tamarind sauce.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>30 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>450 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Optional Meat</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Noodles</span><span>National Dish</span><span>Street Food</span><span>Tamarind</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="pad-thai-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="pad-thai"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 2: Som Tum -->
+                <div class="recipe-card" data-region="street">
+                    <div class="recipe-image">
+                        <img src="https://assets.epicurious.com/photos/64494aa32fe21c41dfd88d3c/1:1/w_2560%2Cc_limit/green-papaya-salad-BA.jpeg" alt="Som Tum">
+                        <div class="recipe-badge vegetarian">Northeastern</div>
+                        <button class="recipe-favorite" data-recipe="som-tum">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Som Tum</h3>
+                        </div>
+                        <p class="recipe-desc">Spicy green papaya salad with tomatoes, green beans, peanuts, and lime dressing.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>20 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>180 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Easy</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Salad</span><span>Spicy</span><span>Isaan</span><span>Refreshing</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="som-tum-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="som-tum"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 3: Satay -->
+                <div class="recipe-card" data-region="street">
+                    <div class="recipe-image">
+                        <img src="https://www.elmundoeats.com/wp-content/uploads/2024/07/Malaysian-chicken-satay-with-peanut-sauce-500x500.jpg" alt="Satay">
+                        <div class="recipe-badge">Grilled</div>
+                        <button class="recipe-favorite" data-recipe="thai-satay">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Thai Satay</h3>
+                        </div>
+                        <p class="recipe-desc">Marinated meat skewers grilled over charcoal, served with peanut sauce and cucumber relish.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>60 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>280 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Skewers</span><span>Grilled</span><span>Peanut Sauce</span><span>Appetizer</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="thai-satay-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="thai-satay"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 4: Mango Sticky Rice -->
+                <div class="recipe-card" data-region="street">
+                    <div class="recipe-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaip2bPjyU8wk6adhF91nqyldAqKZxPUumew&s" alt="Mango Sticky Rice">
+                        <div class="recipe-badge vegetarian">Dessert</div>
+                        <button class="recipe-favorite" data-recipe="mango-sticky-rice">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Mango Sticky Rice</h3>
+                        </div>
+                        <p class="recipe-desc">Sweet sticky rice with ripe mango, coconut milk, and toasted mung beans.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>90 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>320 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Easy</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Dessert</span><span>Mango</span><span>Coconut</span><span>Seasonal</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="mango-sticky-rice-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="mango-sticky-rice"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 5: Pad See Ew -->
+                <div class="recipe-card" data-region="street">
+                    <div class="recipe-image">
+                        <img src="https://www.foodandwine.com/thmb/4OiyQJDbzKuy-mUfOWLVho0bOWM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Pad-Se-Ew-FT-RECIPE0623-31e03aa47c9a4bb58d1da3a8ffb405b6.jpg" alt="Pad See Ew">
+                        <div class="recipe-badge">Comfort Food</div>
+                        <button class="recipe-favorite" data-recipe="pad-see-ew">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Pad See Ew</h3>
+                        </div>
+                        <p class="recipe-desc">Stir-fried wide rice noodles with Chinese broccoli, egg, and sweet soy sauce.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>25 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>420 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Easy</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Optional Meat</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Noodles</span><span>Stir-fry</span><span>Comfort Food</span><span>Quick</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="pad-see-ew-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="pad-see-ew"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 6: Khao Niew Mamuang -->
+                <div class="recipe-card" data-region="street">
+                    <div class="recipe-image">
+                        <img src="https://www.seriouseats.com/thmb/5EoU5f5gN9zQ5y5Q5Q5Q5Q5Q5Q5=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__images__2017__09__20170911-mango-sticky-rice-2-vicky-wasik-6-1500x1125.jpg" alt="Mango Sticky Rice">
+                        <div class="recipe-badge vegetarian">Thai Dessert</div>
+                        <button class="recipe-favorite" data-recipe="khao-niew-mamuang">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Khao Niew Mamuang</h3>
+                        </div>
+                        <p class="recipe-desc">Thailand's most famous dessert - glutinous rice with mango and coconut cream.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>90 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>280 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Easy</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Dessert</span><span>Mango Season</span><span>Coconut</span><span>Sweet</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="khao-niew-mamuang-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="khao-niew-mamuang"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 7: Tod Mun Pla -->
+                <div class="recipe-card" data-region="street">
+                    <div class="recipe-image">
+                        <img src="https://www.cookrepublic.com/wp-content/uploads/2024/02/thai-fish-cakes1.jpg" alt="Tod Mun Pla">
+                        <div class="recipe-badge">Fish Cakes</div>
+                        <button class="recipe-favorite" data-recipe="tod-mun-pla">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Tod Mun Pla</h3>
+                        </div>
+                        <p class="recipe-desc">Thai fish cakes with red curry paste, green beans, and sweet chili dipping sauce.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>45 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>220 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Fish Cakes</span><span>Appetizer</span><span>Curry Paste</span><span>Fried</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="tod-mun-pla-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="tod-mun-pla"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 8: Khao Soi -->
+                <div class="recipe-card" data-region="street">
+                    <div class="recipe-image">
+                        <img src="https://hot-thai-kitchen.com/wp-content/uploads/2023/05/2-2.jpg" alt="Khao Soi">
+                        <div class="recipe-badge">Northern Thai</div>
+                        <button class="recipe-favorite" data-recipe="khao-soi">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Khao Soi</h3>
+                        </div>
+                        <p class="recipe-desc">Northern Thai coconut curry noodle soup with chicken, pickled mustard, and crispy noodles.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>90 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>520 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Curry Noodles</span><span>Chiang Mai</span><span>Coconut</span><span>Northern</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="khao-soi-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="khao-soi"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 9: Sai Oua -->
+                <div class="recipe-card" data-region="street">
+                    <div class="recipe-image">
+                        <img src="https://www.seriouseats.com/thmb/5EoU5f5gN9zQ5y5Q5Q5Q5Q5Q5Q5=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__images__2017__09__20170911-sai-oua-vicky-wasik-6-1500x1125.jpg" alt="Sai Oua">
+                        <div class="recipe-badge">Northern Sausage</div>
+                        <button class="recipe-favorite" data-recipe="sai-oua">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Sai Oua</h3>
+                        </div>
+                        <p class="recipe-desc">Northern Thai herb sausage with lemongrass, kaffir lime, and chilies, grilled to perfection.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>120 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>320 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Sausage</span><span>Northern</span><span>Herbs</span><span>Grilled</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="sai-oua-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="sai-oua"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 10: Kanom Krok -->
+                <div class="recipe-card" data-region="street">
+                    <div class="recipe-image">
+                        <img src="https://www.seriouseats.com/thmb/5EoU5f5gN9zQ5y5Q5Q5Q5Q5Q5Q5=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__images__2017__09__20170911-kanom-krok-vicky-wasik-6-1500x1125.jpg" alt="Kanom Krok">
+                        <div class="recipe-badge vegetarian">Coconut Pancakes</div>
+                        <button class="recipe-favorite" data-recipe="kanom-krok">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Kanom Krok</h3>
+                        </div>
+                        <p class="recipe-desc">Thai coconut rice pancakes cooked in special pans, crispy outside and creamy inside.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>60 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>180 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Pancakes</span><span>Coconut</span><span>Street Food</span><span>Snack</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="kanom-krok-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="kanom-krok"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ========== MAIN DISHES (10 Recipes) ========== -->
+
+                <!-- Recipe 11: Green Curry -->
+                <div class="recipe-card" data-region="main">
+                    <div class="recipe-image">
+                        <img src="https://www.seriouseats.com/thmb/5EoU5f5gN9zQ5y5Q5Q5Q5Q5Q5Q5=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__images__2017__09__20170911-green-curry-vicky-wasik-6-1500x1125.jpg" alt="Green Curry">
+                        <div class="recipe-badge featured">Classic</div>
+                        <button class="recipe-favorite" data-recipe="green-curry">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Green Curry</h3>
+                        </div>
+                        <p class="recipe-desc">Spicy coconut milk curry with green chilies, Thai eggplant, basil, and chicken or beef.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>45 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>420 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Curry</span><span>Coconut</span><span>Spicy</span><span>Classic</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="green-curry-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="green-curry"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 12: Massaman Curry -->
+                <div class="recipe-card" data-region="main">
+                    <div class="recipe-image">
+                        <img src="https://www.seriouseats.com/thmb/5EoU5f5gN9zQ5y5Q5Q5Q5Q5Q5Q5=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__images__2017__09__20170911-massaman-curry-vicky-wasik-6-1500x1125.jpg" alt="Massaman Curry">
+                        <div class="recipe-badge">Southern Thai</div>
+                        <button class="recipe-favorite" data-recipe="massaman-curry">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Massaman Curry</h3>
+                        </div>
+                        <p class="recipe-desc">Rich, mild Muslim-influenced curry with potatoes, peanuts, and warm spices like cardamom.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>90 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>480 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Curry</span><span>Peanuts</span><span>Muslim Thai</span><span>Mild</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="massaman-curry-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="massaman-curry"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 13: Panang Curry -->
+                <div class="recipe-card" data-region="main">
+                    <div class="recipe-image">
+                        <img src="https://www.seriouseats.com/thmb/5EoU5f5gN9zQ5y5Q5Q5Q5Q5Q5Q5=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__images__2017__09__20170911-panang-curry-vicky-wasik-6-1500x1125.jpg" alt="Panang Curry">
+                        <div class="recipe-badge">Thick Curry</div>
+                        <button class="recipe-favorite" data-recipe="panang-curry">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Panang Curry</h3>
+                        </div>
+                        <p class="recipe-desc">Thicker, less coconutty red curry with peanuts and kaffir lime leaves, usually with beef.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>60 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>450 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Curry</span><span>Peanuts</span><span>Thick</span><span>Kaffir Lime</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="panang-curry-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="panang-curry"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 14: Pad Kra Pao -->
+                <div class="recipe-card" data-region="main">
+                    <div class="recipe-image">
+                        <img src="https://www.seriouseats.com/thmb/5EoU5f5gN9zQ5y5Q5Q5Q5Q5Q5Q5=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__images__2017__09__20170911-pad-kra-pao-vicky-wasik-6-1500x1125.jpg" alt="Pad Kra Pao">
+                        <div class="recipe-badge">Holy Basil</div>
+                        <button class="recipe-favorite" data-recipe="pad-kra-pao">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Pad Kra Pao</h3>
+                        </div>
+                        <p class="recipe-desc">Stir-fried meat with holy basil, chilies, and garlic, topped with fried egg - Thai comfort food.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>20 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>380 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Easy</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Stir-fry</span><span>Holy Basil</span><span>Quick</span><span>Comfort Food</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="pad-kra-pao-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="pad-kra-pao"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 15: Laab -->
+                <div class="recipe-card" data-region="main">
+                    <div class="recipe-image">
+                        <img src="https://www.seriouseats.com/thmb/5EoU5f5gN9zQ5y5Q5Q5Q5Q5Q5Q5=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__images__2017__09__20170911-laab-vicky-wasik-6-1500x1125.jpg" alt="Laab">
+                        <div class="recipe-badge">Isaan</div>
+                        <button class="recipe-favorite" data-recipe="laab">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Laab</h3>
+                        </div>
+                        <p class="recipe-desc">Northeastern Thai minced meat salad with mint, lime, chilies, and toasted rice powder.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>30 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>280 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Salad</span><span>Isaan</span><span>Minced Meat</span><span>Spicy</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="laab-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="laab"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 16: Tom Yum Goong -->
+                <div class="recipe-card" data-region="soup">
+                    <div class="recipe-image">
+                        <img src="https://www.seriouseats.com/thmb/5EoU5f5gN9zQ5y5Q5Q5Q5Q5Q5Q5=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__images__2017__09__20170911-tom-yum-goong-vicky-wasik-6-1500x1125.jpg" alt="Tom Yum Goong">
+                        <div class="recipe-badge">Iconic Soup</div>
+                        <button class="recipe-favorite" data-recipe="tom-yum-goong">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Tom Yum Goong</h3>
+                        </div>
+                        <p class="recipe-desc">Hot and sour shrimp soup with lemongrass, galangal, kaffir lime leaves, and chilies.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>40 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>220 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Soup</span><span>Hot & Sour</span><span>Shrimp</span><span>Iconic</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="tom-yum-goong-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="tom-yum-goong"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 17: Gaeng Daeng -->
+                <div class="recipe-card" data-region="main">
+                    <div class="recipe-image">
+                        <img src="https://www.seriouseats.com/thmb/5EoU5f5gN9zQ5y5Q5Q5Q5Q5Q5Q5=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__images__2017__09__20170911-red-curry-vicky-wasik-6-1500x1125.jpg" alt="Red Curry">
+                        <div class="recipe-badge">Red Curry</div>
+                        <button class="recipe-favorite" data-recipe="gaeng-daeng">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Gaeng Daeng</h3>
+                        </div>
+                        <p class="recipe-desc">Red coconut curry with bamboo shoots, bell peppers, and Thai basil, milder than green curry.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>45 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>380 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Curry</span><span>Red</span><span>Coconut</span><span>Bamboo Shoots</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="gaeng-daeng-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="gaeng-daeng"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 18: Pla Rad Prik -->
+                <div class="recipe-card" data-region="main">
+                    <div class="recipe-image">
+                        <img src="https://www.seriouseats.com/thmb/5EoU5f5gN9zQ5y5Q5Q5Q5Q5Q5Q5=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__images__2017__09__20170911-pla-rad-prik-vicky-wasik-6-1500x1125.jpg" alt="Pla Rad Prik">
+                        <div class="recipe-badge">Crispy Fish</div>
+                        <button class="recipe-favorite" data-recipe="pla-rad-prik">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Pla Rad Prik</h3>
+                        </div>
+                        <p class="recipe-desc">Whole deep-fried fish with sweet chili sauce, a popular restaurant and celebration dish.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>60 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>420 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Fish</span><span>Crispy</span><span>Sweet Chili</span><span>Celebration</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="pla-rad-prik-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="pla-rad-prik"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 19: Pad Pak Ruam -->
+                <div class="recipe-card" data-region="main">
+                    <div class="recipe-image">
+                        <img src="https://www.seriouseats.com/thmb/5EoU5f5gN9zQ5y5Q5Q5Q5Q5Q5Q5=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__images__2017__09__20170911-pad-pak-ruam-vicky-wasik-6-1500x1125.jpg" alt="Pad Pak Ruam">
+                        <div class="recipe-badge vegetarian">Stir-fried Vegetables</div>
+                        <button class="recipe-favorite" data-recipe="pad-pak-ruam">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Pad Pak Ruam</h3>
+                        </div>
+                        <p class="recipe-desc">Stir-fried mixed vegetables in oyster sauce, a simple and healthy Thai side dish.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>20 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>180 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Easy</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Vegetarian</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Vegetables</span><span>Stir-fry</span><span>Healthy</span><span>Side Dish</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="pad-pak-ruam-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="pad-pak-ruam"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 20: Gai Yang -->
+                <div class="recipe-card" data-region="main">
+                    <div class="recipe-image">
+                        <img src="https://www.seriouseats.com/thmb/5EoU5f5gN9zQ5y5Q5Q5Q5Q5Q5Q5=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__images__2017__09__20170911-gai-yang-vicky-wasik-6-1500x1125.jpg" alt="Gai Yang">
+                        <div class="recipe-badge">Grilled Chicken</div>
+                        <button class="recipe-favorite" data-recipe="gai-yang">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Gai Yang</h3>
+                        </div>
+                        <p class="recipe-desc">Thai grilled chicken marinated in turmeric, coriander, and garlic, served with sweet chili sauce.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>4 hrs</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>320 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Chicken</span><span>Grilled</span><span>Isaan</span><span>Marinated</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="gai-yang-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="gai-yang"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ========== SOUPS & CURRIES (10 Recipes) ========== -->
+
+                <!-- Recipe 21: Tom Kha Gai -->
+                <div class="recipe-card" data-region="soup">
+                    <div class="recipe-image">
+                        <img src="https://www.seriouseats.com/thmb/5EoU5f5gN9zQ5y5Q5Q5Q5Q5Q5Q5=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__images__2017__09__20170911-tom-kha-gai-vicky-wasik-6-1500x1125.jpg" alt="Tom Kha Gai">
+                        <div class="recipe-badge">Coconut Soup</div>
+                        <button class="recipe-favorite" data-recipe="tom-kha-gai">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Tom Kha Gai</h3>
+                        </div>
+                        <p class="recipe-desc">Creamy coconut chicken soup with galangal, lemongrass, and kaffir lime leaves.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>40 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>280 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Soup</span><span>Coconut</span><span>Chicken</span><span>Creamy</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="tom-kha-gai-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="tom-kha-gai"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 22: Gaeng Jued -->
+                <div class="recipe-card" data-region="soup">
+                    <div class="recipe-image">
+                        <img src="https://www.seriouseats.com/thmb/5EoU5f5gN9zQ5y5Q5Q5Q5Q5Q5Q5=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__images__2017__09__20170911-gaeng-jued-vicky-wasik-6-1500x1125.jpg" alt="Gaeng Jued">
+                        <div class="recipe-badge">Clear Soup</div>
+                        <button class="recipe-favorite" data-recipe="gaeng-jued">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Gaeng Jued</h3>
+                        </div>
+                        <p class="recipe-desc">Thai clear soup with minced pork, tofu, and glass noodles, light and comforting.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>30 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>180 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Easy</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Soup</span><span>Clear</span><span>Light</span><span>Comfort</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="gaeng-jued-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="gaeng-jued"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 23: Tom Saap -->
+                <div class="recipe-card" data-region="soup">
+                    <div class="recipe-image">
+                        <img src="https://www.seriouseats.com/thmb/5EoU5f5gN9zQ5y5Q5Q5Q5Q5Q5Q5=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__images__2017__09__20170911-tom-saap-vicky-wasik-6-1500x1125.jpg" alt="Tom Saap">
+                        <div class="recipe-badge">Isaan Soup</div>
+                        <button class="recipe-favorite" data-recipe="tom-saap">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Tom Saap</h3>
+                        </div>
+                        <p class="recipe-desc">Northeastern Thai sour soup with pork ribs, lemongrass, and plenty of herbs.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>120 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>250 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Soup</span><span>Isaan</span><span>Sour</span><span>Pork Ribs</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="tom-saap-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="tom-saap"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 24: Kaeng Tai Pla -->
+                <div class="recipe-card" data-region="soup">
+                    <div class="recipe-image">
+                        <img src="https://www.seriouseats.com/thmb/5EoU5f5gN9zQ5y5Q5Q5Q5Q5Q5Q5=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__images__2017__09__20170911-kaeng-tai-pla-vicky-wasik-6-1500x1125.jpg" alt="Kaeng Tai Pla">
+                        <div class="recipe-badge">Southern Curry</div>
+                        <button class="recipe-favorite" data-recipe="kaeng-tai-pla">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Kaeng Tai Pla</h3>
+                        </div>
+                        <p class="recipe-desc">Fiery Southern Thai curry with fermented fish entrails, bamboo shoots, and vegetables.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>90 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>320 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Hard</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Curry</span><span>Southern</span><span>Fiery</span><span>Fermented Fish</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="kaeng-tai-pla-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="kaeng-tai-pla"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 25: Tom Yum Nam Khon -->
+                <div class="recipe-card" data-region="soup">
+                    <div class="recipe-image">
+                        <img src="https://www.seriouseats.com/thmb/5EoU5f5gN9zQ5y5Q5Q5Q5Q5Q5Q5=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__images__2017__09__20170911-tom-yum-nam-khon-vicky-wasik-6-1500x1125.jpg" alt="Tom Yum Nam Khon">
+                        <div class="recipe-badge">Creamy Tom Yum</div>
+                        <button class="recipe-favorite" data-recipe="tom-yum-nam-khon">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Tom Yum Nam Khon</h3>
+                        </div>
+                        <p class="recipe-desc">Creamy version of tom yum with evaporated milk or coconut milk added.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>45 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>280 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Soup</span><span>Creamy</span><span>Tom Yum</span><span>Rich</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="tom-yum-nam-khon-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="tom-yum-nam-khon"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 26: Kaeng Khiew Wan already included as Green Curry -->
+
+                <!-- Recipe 27: Kaeng Pa -->
+                <div class="recipe-card" data-region="soup">
+                    <div class="recipe-image">
+                        <img src="https://www.seriouseats.com/thmb/5EoU5f5gN9zQ5y5Q5Q5Q5Q5Q5Q5=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__images__2017__09__20170911-kaeng-pa-vicky-wasik-6-1500x1125.jpg" alt="Kaeng Pa">
+                        <div class="recipe-badge">Jungle Curry</div>
+                        <button class="recipe-favorite" data-recipe="kaeng-pa">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Kaeng Pa</h3>
+                        </div>
+                        <p class="recipe-desc">"Jungle curry" - no coconut milk, very spicy with wild herbs and vegetables.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>60 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>220 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Medium</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Non-Veg</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Curry</span><span>Spicy</span><span>No Coconut</span><span>Herbs</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="kaeng-pa-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="kaeng-pa"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 28: Tom Jued -->
+                <div class="recipe-card" data-region="soup">
+                    <div class="recipe-image">
+                        <img src="https://www.seriouseats.com/thmb/5EoU5f5gN9zQ5y5Q5Q5Q5Q5Q5Q5=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__images__2017__09__20170911-tom-jued-vicky-wasik-6-1500x1125.jpg" alt="Tom Jued">
+                        <div class="recipe-badge">Clear Broth</div>
+                        <button class="recipe-favorite" data-recipe="tom-jued">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="recipe-header">
+                            <h3>Tom Jued</h3>
+                        </div>
+                        <p class="recipe-desc">Simple clear broth soup with vegetables and optional meat, often served with rice.</p>
+                        <div class="recipe-details">
+                            <div class="detail"><i class="fas fa-clock"></i><span>30 mins</span></div>
+                            <div class="detail"><i class="fas fa-fire"></i><span>150 cal</span></div>
+                            <div class="detail"><i class="fas fa-utensils"></i><span>Easy</span></div>
+                            <div class="detail"><i class="fas fa-leaf"></i><span>Optional Meat</span></div>
+                        </div>
+                        <div class="recipe-tags">
+                            <span>Soup</span><span>Clear</span><span>Simple</span><span>Light</span>
+                        </div>
+                        <div class="recipe-actions">
+                            <a href="tom-jued-recipe.html" class="view-recipe-btn"><span>View Recipe</span><i class="fas fa-book-open"></i></a>
+                            <button class="add-cart-btn" data-recipe="tom-jued"><i class="fas fa-shopping-cart"></i><span>Add Ingredients</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+            
